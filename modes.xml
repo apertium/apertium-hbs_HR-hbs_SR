@@ -47,6 +47,25 @@
     </pipeline>
   </mode>
 
+ <mode name="hbs_HR-hbs_SR-transfer" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="hbs.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w -1 -n">
+        <file name="hbs.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hbs_HR-hbs_SR.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-hbs.hbs_HR-hbs_SR.t1x"/>
+        <file name="hbs_HR-hbs_SR.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
 
  <mode name="hbs_HR-hbs_SR" install="yes">
     <pipeline>
@@ -102,6 +121,25 @@
     </pipeline>
   </mode>
 
+
+ <mode name="hbs_SR-hbs_HR-transfer" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="hbs.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w -1 -n">
+        <file name="hbs.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="hbs_SR-hbs_HR.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-hbs.hbs_SR-hbs_HR.t1x"/>
+        <file name="hbs_SR-hbs_HR.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
 
  <mode name="hbs_SR-hbs_HR" install="yes">
     <pipeline>

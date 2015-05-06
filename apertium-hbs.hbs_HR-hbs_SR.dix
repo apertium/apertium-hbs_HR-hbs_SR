@@ -129,6 +129,7 @@
     <sdef c="Left parenthesis" n="lpar"/>
     <sdef c="Right parenthesis" n="rpar"/>
     <sdef c="Apostrophe" n="apos"/>
+    <sdef c="Quote" n="quote"/>
     <sdef c="Hypen" n="guio"/>
 
     <!--Temporary stuff-->
@@ -652,6 +653,18 @@
 <e><p><l>morski pas<s n="n"/></l><r>ajkula<s n="n"/></r></p></e>
 <e><p><l>valjak za tijesto<s n="n"/></l><r>oklagija<s n="n"/></r></p></e>
 
+<!-- to be checked --> 
+
+<e><p><l>opći<s n="adj"/></l><r>opšti<s n="adj"/></r></p></e>
+<e><p><l>spol<s n="n"/></l><r>pol<s n="n"/></r></p></e>
+<e><p><l>članak<s n="n"/></l><r>član<s n="n"/></r></p></e> <!-- not sure about this one, to produce članak 1 vs. član 1 -->
+<e><p><l>osoba<s n="n"/><s n="f"/></l><r>lice<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>neovisan<s n="adj"/></l><r>nezavisan<s n="adj"/></r></p></e>
+<e><p><l>oblik<s n="n"/><s n="mi"/></l><r>forma<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>svagdje<s n="adv"/></l><r>svuda<s n="adv"/></r></p></e>
+
+
+
 </section>
 
   <section id="regexp" type="standard">
@@ -668,6 +681,7 @@
     <e><re>[\(\[]</re><p><l><s n="lpar"/></l><r><s n="lpar"/></r></p></e>
     <e><re>[\)\]]</re><p><l><s n="rpar"/></l><r><s n="rpar"/></r></p></e>
     <e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
+    <e><p><l>"<s n="quote"/></l><r>"<s n="quote"/></r></p></e>
   </section>
 
 </dictionary>
