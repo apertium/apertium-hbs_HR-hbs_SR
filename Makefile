@@ -321,7 +321,7 @@ TARGETS_COMMON = $(LANG1).automorf.bin $(LANG1b).autogen.bin $(LANG1c).autogen.b
 	$(LANG1b).autopgen.bin $(LANG1c).autopgen.bin \
 	$(LANG1).rlx.bin $(PREFIX1).autobil.bin $(PREFIX1).t1x.bin $(PREFIX1).mode \
 	$(PREFIX2).autobil.bin $(PREFIX2).t1x.bin $(PREFIX2).mode \
-	cyr-lat.automorf.bin lat-cyr.autogen.bin   
+	cyr-lat.automorf.bin lat-cyr.autogen.bin $(LANG1).prob   
 
 
 ###############################################################################
@@ -921,6 +921,9 @@ $(LANG1c).autopgen.bin: $(AP_SRC1)/$(LANG1c).autopgen.bin
 $(LANG1).rlx.bin: $(AP_SRC1)/$(LANG1).rlx.bin
 	cp $< $@
 
+$(LANG1).prob: $(AP_SRC1)/$(LANG1).prob 
+	cp $< $@
+
 ###############################################################################
 ###############################################################################
 
@@ -963,6 +966,7 @@ install-data-local:
 	$(INSTALL_DATA)	$(LANG1b)-$(LANG1c)cyr.mode	$(DESTDIR)$(apertium_hbsmodesdir)
 	$(INSTALL_DATA)	$(LANG1c)cyr-$(LANG1b).mode	$(DESTDIR)$(apertium_hbsmodesdir)	
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).acx $(DESTDIR)$(apertium_hbs_srcdir)
+	$(INSTALL_DATA) $(LANG1).prob $(DESTDIR)$(apertium_hbs_srcdir) 
 	$(INSTALL_DATA) alt.xsl $(DESTDIR)$(apertium_hbs_srcdir) 
 clean-local:
 	-rm -rf .deps modes
