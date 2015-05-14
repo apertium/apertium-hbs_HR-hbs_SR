@@ -156,7 +156,7 @@
       <program name="lt-proc -b">
         <file name="hbs_SR-hbs_HR.autobil.bin"/>
       </program>
-<!--      <program name="apertium-transfer -b">
+      <program name="apertium-transfer -b">
         <file name="apertium-hbs.hbs_SR-hbs_HR.t1x"/>
         <file name="hbs_SR-hbs_HR.t1x.bin"/>
       </program>
@@ -165,7 +165,7 @@
       </program>
       <program name="lt-proc -p">
         <file name="hbs_HR.autopgen.bin"/>
-      </program>-->
+      </program>
     </pipeline>
   </mode>
 
