@@ -162,6 +162,7 @@
 <e><p><l>riža<s n="n"/></l><r>pirinač<s n="n"/></r></p></e>
 <e r="RL"><p><l>riža<s n="n"/></l><r>riža<s n="n"/></r></p></e>
 <e><p><l>vrlo<s n="adv"/></l><r>veoma<s n="adv"/></r></p></e>
+<e><p><l>djelomično<s n="adv"/></l><r>delimično<s n="adv"/></r></p></e>
 
 <e><p><l>naglasak<s n="n"/></l><r>akcenat<s n="n"/></r></p></e>
 <e><p><l>žitnica<s n="n"/></l><r>ambar<s n="n"/></r></p></e>
@@ -309,6 +310,7 @@
 <e><p><l>siječanjski<s n="adj"/></l><r>januarski<s n="adj"/></r></p></e>
 
 <e><p><l>heretik<s n="n"/></l><r>jeretik<s n="n"/></r></p></e>
+<e r="LR"><p><l>interesiranje<s n="n"/></l><r>interesovanje<s n="n"/></r></p></e>
 <e><p><l>ion<s n="n"/></l><r>jon<s n="n"/></r></p></e>
 <e><p><l>ionosfera<s n="n"/></l><r>jonosfera<s n="n"/></r></p></e>
 <e><p><l>poplun<s n="n"/></l><r>jorgan<s n="n"/></r></p></e>
@@ -551,6 +553,9 @@
 <e><p><l>zaljev<s n="n"/></l><r>zaliv<s n="n"/></r></p></e>
 <e><p><l>zapovjed<s n="n"/></l><r>zapoved<s n="n"/></r></p></e>
 <e><p><l>ulje<s n="n"/></l><r>zejtin<s n="n"/></r></p></e>
+<e><p><l>financije<s n="n"/></l><r>finansije<s n="n"/></r></p></e>
+<e><p><l>ovlaštenje<s n="n"/></l><r>ovlašćenje<s n="n"/></r></p></e>
+<e><p><l>korištenje<s n="n"/></l><r>korišćenje<s n="n"/></r></p></e>
 
 <e><p><l>listopadski<s n="adj"/></l><r>oktobarski<s n="adj"/></r></p></e>
 <e><p><l>bizantski<s n="adj"/></l><r>vizantijski<s n="adj"/></r></p></e>
@@ -593,6 +598,8 @@
 <e><p><l>suh<s n="adj"/></l><r>suv<s n="adj"/></r></p></e>
 <e><p><l>okrutan<s n="adj"/></l><r>svirep<s n="adj"/></r></p></e>
 <e><p><l>tanak<s n="adj"/></l><r>tanan<s n="adj"/></r></p></e>
+<e><p><l>sigurnosni<s n="adj"/></l><r>bezbednosni<s n="adj"/></r></p></e>
+<e><p><l>organiziran<s n="adj"/></l><r>organizovan<s n="adj"/></r></p></e>
 
 <e><p><l>usporediti<s n="vblex"/></l><r>uporediti<s n="vblex"/></r></p></e>
 <e><p><l>zavidjeti<s n="vblex"/></l><r>zavideti<s n="vblex"/></r></p></e>
@@ -612,6 +619,7 @@
 <e r="LR"><p><l>prezentirati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
 
 <e><p><l>španjolski<s n="adj"/></l><r>španski<s n="adj"/></r></p></e>
+<e><p><l>rumunjski<s n="adj"/></l><r>rumunski<s n="adj"/></r></p></e>
 <e><p><l>europski<s n="adj"/></l><r>evropski<s n="adj"/></r></p></e>
 <e><p><l>kršćanin<s n="n"/></l><r>hrišćanin<s n="n"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
@@ -646,7 +654,12 @@
 
 <e><p><l>Španjolska<s n="np"/></l><r>Španija<s n="np"/></r></p></e>
 <e><p><l>August<s n="np"/></l><r>August<s n="np"/></r></p></e>
+<e><p><l>Bruxelles<s n="np"/></l><r>Brisel<s n="np"/></r></p></e>
+<e><p><l>Washington<s n="np"/></l><r>Vašington<s n="np"/></r></p></e>
 
+<!-- Abbreviations -->
+
+<e><p><l>EULEX<s n="abbr"/></l><r>EULEKS<s n="abbr"/></r></p></e>
 
 <!-- MWE -->
 
