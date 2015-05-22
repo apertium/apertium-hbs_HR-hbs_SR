@@ -205,6 +205,7 @@
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
 <e><p><l>djelovanje<s n="n"/></l><r>dejstvo<s n="n"/></r></p></e>
 <e><p><l>djelovati<s n="vblex"/></l><r>dejstvovati<s n="vblex"/></r></p></e>
+<e><p><l>falsificirati<s n="vblex"/></l><r>falsifikovati<s n="vblex"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/></l><r>decenija<s n="n"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/></l><r>dekada<s n="n"/></r></p></e>
 
@@ -231,12 +232,13 @@
 <e><p><l>odašiljanje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e r="LR"><p><l>emitiranje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e><p><l>odašiljati<s n="vblex"/></l><r>emitovati<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>odašiljati<s n="vblex"/></l><r>emitovati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>emitirati<s n="vblex"/></l><r>emitovati<s n="vblex"/></r></p></e>
 <e><p><l>unutrašnjost<s n="n"/></l><r>enterijer<s n="n"/></r></p></e>
 <e r="LR"><p><l>interijer<s n="n"/></l><r>enterijer<s n="n"/></r></p></e>
 <e><p><l>evolucijski<s n="adj"/></l><r>evolutivan<s n="adj"/></r></p></e>
 <e><p><l>euro<s n="n"/></l><r>evro<s n="n"/></r></p></e>
 <e><p><l>euroazijski<s n="adj"/></l><r>evroazijski<s n="adj"/></r></p></e>
+<e><p><l>babilonski<s n="adj"/></l><r>vavilonski<s n="adj"/></r></p></e>
 <e><p><l>europeizacija<s n="n"/></l><r>evropeizacija<s n="n"/></r></p></e>
 <e><p><l>europski<s n="adj"/></l><r>evropski<s n="adj"/></r></p></e>
 <e><p><l>tvornica<s n="n"/></l><r>fabrika<s n="n"/></r></p></e>
@@ -306,6 +308,7 @@
 <e><p><l>identifikacija<s n="n"/></l><r>identifikovanje<s n="n"/></r></p></e>
 <e><p><l>identificirati<s n="vblex"/></l><r>identifikovati<s n="vblex"/></r></p></e>
 <e><p><l>zanimati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>dogoditi<s n="vblex"/></l><r>desiti<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>interesirati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
 <e><p><l>siječanjski<s n="adj"/></l><r>januarski<s n="adj"/></r></p></e>
 
@@ -525,7 +528,7 @@
 <e><p><l>tava<s n="n"/></l><r>tiganj<s n="n"/></r></p></e>
 <e><p><l>podnošenje<s n="n"/></l><r>tolerisanje<s n="n"/></r></p></e>
 <e r="LR"><p><l>toleriranje<s n="n"/></l><r>tolerisanje<s n="n"/></r></p></e>
-<e><p><l>svezak<s n="n"/></l><r>tom<s n="n"/></r></p></e>
+<e ><p><l>svezak<s n="n"/></l><r>tom<s n="n"/></r></p></e>
 <e><p><l>toplina<s n="n"/></l><r>toplota<s n="n"/></r></p></e>
 <e><p><l>kiosk<s n="n"/></l><r>trafika<s n="n"/></r></p></e>
 <e><p><l>trokut<s n="n"/></l><r>trougao<s n="n"/></r></p></e>
@@ -546,6 +549,9 @@
 <e><p><l>svemir<s n="n"/></l><r>vasiona<s n="n"/></r></p></e>
 <e><p><l>zrak<s n="n"/></l><r>vazduh<s n="n"/></r></p></e>
 <e><p><l>zrakoplovstvo<s n="n"/></l><r>vazduhoplovstvo<s n="n"/></r></p></e>
+<e><p><l>zrakoplov<s n="n"/></l><r>vazduhoplov<s n="n"/></r></p></e>
+<e r="LR"><p><l>zrakoplov<s n="n"/></l><r>aeroplan<s n="n"/></r></p></e>
+<e r="LR"><p><l>zrakoplov<s n="n"/></l><r>avion<s n="n"/></r></p></e>
 <e><p><l>štruca<s n="n"/></l><r>vekna<s n="n"/></r></p></e>
 <e><p><l>dug<s n="n"/></l><r>veresija<s n="n"/></r></p></e>
 <e><p><l>počinitelj<s n="n"/></l><r>vinovnik<s n="n"/></r></p></e>
@@ -556,6 +562,7 @@
 <e><p><l>financije<s n="n"/></l><r>finansije<s n="n"/></r></p></e>
 <e><p><l>ovlaštenje<s n="n"/></l><r>ovlašćenje<s n="n"/></r></p></e>
 <e><p><l>korištenje<s n="n"/></l><r>korišćenje<s n="n"/></r></p></e>
+<e><p><l>talent<s n="n"/></l><r>talenat<s n="n"/></r></p></e>
 
 <e><p><l>listopadski<s n="adj"/></l><r>oktobarski<s n="adj"/></r></p></e>
 <e><p><l>bizantski<s n="adj"/></l><r>vizantijski<s n="adj"/></r></p></e>
@@ -575,6 +582,7 @@
 <e><p><l>osobit<s n="adj"/></l><r>osoben<s n="adj"/></r></p></e>
 <e><p><l>poganski<s n="adj"/></l><r>paganski<s n="adj"/></r></p></e>
 <e><p><l>umirovljen<s n="adj"/></l><r>penzionisan<s n="adj"/></r></p></e>
+<e r="LR"><p><l>penzioniran<s n="adj"/></l><r>penzionisan<s n="adj"/></r></p></e>
 <e><p><l>petrokemijski<s n="adj"/></l><r>petrohemijski<s n="adj"/></r></p></e>
 <e><p><l>prahistorijski<s n="adj"/></l><r>praistorijski<s n="adj"/></r></p></e>
 <e><p><l>prekooceanski<s n="adj"/></l><r>prekookeanski<s n="adj"/></r></p></e>
@@ -607,7 +615,7 @@
 <e><p><l>odgojiti<s n="vblex"/></l><r>vaspitati<s n="vblex"/></r></p></e>
 <e><p><l>organizirati<s n="vblex"/></l><r>organizovati<s n="vblex"/></r></p></e>
 <e><p><l>podnositi<s n="vblex"/></l><r>tolerisati<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>tolerirati<s n="vblex"/></l><r>tolerirati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>tolerirati<s n="vblex"/></l><r>tolerisati<s n="vblex"/></r></p></e>
 <e><p><l>spašavati<s n="vblex"/></l><r>spasavati<s n="vblex"/></r></p></e>
 <e><p><l>riskirati<s n="vblex"/></l><r>rizikovati<s n="vblex"/></r></p></e>
 <e><p><l>regulirati<s n="vblex"/></l><r>regulisati<s n="vblex"/></r></p></e>
@@ -615,6 +623,9 @@
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
 <e><p><l>ostvariti<s n="vblex"/></l><r>realizovati<s n="vblex"/></r></p></e>
 <e><p><l>prakticirati<s n="vblex"/></l><r>praktikovati<s n="vblex"/></r></p></e>
+<e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
+<e><p><l>osjećati<s n="vblex"/></l><r>čuvstvovati<s n="vblex"/></r></p></e>
+<e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
 <e><p><l>prikazati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>prezentirati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
 
@@ -638,10 +649,13 @@
 
 <e><p><l>zračan<s n="adj"/></l><r>vazdušan<s n="adj"/></r></p></e>
 <e><p><l>posto<s n="adv"/></l><r>odsto<s n="adv"/></r></p></e>
+<e><p><l>jučer<s n="adv"/></l><r>juče<s n="adv"/></r></p></e>
+<e><p><l>prekjučer<s n="adv"/></l><r>prekjuče<s n="adv"/></r></p></e>
 
 <!-- irati ovati verbs -->
 <e><p><l>prezentirati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
-<e><p><l>diskutirati<s n="vblex"/></l><r>diskutovati<s n="vblex"/></r></p></e>
+<e><p><l>diskutirati<s n="vblex"/><s n="imperf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
+<e r="LR"><p><l>diskutirati<s n="vblex"/><s n="perf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
 <e><p><l>organizirati<s n="vblex"/></l><r>organizovati<s n="vblex"/></r></p></e>
 
