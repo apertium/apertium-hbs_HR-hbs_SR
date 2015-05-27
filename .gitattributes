@@ -16,13 +16,6 @@
 /apertium-hbs.hbs_HR-hbs_SR.t1x -text
 /apertium-hbs.hbs_SR-hbs_HR.t1x -text
 /autogen.sh -text
-autom4te.cache/output.0 -text
-autom4te.cache/output.1 -text
-autom4te.cache/requests -text
-autom4te.cache/traces.0 -text
-autom4te.cache/traces.1 -text
-/config.log -text
-/config.status -text
 /configure -text
 /configure.ac -text
 /expand-to-dix.py -text
