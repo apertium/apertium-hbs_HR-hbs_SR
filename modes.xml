@@ -126,7 +126,7 @@
   </mode>
 
 
- <mode name="hbs_SR-hbs_HR-transfer" install="no">
+ <mode name="hbs_SR-hbs_HR-transfert" install="no">
     <pipeline>
       <program name="lt-proc">
         <file name="hbs.automorf.bin"/>
@@ -149,6 +149,24 @@
     </pipeline>
   </mode>
 
+
+ <mode name="hbs_SR-hbs_HR-tagger" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="hbs.automorf.bin"/>
+      </program>
+<!--      <program name="cg-proc">
+        <file name="hbs.rlx.bin"/>
+      </program>
+-->
+      <program name="apertium-tagger -g $2">
+          <file name="hbs.prob"/>
+      </program> 
+    </pipeline>
+  </mode>
+
+
+
  <mode name="hbs_SR-hbs_HR" install="yes">
     <pipeline>
       <program name="lt-proc">
@@ -160,7 +178,7 @@
       <program name="apertium-tagger -g $2">
           <file name="hbs.prob"/>
       </program> 
-      <program name="apertium-pretransfer"/>
+     <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="hbs_SR-hbs_HR.autobil.bin"/>
       </program>
@@ -176,6 +194,36 @@
       </program>
     </pipeline>
   </mode>
+
+
+
+ <mode name="hbs_SR-hbs_HR-transfer" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="hbs.automorf.bin"/>
+      </program>
+<!--      <program name="cg-proc">
+        <file name="hbs.rlx.bin"/>
+      </program>
+-->
+      <program name="apertium-tagger -g $2">
+          <file name="hbs.prob"/>
+      </program> 
+      <program name="apertium-pretransfer"/>
+
+      <program name="lt-proc -b">
+        <file name="hbs_SR-hbs_HR.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-hbs.hbs_SR-hbs_HR.t1x"/>
+        <file name="hbs_SR-hbs_HR.t1x.bin"/>
+      </program>      
+    </pipeline>
+  </mode>
+
+
+
+
 
 <mode name="hbs_SRcyr-hbs_HR" install="yes">
     <pipeline>

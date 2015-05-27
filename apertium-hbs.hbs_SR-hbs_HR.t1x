@@ -75,11 +75,8 @@
 
   <def-cat n="CAT__vb_">
     <cat-item tags="vblex.*"/>
-    <cat-item tags="vblex"/>
     <cat-item tags="vbmod.*"/>
-    <cat-item tags="vbmod"/>
     <cat-item tags="vbser.*"/>
-    <cat-item tags="vbser"/>
   </def-cat>
 
  <def-cat n="CAT__vblexpp_">
@@ -216,6 +213,7 @@
   <def-attr n="learned_verbtime">
     <attr-item tags="aor"/>
     <attr-item tags="futI"/>
+    <attr-item tags="futII.pres"/>
     <attr-item tags="futII"/>
     <attr-item tags="imp"/>
     <attr-item tags="inf"/>
@@ -383,7 +381,9 @@ If no format information is present it is removed. -->
         </test>
        <out>
           <lu>
+           <get-case-from pos="1">
             <lit v="trebati"/>
+           </get-case-from>
             <lit-tag v="vbmod"/>
             <clip pos="1" side="sl" part="learned_verbtime"/>
             <lit-tag v="m"/> <!-- default gender until we have any idea on where to get it from -->
@@ -405,7 +405,9 @@ If no format information is present it is removed. -->
      <otherwise>
        <out>
           <lu>
+           <get-case-from pos="1">
             <lit v="trebati"/>
+           </get-case-from>
             <lit-tag v="vbmod"/>
             <clip pos="3" side="sl" part="learned_verbtime"/>
             <clip pos="3" side="sl" part="learned_person"/>
@@ -472,7 +474,9 @@ If no format information is present it is removed. -->
        </choose>
        <out>
           <lu>
+             <get-case-from pos="1">
             <lit v="trebati"/>
+           </get-case-from>
             <lit-tag v="vbmod"/>
             <clip pos="1" side="tl" part="learned_verbtime"/>
             <clip pos="1" side="tl" part="learned_gender"/>
@@ -545,7 +549,9 @@ If no format information is present it is removed. -->
           </lu>
           <b pos="1"/>
           <lu>
+          <get-case-from pos="1">
             <lit v="trebati"/>
+          </get-case-from>
             <lit-tag v="vbmod"/>
             <clip pos="2" side="tl" part="learned_verbtime"/>
             <clip pos="2" side="tl" part="learned_gender"/>
@@ -579,16 +585,22 @@ If no format information is present it is removed. -->
   <pattern>
     <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
     <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__vblex_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
   </pattern>
   <action>
     <choose>
       <when>
         <test>
+          <or>
                <equal>
                  <clip pos="3" side="tl" part="learned_verbtime"/>
                  <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="3" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="futII.pres"/>
                </equal>
+          </or>
         </test>
        <out>
           <lu>
@@ -618,13 +630,28 @@ If no format information is present it is removed. -->
             <lit-tag v="inf"/>
             <clip pos="3" side="tl" part="lemq"/>
           </lu>
-      </out>
-     </when>
-    </choose>
+      </out>      
         <call-macro n="f_bcond">
           <with-param pos="2"/>
           <with-param pos="3"/>
         </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
 </action>
 </rule>
 
