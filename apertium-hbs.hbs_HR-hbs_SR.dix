@@ -205,9 +205,13 @@
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
 <e><p><l>djelovanje<s n="n"/></l><r>dejstvo<s n="n"/></r></p></e>
 <e><p><l>djelovati<s n="vblex"/></l><r>dejstvovati<s n="vblex"/></r></p></e>
+<e><p><l>shvaćati<s n="vblex"/></l><r>shvatati<s n="vblex"/></r></p></e>
 <e><p><l>falsificirati<s n="vblex"/></l><r>falsifikovati<s n="vblex"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/></l><r>decenija<s n="n"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/></l><r>dekada<s n="n"/></r></p></e>
+<e><p><l>poduzetnik<s n="n"/></l><r>preduzetnik<s n="n"/></r></p></e>
+<e><p><l>gospodarstvo<s n="n"/></l><r>privreda<s n="n"/></r></p></e>
+<e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
 
 <e><p><l>deklariranje<s n="n"/></l><r>deklarisanje<s n="n"/></r></p></e>
 <e><p><l>demokracija<s n="n"/></l><r>demokratija<s n="n"/></r></p></e>
@@ -307,8 +311,9 @@
 <e><p><l>identifikacija<s n="n"/></l><r>identifikovanje<s n="n"/></r></p></e>
 <e><p><l>identificirati<s n="vblex"/></l><r>identifikovati<s n="vblex"/></r></p></e>
 <e><p><l>zanimati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>dogoditi<s n="vblex"/></l><r>desiti<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>interesirati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>dogoditi<s n="vblex"/></l><r>desiti<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>interesirati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>donijeti<s n="vblex"/></l><r>donesti<s n="vblex"/></r></p></e>
 <e><p><l>siječanjski<s n="adj"/></l><r>januarski<s n="adj"/></r></p></e>
 
 <e><p><l>heretik<s n="n"/></l><r>jeretik<s n="n"/></r></p></e>
