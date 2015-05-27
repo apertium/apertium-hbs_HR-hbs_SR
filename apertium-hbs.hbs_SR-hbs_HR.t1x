@@ -530,6 +530,12 @@ If no format information is present it is removed. -->
               <lit-tag v="m"/>
         </let>
        </when>
+       <otherwise>
+        <let> 
+              <clip pos="1" side="tl" part="learned_gender"/>
+              <clip pos="5" side="tl" part="learned_gender"/>
+        </let>
+       </otherwise>
        </choose>
        <out>
           <lu>

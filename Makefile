@@ -220,19 +220,19 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-APERTIUM_CFLAGS = -I/usr/local/include/apertium-3.4 -I/usr/local/lib/apertium-3.4/include -I/usr/local/include/lttoolbox-3.3 -I/usr/local/lib/lttoolbox-3.3/include -I/usr/include/libxml2  
+APERTIUM_CFLAGS = -I/usr/local/include/apertium-3.3 -I/usr/local/lib/apertium-3.3/include -I/usr/local/include/lttoolbox-3.3 -I/usr/local/lib/lttoolbox-3.3/include -I/usr/include/libxml2  
 APERTIUM_HBS_CFLAGS = 
 APERTIUM_HBS_LIBS = 
 APERTIUM_LIBS = -L/usr/local/lib -lapertium3 -llttoolbox3 -lxml2 -lpcre  
-AP_LIB1 = /home/nikola/tools/apertium/apertium-hbs/
-AP_SRC1 = /home/nikola/tools/apertium/apertium-hbs/
-AP_SUBDIRS =  /home/nikola/tools/apertium/apertium-hbs/
-AUTOCONF = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/missing autoconf
-AUTOHEADER = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/missing autoheader
-AUTOMAKE = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/missing automake-1.14
+AP_LIB1 = /home/gema/svn/languages/apertium-hbs
+AP_SRC1 = /home/gema/svn/languages/apertium-hbs
+AP_SUBDIRS =  /home/gema/svn/languages/apertium-hbs
+AUTOCONF = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/missing autoconf
+AUTOHEADER = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/missing autoheader
+AUTOMAKE = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/missing automake-1.14
 AWK = gawk
 CGCOMP = /usr/bin/cg-comp
 CGPROC = /usr/bin/cg-proc
@@ -252,7 +252,7 @@ LN_S = ln -s
 LRXCOMP = /usr/local/bin/lrx-comp
 LRXPROC = /usr/local/bin/lrx-proc
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/missing makeinfo
+MAKEINFO = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 PACKAGE = apertium-hbs_HR-hbs_SR
 PACKAGE_BUGREPORT = unknown@users.sourceforge.net
@@ -269,10 +269,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 0.5.0
-abs_builddir = /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR
-abs_srcdir = /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR
-abs_top_builddir = /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR
-abs_top_srcdir = /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR
+abs_builddir = /home/gema/svn/staging/apertium-hbs_HR-hbs_SR
+abs_srcdir = /home/gema/svn/staging/apertium-hbs_HR-hbs_SR
+abs_top_builddir = /home/gema/svn/staging/apertium-hbs_HR-hbs_SR
+abs_top_srcdir = /home/gema/svn/staging/apertium-hbs_HR-hbs_SR
 am__leading_dot = .
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
@@ -288,7 +288,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/nikola/tools/apertium/apertium-hbs_HR-hbs_SR/install-sh
+install_sh = ${SHELL} /home/gema/svn/staging/apertium-hbs_HR-hbs_SR/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -850,10 +850,6 @@ install-modes:
 	touch $@
 
 .PRECIOUS: .deps/.d
-
-langs:
-	@fail=; 	if $(am__make_keepgoing); then 	  failcom='fail=yes'; 	else 	  failcom='exit 1'; 	fi; 	dot_seen=no; 	list='$(AP_SUBDIRS)'; 	for subdir in $$list; do 	  echo "Making $$subdir"; 	  ($(am__cd) $$subdir && $(MAKE) $(AM_MAKEFLAGS) all-am) 	  || eval $$failcom; 	done; 	$(MAKE) $(AM_MAKEFLAGS) all-am || exit 1; 	test -z "$$fail"
-.PHONY: langs
 
 
 ###############################################################################
