@@ -81,6 +81,9 @@
     <cat-item tags="vbser.*"/>
   </def-cat>
 
+ <def-cat n="CAT__posadj_">
+    <cat-item lemma="pos" tags="adj.*"/>
+  </def-cat>
 
   <def-cat n="CAT__vbinf_">
     <cat-item tags="vblex.*.inf"/>
@@ -514,6 +517,47 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
+
+
+
+<rule comment="RULE: ne + vb = nevb -> neće -> neće ">
+  <pattern>
+    <pattern-item n="CAT__part_"/>  
+    <pattern-item n="CAT__vb_"/>
+  </pattern>
+  <action>
+       <out>
+        <mlu>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="2" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+      </out>
+</action>
+</rule>
+
+
+<rule comment="RULE: np + pos = nppos -> Marko ov -> Markov ">
+  <pattern>
+    <pattern-item n="CAT__np_"/>  
+    <pattern-item n="CAT__pos_"/>
+  </pattern>
+  <action>
+       <out>
+        <mlu>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="2" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+      </out>
+</action>
+</rule>
 
 
 
