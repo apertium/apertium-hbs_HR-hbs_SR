@@ -265,7 +265,7 @@
 <e><p><l>plinovod<s n="n"/></l><r>gasovod<s n="n"/></r></p></e>
 <e><p><l>igra<s n="n"/></l><r>gem<s n="n"/></r></p></e>
 <e r="RL"><p><l>igra<s n="n"/></l><r>igra<s n="n"/></r></p></e>
-<e><p><l>gesta<s n="n"/><s n="f"></s></l><r>gest<s n="n"/><s n="m"></s></r></p></e>
+<e><p><l>gesta<s n="n"/><s n="f"/></l><r>gest<s n="n"/><s n="m"/></r></p></e>
 
 <e><p><l>gruda<s n="n"/></l><r>grudva<s n="n"/></r></p></e>
 <e><p><l>željezni<s n="n"/></l><r>gvozdeni<s n="n"/></r></p></e>
@@ -410,8 +410,8 @@
 <e><p><l>opsežan<s n="adj"/></l><r>obiman<s n="adj"/></r></p></e>
 <e><p><l>nadzirati<s n="vblex"/></l><r>kontrolisati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>nadgledati<s n="vblex"/></l><r>kontrolisati<s n="vblex"/></r></p></e>
-<e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="imperf"></l><r>kontrolisati<s n="vblex"/><s n="imperf"></r></p></e>
-<e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="perf"></s></l><r>kontrolisati<s n="vblex"/><s n="imperf"></r></p></e>
+<e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="imperf"/></l><r>kontrolisati<s n="vblex"/><s n="imperf"/></r></p></e>
+<e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="perf"/></l><r>kontrolisati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>koordinirati<s n="vblex"/></l><r>koordinisati<s n="vblex"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
 <e><p><l>kruniti<s n="vblex"/></l><r>krunisati<s n="vblex"/></r></p></e>
@@ -622,8 +622,8 @@
 <e><p><l>reformirati<s n="vblex"/></l><r>reformisati<s n="vblex"/></r></p></e>
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
 <e><p><l>ostvariti<s n="vblex"/></l><r>realizovati<s n="vblex"/></r></p></e>
-<e><p><l>prakticirati<s n="vblex"/><s n="perf"></l><r>praktikovati<s n="vblex"/><s n="imperf"></r></p></e>
-<e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"></l><r>praktikovati<s n="vblex"/><s n="imperf"></r></p></e>
+<e><p><l>prakticirati<s n="vblex"/><s n="perf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
+<e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
 <e><p><l>osjećati<s n="vblex"/></l><r>čuvstvovati<s n="vblex"/></r></p></e>
 <e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
@@ -638,8 +638,8 @@
 <e><p><l>tužitelj<s n="n"/></l><r>tužilac<s n="n"/></r></p></e>
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
-<e><p><l>vanjski<s n="adj"/><s n="pst"></l><r>inostran<s n="adj"/><s n="pst"></r></p></e>
-<e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"></l><r>spoljni<s n="adj"/><s n="pst"></r></p></e>
+<e><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>inostran<s n="adj"/><s n="pst"/></r></p></e>
+<e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>spoljni<s n="adj"/><s n="pst"/></r></p></e>
 <e><p><l>Cipar<s n="np"/></l><r>Kipar<s n="np"/></r></p></e>
 <e><p><l>diplomacija<s n="n"/></l><r>diplomatija<s n="n"/></r></p></e>
 <e><p><l>točka<s n="n"/></l><r>tačka<s n="n"/></r></p></e>
