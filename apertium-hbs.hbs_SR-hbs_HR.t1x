@@ -6,6 +6,10 @@
     <cat-item tags="adj.*"/>
     <cat-item tags="adj"/>
   </def-cat>
+  <def-cat n="CAT__adv_">
+    <cat-item tags="adv.*"/>
+    <cat-item tags="adv"/>
+  </def-cat>
   <def-cat n="CAT__cnjcoo_">
     <cat-item tags="cnjcoo.*"/>
     <cat-item tags="cnjcoo"/>
@@ -655,6 +659,178 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
+
+
+
+
+<rule comment="RULE: vbmod/vblex + adv + da + vblex.pres = vbmod/vblex + adv + vblex.inf. Moram danas da lupam -> Moram danas lupati, početi danas da radim -> početi danas raditi">
+  <pattern>
+    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
+    <pattern-item n="CAT__adv_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+          <or>
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="futII.pres"/>
+               </equal>
+          </or>
+        </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/> 
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
+
+
+
+
+<rule comment="RULE: vbmod/vblex + da + adv + vblex.pres = vbmod/vblex + adv + vblex.inf. Moram da danas lupam -> Moram danas lupati, početi da danas radim -> početi danas raditi">
+  <pattern>
+    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__adv_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+          <or>
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="futII.pres"/>
+               </equal>
+          </or>
+        </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/> 
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
 
 
 <rule comment="RULE: da li + vb = vb + li. da li će -> hoće li, da li možeš -> možeš li">
