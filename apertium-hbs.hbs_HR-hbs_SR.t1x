@@ -83,7 +83,7 @@
 
 
   <def-cat n="CAT__vbinf_">
-    <cat-item tags="vblex.*.inf.*"/>
+    <cat-item tags="vblex.*.inf"/>
     <cat-item tags="vbmod.inf"/>
     <cat-item tags="vbser.inf"/>
   </def-cat>
