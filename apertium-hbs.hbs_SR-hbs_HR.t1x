@@ -660,6 +660,94 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="RULE: vbmod/vblex + da + vblex.pres + da + vblex.pres = vbmod/vblex + vblex.inf. + vblex.inf Moram da pocnem da lupam -> Moram poceti lupati">
+  <pattern>
+    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+          <and>
+               <equal>
+                 <clip pos="3" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="5" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal>
+           </and>
+        </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="3" side="tl" part="lemh"/>
+            <clip pos="3" side="sl" part="learned_verbcat"/>
+            <clip pos="3" side="sl" part="learned_verbaspect"/>
+            <clip pos="3" side="sl" part="learned_verbtype"/>
+            <clip pos="3" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="3" side="tl" part="lemq"/>
+          </lu>
+          <b pos="2"/>
+	  <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu> 
+	  <b pos="1"/>
+          <lu>
+            <clip pos="5" side="tl" part="lemh"/>
+            <clip pos="5" side="sl" part="learned_verbcat"/>
+            <clip pos="5" side="sl" part="learned_verbaspect"/>
+            <clip pos="5" side="sl" part="learned_verbtype"/>
+            <clip pos="5" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="5" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>     
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+          <b pos="4"/>
+          <lu>
+            <clip pos="5" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
+
 
 
 
@@ -900,6 +988,7 @@ If no format information is present it is removed. -->
     </choose>
 </action>
 </rule>
+
 
 
 
