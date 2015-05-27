@@ -697,10 +697,6 @@ If no format information is present it is removed. -->
             <lit-tag v="inf"/>
             <clip pos="3" side="tl" part="lemq"/>
           </lu>
-          <b pos="2"/>
-	  <lu>
-            <clip pos="1" side="tl" part="whole"/>
-          </lu> 
 	  <b pos="1"/>
           <lu>
             <clip pos="5" side="tl" part="lemh"/>

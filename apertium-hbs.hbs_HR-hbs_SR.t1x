@@ -416,7 +416,6 @@ If no format information is present it is removed. -->
             <clip pos="1" side="sl" part="learned_isadv"/>
             <clip pos="1" side="sl" part="learned_issfx"/>
             <clip pos="1" side="sl" part="learned_person"/>
-            <clip pos="1" side="sl" part="learned_gender"/>
             <clip pos="1" side="sl" part="learned_numberat"/>
             <clip pos="1" side="sl" part="learned_case"/>
             <clip pos="1" side="sl" part="learned_definiteness"/>
