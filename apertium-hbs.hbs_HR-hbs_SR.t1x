@@ -379,22 +379,39 @@ If no format information is present it is removed. -->
       <when>
         <test>
           <equal>
-            <clip pos="1" side="sl" part="learned_person"/>
-            <lit-tag v=""/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <lit-tag v="lp"/>
            </equal>
         </test>
-        <let>
-          <clip pos="1" side="tl" part="learned_person"/>
-          <lit-tag v="p3"/>
-	</let>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>            
+          </lu>
+          <b pos="1"/>
+          <lu>
+          <lit v="da"/>
+          <lit-tag v="cnjsub"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="sl" part="learned_verbcat"/>
+            <clip pos="2" side="sl" part="learned_isclt"/>
+            <clip pos="2" side="sl" part="learned_verbaspect"/>
+            <clip pos="2" side="sl" part="learned_verbtype"/>
+            <clip pos="2" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="pres"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <lit-tag v="p3"/>
+            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+      </out>
       </when>
-       <otherwise>
-       <let>
-          <clip pos="1" side="tl" part="learned_person"/>
-          <clip pos="1" side="sl" part="learned_person"/>
-	</let>
-      </otherwise>
-     </choose>
+      <otherwise>
        <out>
           <lu>
             <clip pos="1" side="tl" part="whole"/>            
@@ -422,6 +439,8 @@ If no format information is present it is removed. -->
             <clip pos="2" side="tl" part="lemq"/>
           </lu>
       </out>
+      </otherwise>
+     </choose>
 </action>
 </rule>
 
