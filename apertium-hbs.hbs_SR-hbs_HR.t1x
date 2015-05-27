@@ -60,6 +60,12 @@
     <cat-item tags="part.*"/>
     <cat-item tags="part"/>
   </def-cat>
+
+  <def-cat n="CAT__nenipart_">
+    <cat-item lemma="ne" tags="part.neg"/>
+    <cat-item lemma="ni" tags="part.neg"/>
+  </def-cat>
+
   <def-cat n="CAT__pr_">
     <cat-item tags="pr.*"/>
     <cat-item tags="pr"/>
@@ -991,9 +997,9 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="RULE: ne + vb = nevb -> neće -> neće check">
+<rule comment="RULE: ne/ni + vb = nevb -> neće -> neće, ni sam -> nisam check">
   <pattern>
-    <pattern-item n="CAT__part_"/>  
+    <pattern-item n="CAT__nenipart_"/>  
     <pattern-item n="CAT__vb_"/>
   </pattern>
   <action>
@@ -1014,6 +1020,26 @@ If no format information is present it is removed. -->
 <rule comment="RULE: np + pos = nppos -> Marko ov -> Markov check ">
   <pattern>
     <pattern-item n="CAT__np_"/>  
+    <pattern-item n="CAT__posadj_"/>
+  </pattern>
+  <action>
+       <out>
+        <mlu>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="2" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+      </out>
+</action>
+</rule>
+
+
+<rule comment="RULE: n + pos = nppos -> brod ov -> brodov check ">
+  <pattern>
+    <pattern-item n="CAT__n_"/>  
     <pattern-item n="CAT__posadj_"/>
   </pattern>
   <action>
