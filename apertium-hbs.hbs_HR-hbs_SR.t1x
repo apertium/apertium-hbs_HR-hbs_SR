@@ -520,7 +520,7 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="RULE: ne + vb = nevb -> neće -> neće ">
+<rule comment="RULE: ne + vb = nevb -> neće -> neće check">
   <pattern>
     <pattern-item n="CAT__part_"/>  
     <pattern-item n="CAT__vb_"/>
@@ -540,7 +540,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="RULE: np + pos = nppos -> Marko ov -> Markov ">
+<rule comment="RULE: np + pos = nppos -> Marko ov -> Markov check ">
   <pattern>
     <pattern-item n="CAT__np_"/>  
     <pattern-item n="CAT__posadj_"/>
