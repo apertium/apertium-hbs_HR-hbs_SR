@@ -543,7 +543,7 @@ If no format information is present it is removed. -->
 <rule comment="RULE: np + pos = nppos -> Marko ov -> Markov ">
   <pattern>
     <pattern-item n="CAT__np_"/>  
-    <pattern-item n="CAT__pos_"/>
+    <pattern-item n="CAT__adjpos_"/>
   </pattern>
   <action>
        <out>
