@@ -28,9 +28,11 @@
     <cat-item lemma="da li" tags="cnjsub"/>
  </def-cat>
 
-  <def-cat n="CAT__trebati_">
+  <def-cat n="CAT__trebati_">    
     <cat-item lemma="trebati" tags="vbmod.lp.nt.*"/> <!-- gender agreement problematic -->
     <cat-item lemma="trebati" tags="vbmod.pres.p3.sg"/>
+    <cat-item lemma="trebati" tags="vblex.*.lp.nt.*"/> <!-- gender agreement problematic + tagger problem -->
+    <cat-item lemma="trebati" tags="vblex.*.pres.p3.sg"/> <!-- tagger problem -->
     <cat-item lemma="treba" tags="n.*"/> <!-- tagger mistake -->
   </def-cat>
 
@@ -532,7 +534,7 @@ If no format information is present it is removed. -->
        </when>
        <otherwise>
         <let> 
-              <clip pos="1" side="tl" part="learned_gender"/>
+              <clip pos="2" side="tl" part="learned_gender"/>
               <clip pos="5" side="tl" part="learned_gender"/>
         </let>
        </otherwise>

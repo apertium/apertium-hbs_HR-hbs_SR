@@ -52,9 +52,13 @@
       <program name="lt-proc">
         <file name="hbs.automorf.bin"/>
       </program>
-      <program name="cg-proc -w -1 -n">
+<!--      <program name="cg-proc -w -1 -n">
         <file name="hbs.rlx.bin"/>
       </program>
+-->
+      <program name="apertium-tagger -g $2">
+          <file name="hbs.prob"/>
+      </program> 
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="hbs_HR-hbs_SR.autobil.bin"/>
@@ -127,9 +131,10 @@
       <program name="lt-proc">
         <file name="hbs.automorf.bin"/>
       </program>
-      <program name="cg-proc">
+<!--      <program name="cg-proc">
         <file name="hbs.rlx.bin"/>
       </program>
+-->
       <program name="apertium-tagger -g $2">
           <file name="hbs.prob"/>
       </program> 
