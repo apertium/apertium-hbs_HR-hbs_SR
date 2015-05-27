@@ -3,7 +3,6 @@
 /COPYING -text
 /ChangeLog -text
 /INSTALL -text
-/Makefile -text
 /Makefile.am -text
 /Makefile.in -text
 /NEWS -text
@@ -17,8 +16,6 @@
 /configure.ac -text
 /expand-to-dix.py -text
 /gen-bidix.sh -text
-/hbs_HR-hbs_SRcyr.mode -text
-/hbs_SRcyr-hbs_HR.mode -text
 /install-sh -text
 /missing -text
 /modes.xml -text
