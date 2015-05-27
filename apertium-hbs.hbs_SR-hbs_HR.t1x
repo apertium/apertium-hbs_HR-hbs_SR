@@ -368,11 +368,11 @@ If no format information is present it is removed. -->
 <section-rules>
 
 
-<rule comment="RULE: treba/trebalo + da + vblex.pres = trebati.infofromvblex + vblex.inf. Treba da lupam -> Trebam lupati, trebalo da okonča -> Trebao okončati">
+<rule comment="RULE: treba/trebalo + da + vb.pres = trebati.infofromvb + vblex.inf. Treba da lupam -> Trebam lupati, trebalo da okonča -> Trebao okončati">
   <pattern>
     <pattern-item n="CAT__trebati_"/>
     <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__vblex_"/>
+    <pattern-item n="CAT__vb_"/>
   </pattern>
   <action>
     <choose>
@@ -397,7 +397,7 @@ If no format information is present it is removed. -->
           <b pos="1"/>
           <lu>
             <clip pos="3" side="tl" part="lemh"/>
-            <lit-tag v="vblex"/>
+            <clip pos="3" side="sl" part="learned_verbcat"/>
             <clip pos="3" side="sl" part="learned_verbaspect"/>
             <clip pos="3" side="sl" part="learned_verbtype"/>
             <clip pos="3" side="sl" part="learned_isrefvb"/>
