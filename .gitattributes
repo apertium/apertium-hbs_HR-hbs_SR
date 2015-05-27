@@ -8,15 +8,12 @@
 /Makefile.in -text
 /NEWS -text
 /README -text
-/aclocal.m4 -text
 /alt.xsl -text
-/ap_include.am -text
 /apertium-hbs.hbs.acx -text
 /apertium-hbs.hbs_HR-hbs_SR.dix -text
 /apertium-hbs.hbs_HR-hbs_SR.t1x -text
 /apertium-hbs.hbs_SR-hbs_HR.t1x -text
 /autogen.sh -text
-/configure -text
 /configure.ac -text
 /expand-to-dix.py -text
 /gen-bidix.sh -text
