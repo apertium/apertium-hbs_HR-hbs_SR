@@ -62,8 +62,12 @@ $(PREFIX1).autobil.bin: .deps/$(PREFIX1).dix
 	apertium-validate-dictionary .deps/$(PREFIX1).dix
 	lt-comp lr .deps/$(PREFIX1).dix $@
 	
+#$(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
+#	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
+#	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t1x $@
+
+	
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
-	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t1x $@
 
 
@@ -71,8 +75,11 @@ $(PREFIX2).autobil.bin: .deps/$(PREFIX2).dix
 	apertium-validate-dictionary .deps/$(PREFIX2).dix
 	lt-comp rl .deps/$(PREFIX2).dix $@
 	
+#$(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
+#	apertium-validate-transfer $(BASENAME).$(PREFIX2).t1x
+#	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t1x $@
+
 $(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
-	apertium-validate-transfer $(BASENAME).$(PREFIX2).t1x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t1x $@
 
 $(PREFIX1).mode:
