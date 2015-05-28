@@ -23,16 +23,18 @@
     <cat-item lemma="da" tags="cnjsub"/>
     <cat-item lemma="da" tags="part.*"/>
     <cat-item lemma="da" tags="part"/>
-    <cat-item lemma="dati" tags="vblex.*"/> <!-- until we fix tagger-->
+    <!-- <cat-item lemma="dati" tags="vblex.*"/> --> <!-- until we fix tagger-->
   </def-cat>
   <def-cat n="CAT__se_">
     <cat-item lemma="sebe" tags="prn.ref.clt.pers.mfn.sp.acc"/>
   </def-cat>
- <def-cat n="CAT__da_li_">
+  <def-cat n="CAT__da_li_">
     <cat-item lemma="da li" tags="cnjsub.*"/>
     <cat-item lemma="da li" tags="cnjsub"/>
- </def-cat>
-
+  </def-cat>
+  <def-cat n="CAT__htjeticlt_">
+    <cat-item lemma="htjeti" tags="vbmod.clt.futI.*"/>
+  </def-cat>
   <def-cat n="CAT__trebati_">    
     <cat-item lemma="trebati" tags="vbmod.lp.nt.*"/> <!-- gender agreement problematic -->
     <cat-item lemma="trebati" tags="vbmod.pres.p3.sg"/>
@@ -905,8 +907,43 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-
-
+<rule comment="RULE: vbmod/vblex + da + će + da + vblex.pres = vbmod/vblex + da + će + vblex.inf Znači da će da živi -> Znači da će živjeti">
+  <pattern>
+    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__htjeticlt_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+  </pattern>
+  <action>
+    <out>
+      <lu>
+        <clip pos="1" side="tl" part="whole"/>
+      </lu>
+      <b pos="1"/>
+      <lu>
+        <clip pos="2" side="tl" part="whole"/>
+      </lu>
+      <b pos="2"/>
+      <lu>
+        <clip pos="3" side="tl" part="whole"/>
+      </lu>
+      <b pos="3"/>
+      <lu>
+        <clip pos="5" side="tl" part="lemh"/>
+        <clip pos="5" side="sl" part="learned_verbcat"/>
+        <clip pos="5" side="sl" part="learned_verbaspect"/>
+        <clip pos="5" side="sl" part="learned_verbtype"/>
+        <clip pos="5" side="sl" part="learned_isrefvb"/>
+        <lit-tag v="inf"/>
+        <clip pos="5" side="tl" part="lemq"/>
+      </lu>
+    </out>      
+    <call-macro n="f_bcond">
+      <with-param pos="4"/>
+    </call-macro>     
+  </action>
+</rule>
 
 <rule comment="RULE: vbmod/vblex + adv + da + vblex.pres = vbmod/vblex + adv + vblex.inf. Moram danas da lupam -> Moram danas lupati, početi danas da radim -> početi danas raditi">
   <pattern>

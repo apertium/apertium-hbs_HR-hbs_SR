@@ -176,10 +176,10 @@
 <e r="LR"><p><l>samovlašće<s n="n"/></l><r>autokratija<s n="n"/></r></p></e>
 <e><p><l>kolovoz<s n="n"/></l><r>avgust<s n="n"/></r></p></e>
 <e><p><l>kolovoški<s n="adj"/></l><r>avgustovski<s n="adj"/></r></p></e>
-<e><p><l>dvorište<s n="n"/></l><r>avlija<s n="n"/></r></p></e>
+<e><p><l>dvorište<s n="n"/><s n="nt"/></l><r>avlija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>dušik<s n="n"/></l><r>azot<s n="n"/></r></p></e>
 <e><p><l>ustajao<s n="adj"/></l><r>bajat<s n="adj"/></r></p></e>
-<e><p><l>korito<s n="n"/></l><r>basen<s n="n"/></r></p></e>
+<e><p><l>korito<s n="n"/><s n="nt"/></l><r>basen<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>brat<s n="n"/></l><r>bata<s n="n"/></r></p></e>
 <e><p><l>oznaka<s n="n"/></l><r>beleg<s n="n"/></r></p></e>
 <e><p><l>brijač<s n="n"/></l><r>berberin<s n="n"/></r></p></e>
@@ -187,22 +187,24 @@
 <e><p><l>bijesan<s n="n"/></l><r>besan<s n="n"/></r></p></e>
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>bezuvjetan<s n="adj"/></l><r>bezuslovan<s n="adj"/></r></p></e>
-<e><p><l>milijarda<s n="n"/></l><r>bilion<s n="n"/></r></p></e>
+<e><p><l>milijarda<s n="n"/><s n="f"/></l><r>bilion<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>biokemija<s n="n"/></l><r>biohemija<s n="n"/></r></p></e>
 <e><p><l>biokemijski<s n="adj"/></l><r>biohemijski<s n="adj"/></r></p></e>
 <e><p><l>kino<s n="n"/></l><r>bioskop<s n="n"/></r></p></e>
 <e><p><l>kinematografski<s n="adj"/></l><r>bioskopski<s n="adj"/></r></p></e>
-<e><p><l>dinja<s n="n"/></l><r>bostan<s n="n"/></r></p></e>
+<e><p><l>dinja<s n="n"/><s n="f"/></l><r>bostan<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>branitelj<s n="n"/></l><r>branilac<s n="n"/></r></p></e>
 <e><p><l>doslovan<s n="n"/></l><r>bukvalan<s n="n"/></r></p></e>
 <e><p><l>početnica<s n="n"/></l><r>bukvar<s n="n"/></r></p></e>
-<e><p><l>svrdlo<s n="n"/></l><r>burgija<s n="n"/></r></p></e>
+<e><p><l>svrdlo<s n="n"/><s n="nt"/></l><r>burgija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>buha<s n="n"/></l><r>buva<s n="n"/></r></p></e>
 <e><p><l>duda<s n="n"/></l><r>cucla<s n="n"/></r></p></e>
 <e><p><l>prosinac<s n="n"/></l><r>decembar<s n="n"/></r></p></e>
 <e><p><l>prosinački<s n="adj"/></l><r>decembarski<s n="adj"/></r></p></e>
 <e><p><l>definiranje<s n="n"/></l><r>definisanje<s n="n"/></r></p></e>
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
+<e><p><l>pomicati<s n="vblex"/></l><r>pomerati<s n="vblex"/></r></p></e>
+<e><p><l>pomaknuti<s n="vblex"/></l><r>pomeriti<s n="vblex"/></r></p></e>
 <e><p><l>djelovanje<s n="n"/></l><r>dejstvo<s n="n"/></r></p></e>
 <e><p><l>djelovati<s n="vblex"/></l><r>dejstvovati<s n="vblex"/></r></p></e>
 <e><p><l>shvaćati<s n="vblex"/></l><r>shvatati<s n="vblex"/></r></p></e>
@@ -213,7 +215,7 @@
 <e><p><l>gospodarstvo<s n="n"/></l><r>privreda<s n="n"/></r></p></e>
 <e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
 <e><p><l>gospodarstveni<s n="adj"/></l><r>privredan<s n="adj"/></r></p></e>
-<e><p><l>tromjesječje<s n="n"/></l><r>kvartal<s n="n"/></r></p></e>
+<e><p><l>tromjesječje<s n="n"/><s n="nt"/></l><r>kvartal<s n="n"/><s n="mi"/></r></p></e>
 
 <e><p><l>deklariranje<s n="n"/></l><r>deklarisanje<s n="n"/></r></p></e>
 <e><p><l>demokracija<s n="n"/></l><r>demokratija<s n="n"/></r></p></e>
@@ -224,8 +226,8 @@
 <e><p><l>diskvalificirati<s n="vblex"/></l><r>diskvalifikovati<s n="vblex"/></r></p></e>
 <e><p><l>prijateljica<s n="n"/></l><r>drugarica<s n="n"/></r></p></e>
 <e><p><l>prijateljstvo<s n="n"/></l><r>drugarstvo<s n="n"/></r></p></e>
-<e><p><l>cesta<s n="n"/></l><r>drum<s n="n"/></r></p></e>
-<e><p><l>dvojina<s n="n"/></l><r>dual<s n="n"/></r></p></e>
+<e><p><l>cesta<s n="n"/><s n="f"/></l><r>drum<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>dvojina<s n="n"/><s n="f"/></l><r>dual<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>par<s n="n"/></l><r>dubl<s n="n"/></r></p></e>
 <e><p><l>duhan<s n="n"/></l><r>duvan<s n="n"/></r></p></e>
 <e><p><l>puhati<s n="vblex"/></l><r>duvati<s n="vblex"/></r></p></e>
@@ -269,13 +271,11 @@
 <e><p><l>plinifikacija<s n="n"/></l><r>gasifikacija<s n="n"/></r></p></e>
 <e><p><l>plinski<s n="adj"/></l><r>gasni<s n="adj"/></r></p></e>
 <e><p><l>plinovod<s n="n"/></l><r>gasovod<s n="n"/></r></p></e>
-<e><p><l>igra<s n="n"/></l><r>gem<s n="n"/></r></p></e>
-<e r="RL"><p><l>igra<s n="n"/></l><r>igra<s n="n"/></r></p></e>
 <e><p><l>gesta<s n="n"/><s n="f"/></l><r>gest<s n="n"/><s n="m"/></r></p></e>
 
 <e><p><l>gruda<s n="n"/></l><r>grudva<s n="n"/></r></p></e>
 <e><p><l>željezni<s n="n"/></l><r>gvozdeni<s n="n"/></r></p></e>
-<e><p><l>papir<s n="n"/></l><r>hartija<s n="n"/></r></p></e>
+<e><p><l>papir<s n="n"/><s n="mi"/></l><r>hartija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>zatvor<s n="n"/></l><r>haps<s n="n"/></r></p></e>
 <e><p><l>kila<s n="n"/></l><r>hernija<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
@@ -283,7 +283,7 @@
 <e><p><l>kirurg<s n="n"/></l><r>hirurg<s n="n"/></r></p></e>
 <e><p><l>klor<s n="n"/></l><r>hlor<s n="n"/></r></p></e>
 <e><p><l>klorofil<s n="n"/></l><r>hlorofil<s n="n"/></r></p></e>
-<e><p><l>dvorana<s n="n"/></l><r>hol<s n="n"/></r></p></e>
+<e><p><l>dvorana<s n="n"/><s n="f"/></l><r>hol<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>zbor<s n="n"/></l><r>hor<s n="n"/></r></p></e>
 <e><p><l>kruh<s n="n"/></l><r>hljeb<s n="n"/></r></p></e>
 <e r="LR"><p><l>hljeb<s n="n"/></l><r>hljeb<s n="n"/></r></p></e>
