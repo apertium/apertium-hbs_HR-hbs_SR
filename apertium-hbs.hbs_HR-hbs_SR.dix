@@ -212,6 +212,8 @@
 <e><p><l>poduzetnik<s n="n"/></l><r>preduzetnik<s n="n"/></r></p></e>
 <e><p><l>gospodarstvo<s n="n"/></l><r>privreda<s n="n"/></r></p></e>
 <e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
+<e><p><l>gospodarstveni<s n="adj"/></l><r>privredan<s n="adj"/></r></p></e>
+<e><p><l>tromjesječje<s n="n"/></l><r>kvartal<s n="n"/></r></p></e>
 
 <e><p><l>deklariranje<s n="n"/></l><r>deklarisanje<s n="n"/></r></p></e>
 <e><p><l>demokracija<s n="n"/></l><r>demokratija<s n="n"/></r></p></e>
@@ -312,6 +314,7 @@
 <e><p><l>identificirati<s n="vblex"/></l><r>identifikovati<s n="vblex"/></r></p></e>
 <e><p><l>zanimati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>dogoditi<s n="vblex"/></l><r>desiti<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>događati<s n="vblex"/></l><r>dešavati<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>interesirati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>donijeti<s n="vblex"/></l><r>donesti<s n="vblex"/></r></p></e>
 <e><p><l>siječanjski<s n="adj"/></l><r>januarski<s n="adj"/></r></p></e>

@@ -18,7 +18,6 @@
     <cat-item tags="cnjsub.*"/>
     <cat-item tags="cnjsub"/>
   </def-cat>
-
   <def-cat n="CAT__da_">
     <cat-item lemma="da" tags="cnjsub.*"/>
     <cat-item lemma="da" tags="cnjsub"/>
@@ -26,7 +25,9 @@
     <cat-item lemma="da" tags="part"/>
     <cat-item lemma="dati" tags="vblex.*"/> <!-- until we fix tagger-->
   </def-cat>
-
+  <def-cat n="CAT__se_">
+    <cat-item lemma="sebe" tags="prn.ref.clt.pers.mfn.sp.acc"/>
+  </def-cat>
  <def-cat n="CAT__da_li_">
     <cat-item lemma="da li" tags="cnjsub.*"/>
     <cat-item lemma="da li" tags="cnjsub"/>
@@ -450,6 +451,87 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. Treba da lupam -> Trebam lupati, trebalo da okonča -> Trebao okončati">
+  <pattern>
+    <pattern-item n="CAT__trebati_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__se_"/>
+    <pattern-item n="CAT__vb_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+               <equal>
+                 <clip pos="1" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="lp"/>
+               </equal>
+        </test>
+       <out>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+           <get-case-from pos="1">
+            <lit v="trebati"/>
+           </get-case-from>
+            <lit-tag v="vbmod"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <lit-tag v="m"/> <!-- default gender until we have any idea on where to get it from -->
+            <clip pos="4" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>
+     </when>
+     <otherwise>
+       <out>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+           <get-case-from pos="1">
+            <lit v="trebati"/>
+           </get-case-from>
+            <lit-tag v="vbmod"/>
+            <clip pos="4" side="sl" part="learned_verbtime"/>
+            <clip pos="4" side="sl" part="learned_person"/>
+            <clip pos="4" side="sl" part="learned_numberat"/>
+            <clip pos="4" side="sl" part="learned_case"/>
+            <clip pos="4" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <lit-tag v="vblex"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+          </lu>
+        </out>
+     </otherwise>
+    </choose>
+    <call-macro n="f_bcond">
+       <with-param pos="3"/>
+       <with-param pos="4"/>
+    </call-macro>
+</action>
+</rule>
+
+
 
 <rule comment="RULE: trebalo + vbser + da + vbser + pp = trebati.infofromvblex + vbser + vbser.inf + pp. trebalo bi da bude provjeren -> trebao bi biti provjeren">
   <pattern>
@@ -593,13 +675,82 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-
+<!-- <rule comment="RULE: vbser + n + trebalo + da + vblex = vbser + n + trebati.infofromvblex + vblex.inf bi pregovori trebalo da počnu -> bi pregovori trebali početi">
+  <pattern>
+    <pattern-item n="CAT__vbser_"/>
+    <pattern-item n="CAT__n_"/>
+    <pattern-item n="CAT__trebati_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vblex_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test> 
+          <or>
+               <equal>
+                 <clip pos="2" side="tl" part="learned_gender"/>
+                 <lit-tag v="ma"/>
+               </equal>   
+               <equal>
+                 <clip pos="2" side="tl" part="learned_gender"/>
+                 <lit-tag v="mi"/>
+               </equal> 
+           </or>
+        </test>
+        <let> 
+              <clip pos="3" side="tl" part="learned_gender"/>
+              <lit-tag v="m"/>
+        </let>
+       </when>
+       <otherwise>
+        <let> 
+              <clip pos="2" side="tl" part="learned_gender"/>
+              <clip pos="3" side="tl" part="learned_gender"/>
+        </let>
+       </otherwise>
+       </choose>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <get-case-from pos="1">
+              <lit v="trebati"/>
+            </get-case-from>
+            <lit-tag v="vbmod"/>
+            <clip pos="3" side="tl" part="learned_verbtime"/>
+            <clip pos="3" side="tl" part="learned_gender"/>
+            <clip pos="2" side="tl" part="learned_numberat"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="5" side="tl" part="lemh"/>
+            <lit-tag v="vblex"/>
+            <clip pos="5" side="tl" part="learned_verbaspect"/>
+            <clip pos="5" side="tl" part="learned_verbtype"/>
+            <clip pos="5" side="tl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="5" side="tl" part="lemq"/>
+          </lu>
+      </out>
+    <call-macro n="f_bcond">
+       <with-param pos="4"/>
+       <with-param pos="5"/>
+    </call-macro>
+</action>
+</rule> -->
 
 <rule comment="RULE: vbmod/vblex + da + vblex.pres = vbmod/vblex + vblex.inf. Moram da lupam -> Moram lupati, početi da radim -> početi raditi">
   <pattern>
     <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
     <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
+    <pattern-item n="CAT__vblex_"/>
   </pattern>
   <action>
     <choose>
