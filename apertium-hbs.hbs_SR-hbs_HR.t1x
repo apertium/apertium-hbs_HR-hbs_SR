@@ -1096,6 +1096,7 @@ If no format information is present it is removed. -->
           <lu>
             <clip pos="2" side="tl" part="lemh"/>
             <clip pos="2" side="sl" part="learned_verbcat"/>
+            <clip pos="2" side="sl" part="learned_isclt"/>
             <clip pos="2" side="sl" part="learned_verbaspect"/>
             <clip pos="2" side="sl" part="learned_verbtype"/>
             <clip pos="2" side="sl" part="learned_isrefvb"/>
