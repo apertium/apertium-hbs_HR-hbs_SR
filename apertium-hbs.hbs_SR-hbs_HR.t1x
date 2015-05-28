@@ -99,7 +99,7 @@
     <cat-item lemma="moći" tags="vblex.*"/>
     <cat-item lemma="znati" tags="vblex.*"/>
     <cat-item lemma="trebati" tags="vblex.*"/>
-    <cat-item lemma="morati" tags="vblex.*"/>
+    <cat-item lemma="morati" tags="vbmod.*"/>
     <cat-item lemma="smjeti" tags="vblex.*"/>
     <cat-item lemma="zeljeti" tags="vblex.*"/>
     <cat-item lemma="voljeti" tags="vblex.*"/>
