@@ -941,6 +941,7 @@ If no format information is present it is removed. -->
     </out>      
     <call-macro n="f_bcond">
       <with-param pos="4"/>
+      <with-param pos="5"/>
     </call-macro>     
   </action>
 </rule>
