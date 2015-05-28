@@ -481,7 +481,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. Treba da se vb -> se treba + vb  ">
+<rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. Treba da se vb -> se treba + vb">
   <pattern>
     <pattern-item n="CAT__trebati_"/>
     <pattern-item n="CAT__da_"/>
@@ -705,7 +705,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<!-- <rule comment="RULE: vbser + n + trebalo + da + vblex = vbser + n + trebati.infofromvblex + vblex.inf bi pregovori trebalo da počnu -> bi pregovori trebali početi">
+<rule comment="RULE: vbser + n + trebalo + da + vblex = vbser + n + trebati.infofromvblex + vblex.inf bi pregovori trebalo da počnu -> bi pregovori trebali početi">
   <pattern>
     <pattern-item n="CAT__vbser_"/>
     <pattern-item n="CAT__n_"/>
@@ -735,8 +735,8 @@ If no format information is present it is removed. -->
        </when>
        <otherwise>
         <let> 
-              <clip pos="2" side="tl" part="learned_gender"/>
               <clip pos="3" side="tl" part="learned_gender"/>
+              <clip pos="2" side="tl" part="learned_gender"/>
         </let>
        </otherwise>
        </choose>
@@ -774,7 +774,7 @@ If no format information is present it is removed. -->
        <with-param pos="5"/>
     </call-macro>
 </action>
-</rule> -->
+</rule>
 
 <rule comment="RULE: vbmod/vblex + da + vblex.pres = vbmod/vblex + vblex.inf. Moram da lupam -> Moram lupati, početi da radim -> početi raditi">
   <pattern>
