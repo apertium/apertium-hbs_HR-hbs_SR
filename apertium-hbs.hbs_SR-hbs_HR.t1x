@@ -38,7 +38,7 @@
   <def-cat n="CAT__vbhtjetibiti_">
     <cat-item lemma="htjeti" tags="vbmod.*"/>
     <cat-item lemma="htjeti" tags="vblex.*"/>  
-    <cat-item lemma="biti" tags="vbser.*"/>
+    <cat-item lemma="biti" tags="vbser.clt.*"/>
     <cat-item lemma="biti" tags="vblex.*"/>
   </def-cat>
 
@@ -92,6 +92,21 @@
     <cat-item tags="vbmod.*"/>
     <cat-item tags="vbmod"/>
   </def-cat>
+ <def-cat n="CAT__vbmodals_"> <!-- extend when others are found-->
+    <cat-item lemma="htjeti" tags="vbmod.*"/>
+    <cat-item lemma="htjeti" tags="vblex.*"/>
+    <cat-item lemma="moći" tags="vbmod.*"/>
+    <cat-item lemma="moći" tags="vblex.*"/>
+    <cat-item lemma="znati" tags="vblex.*"/>
+    <cat-item lemma="trebati" tags="vblex.*"/>
+    <cat-item lemma="morati" tags="vblex.*"/>
+    <cat-item lemma="smjeti" tags="vblex.*"/>
+    <cat-item lemma="zeljeti" tags="vblex.*"/>
+    <cat-item lemma="voljeti" tags="vblex.*"/>
+    <cat-item lemma="umijeti" tags="vblex.*"/>
+    <cat-item lemma="poćeti" tags="vblex.*"/>
+  </def-cat>
+
   <def-cat n="CAT__vbser_">
     <cat-item tags="vbser.*"/>
     <cat-item tags="vbser"/>
@@ -466,7 +481,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. Treba da lupam -> Trebam lupati, trebalo da okonča -> Trebao okončati">
+<rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. Treba da se vb -> se treba + vb  ">
   <pattern>
     <pattern-item n="CAT__trebati_"/>
     <pattern-item n="CAT__da_"/>
@@ -763,7 +778,7 @@ If no format information is present it is removed. -->
 
 <rule comment="RULE: vbmod/vblex + da + vblex.pres = vbmod/vblex + vblex.inf. Moram da lupam -> Moram lupati, početi da radim -> početi raditi">
   <pattern>
-    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
+    <pattern-item n="CAT__vbmodals_"/>
     <pattern-item n="CAT__da_"/>
     <pattern-item n="CAT__vblex_"/>
   </pattern>
@@ -961,47 +976,6 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 -->
-
-<rule comment="RULE: vbmod/vblex + da + će + da + vblex.pres = vbmod/vblex + da + će + vblex.inf Znači da će da živi -> Znači da će živjeti">
-  <pattern>
-    <pattern-item n="CAT__vb_"/> <!-- not only vbmod, but all -->
-    <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__htjeticlt_"/>
-    <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__vb_"/><!-- not only vblex, but all -->
-  </pattern>
-  <action>
-    <out>
-      <lu>
-        <clip pos="1" side="tl" part="whole"/>
-      </lu>
-      <b pos="1"/>
-      <lu>
-        <clip pos="2" side="tl" part="whole"/>
-      </lu>
-      <b pos="2"/>
-      <lu>
-        <clip pos="3" side="tl" part="whole"/>
-      </lu>
-      <b pos="3"/>
-      <lu>
-        <clip pos="5" side="tl" part="lemh"/>
-        <clip pos="5" side="sl" part="learned_verbcat"/>
-        <clip pos="5" side="sl" part="learned_verbaspect"/>
-        <clip pos="5" side="sl" part="learned_verbtype"/>
-        <clip pos="5" side="sl" part="learned_isrefvb"/>
-        <lit-tag v="inf"/>
-        <clip pos="5" side="tl" part="lemq"/>
-      </lu>
-    </out>      
-    <call-macro n="f_bcond">
-      <with-param pos="4"/>
-      <with-param pos="5"/>
-    </call-macro>     
-  </action>
-</rule>
-
-
 
 <rule comment="RULE: vbmod/vblex + da + adv + vblex.pres = vbmod/vblex + adv + vblex.inf. Moram da danas lupam -> Moram danas lupati, početi da danas radim -> početi danas raditi">
   <pattern>
@@ -1220,7 +1194,7 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="RULE: inf + clt = infclt, ">
+<rule comment="RULE: inf + clt = infclt, pripremićemo -> pripremit ćemo">
   <pattern>
     <pattern-item n="CAT__vbinf_"/>
     <pattern-item n="CAT__htjeticlt_"/>
