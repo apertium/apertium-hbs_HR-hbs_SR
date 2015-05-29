@@ -112,10 +112,9 @@
     <cat-item lemma="trebati" tags="vblex.*"/>
     <cat-item lemma="morati" tags="vbmod.*"/>
     <cat-item lemma="smjeti" tags="vblex.*"/>
-    <cat-item lemma="zeljeti" tags="vblex.*"/>
+    <cat-item lemma="željeti" tags="vblex.*"/>
     <cat-item lemma="voljeti" tags="vblex.*"/>
-    <cat-item lemma="umijeti" tags="vblex.*"/>
-    <cat-item lemma="poćeti" tags="vblex.*"/>
+    <cat-item lemma="umjeti" tags="vblex.*"/>
   </def-cat>
 
   <def-cat n="CAT__vbser_">
