@@ -257,7 +257,7 @@
 
 <e><p><l>boja<s n="n"/></l><r>farba<s n="n"/></r></p></e>
 <e><p><l>štos<s n="n"/></l><r>fazon<s n="n"/></r></p></e>
-<e><p><l>veljača<s n="n"/></l><r>februar<s n="n"/></r></p></e>
+<e><p><l>veljača<s n="n"/><s n="f"/></l><r>februar<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>veljački<s n="adj"/></l><r>februarski<s n="adj"/></r></p></e>
 <e><p><l>financiranje<s n="n"/></l><r>finansiranje<s n="n"/></r></p></e>
 <e><p><l>ladica<s n="n"/></l><r>fioka<s n="n"/></r></p></e>
@@ -649,7 +649,7 @@
 <e><p><l>tužitelj<s n="n"/></l><r>tužilac<s n="n"/></r></p></e>
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
-<e><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>inostran<s n="adj"/><s n="pst"/></r></p></e>
+<e><p><l>vanjski<s n="adj"/><s n="pst"/><s n="def"/></l><r>inostran<s n="adj"/><s n="pst"/></r></p></e>
 <e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>spoljni<s n="adj"/><s n="pst"/></r></p></e>
 <e><p><l>Cipar<s n="np"/></l><r>Kipar<s n="np"/></r></p></e>
 <e><p><l>diplomacija<s n="n"/></l><r>diplomatija<s n="n"/></r></p></e>
@@ -696,7 +696,6 @@
 
 <e><p><l>opći<s n="adj"/></l><r>opšti<s n="adj"/></r></p></e>
 <e><p><l>spol<s n="n"/></l><r>pol<s n="n"/></r></p></e>
-<e><p><l>članak<s n="n"/></l><r>član<s n="n"/></r></p></e> <!-- not sure about this one, to produce članak 1 vs. član 1 -->
 <e><p><l>osoba<s n="n"/><s n="f"/></l><r>lice<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>neovisan<s n="adj"/></l><r>nezavisan<s n="adj"/></r></p></e>
 <e><p><l>oblik<s n="n"/><s n="mi"/></l><r>forma<s n="n"/><s n="f"/></r></p></e>
