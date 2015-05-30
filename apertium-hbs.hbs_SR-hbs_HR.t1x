@@ -46,11 +46,9 @@
   <def-cat n="CAT__htjeticlt_">
     <cat-item lemma="htjeti" tags="vbmod.clt.futI.*"/>
   </def-cat>
-  <def-cat n="CAT__vbhtjetibiti_">
-    <cat-item lemma="htjeti" tags="vbmod.*"/>
-    <cat-item lemma="htjeti" tags="vblex.*"/>  
-    <cat-item lemma="biti" tags="vbser.clt.*"/>
-    <cat-item lemma="biti" tags="vblex.*"/>
+  <def-cat n="CAT__vbhtjetibitineg_">
+    <cat-item lemma="htjeti" tags="vbmod.clt.futI.*"/>
+    <cat-item lemma="biti" tags="vbser.clt.pres.*"/>
   </def-cat>
 
   <def-cat n="CAT__trebati_">    
@@ -84,7 +82,7 @@
 
   <def-cat n="CAT__nenipart_">
     <cat-item lemma="ne" tags="part.neg"/>
-    <cat-item lemma="ni" tags="part.neg"/>
+    <!-- <cat-item lemma="ni" tags="part.neg"/> -->
   </def-cat>
 
   <def-cat n="CAT__pr_">
@@ -1255,6 +1253,89 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
+<!-- if this VP is not at the beginning of the sentence, "se" should be at the beginning of the VP, Čovek mora da se lupa -> Čovjek se mora lupati.  -->
+<rule comment="RULE: vbmodals + da + se + vblex.pres = vbmod/vblex + vblex.inf. Moram da se lupam -> Moram se lupati, početi da radim -> početi raditi">
+  <pattern>
+    <pattern-item n="CAT__vbmodals_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__se_"/>
+    <pattern-item n="CAT__vblex_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+          <or>
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="futII.pres"/>
+               </equal>
+          </or>
+        </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
 
 <rule comment="RULE: vbmod/vblex + da + će + da + vblex.pres = vbmod/vblex + da + će + vblex.inf Znači da će da živi -> Znači da će živjeti">
   <pattern>
@@ -1537,23 +1618,23 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="RULE: ne/ni + vb = nevb -> neće -> neće, ni sam -> nisam check">
+<rule comment="RULE: ne/ni + vbhtjetibiti = nevb -> neće -> neće, ni sam -> nisam check">
   <pattern>
-    <pattern-item n="CAT__nenipart_"/>  
-    <pattern-item n="CAT__vbhtjetibiti_"/>
+    <pattern-item n="CAT__nenipart_"/>
+    <pattern-item n="CAT__vbhtjetibitineg_"/>
   </pattern>
   <action>
-       <out>
-        <mlu>
-          <lu>
-            <clip pos="1" side="tl" part="whole"/>
-          </lu>
-          <lu>
-             <clip pos="2" side="tl" part="whole"/>
-          </lu>
-         </mlu>
-      </out>
-</action>
+    <out>
+      <mlu>
+        <lu>
+          <clip pos="1" side="tl" part="whole"/>
+        </lu>
+        <lu>
+          <clip pos="2" side="tl" part="whole"/>
+        </lu>
+      </mlu>
+    </out>
+  </action>
 </rule>
 
 

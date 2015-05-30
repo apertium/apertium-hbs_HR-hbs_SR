@@ -150,6 +150,7 @@
 
 <e><p><l>siječanj<s n="n"/></l><r>januar<s n="n"/></r></p></e>
 <e><p><l>tvornica<s n="n"/></l><r>fabrika<s n="n"/></r></p></e>
+<e><p><l>računalo<s n="n"/><s n="nt"/></l><r>računar<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>vlak<s n="n"/></l><r>voz<s n="n"/></r></p></e>
 <e><p><l>knjižnica<s n="n"/></l><r>biblioteka<s n="n"/></r></p></e>
 <e><p><l>nogomet<s n="n"/></l><r>fudbal<s n="n"/></r></p></e>
@@ -204,6 +205,8 @@
 <e><p><l>prosinački<s n="adj"/></l><r>decembarski<s n="adj"/></r></p></e>
 <e><p><l>definiranje<s n="n"/></l><r>definisanje<s n="n"/></r></p></e>
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
+<e><p><l>izolirati<s n="vblex"/></l><r>izolovati<s n="vblex"/></r></p></e>
+<e><p><l>kriminalizirati<s n="vblex"/></l><r>kriminalizovati<s n="vblex"/></r></p></e>
 <e><p><l>pomicati<s n="vblex"/></l><r>pomerati<s n="vblex"/></r></p></e>
 <e><p><l>pomaknuti<s n="vblex"/></l><r>pomeriti<s n="vblex"/></r></p></e>
 <e><p><l>djelovanje<s n="n"/></l><r>dejstvo<s n="n"/></r></p></e>
@@ -217,7 +220,6 @@
 <e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
 <e><p><l>gospodarstveni<s n="adj"/></l><r>privredan<s n="adj"/></r></p></e>
 <e><p><l>tromjesječje<s n="n"/><s n="nt"/></l><r>kvartal<s n="n"/><s n="mi"/></r></p></e>
-
 <e><p><l>deklariranje<s n="n"/></l><r>deklarisanje<s n="n"/></r></p></e>
 <e><p><l>demokracija<s n="n"/></l><r>demokratija<s n="n"/></r></p></e>
 <e><p><l>desert<s n="n"/></l><r>dezert<s n="n"/></r></p></e>
@@ -232,7 +234,8 @@
 <e><p><l>par<s n="n"/></l><r>dubl<s n="n"/></r></p></e>
 <e><p><l>duhan<s n="n"/></l><r>duvan<s n="n"/></r></p></e>
 <e><p><l>puhati<s n="vblex"/></l><r>duvati<s n="vblex"/></r></p></e>
-<e><p><l>izbaciti<s n="vblex"/></l><r>eliminisati<s n="vblex"/></r></p></e>
+<e><p><l>izbaciti<s n="vblex"/><s n="perf"/></l><r>eliminisati<s n="vblex"/><s n="perf"/></r></p></e>
+<e><p><l>izbacivati<s n="vblex"/><s n="imperf"/></l><r>eliminisati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e r="LR"><p><l>eliminirati<s n="vblex"/></l><r>eliminisati<s n="vblex"/></r></p></e>
 <e><p><l>zametak<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
 <e r="LR"><p><l>embrij<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
@@ -268,6 +271,7 @@
 <e><p><l>konop<s n="n"/></l><r>gajtan<s n="n"/></r></p></e>
 <e><p><l>jamčiti<s n="vblex"/></l><r>garantovati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>garantirati<s n="vblex"/></l><r>garantovati<s n="vblex"/></r></p></e>
+<e><p><l>znati<s n="vblex"/></l><r>umjeti<s n="vblex"/></r></p></e>
 <e><p><l>plin<s n="n"/></l><r>gas<s n="n"/></r></p></e>
 <e><p><l>plinifikacija<s n="n"/></l><r>gasifikacija<s n="n"/></r></p></e>
 <e><p><l>plinski<s n="adj"/></l><r>gasni<s n="adj"/></r></p></e>
@@ -445,7 +449,7 @@
 <e><p><l>otok<s n="n"/><s n="mi"/></l><r>ostrvo<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>štakor<s n="n"/></l><r>pacov<s n="n"/></r></p></e>
 <e><p><l>pakiranje<s n="n"/></l><r>pakovanje<s n="n"/></r></p></e>
-<e><p><l>palaća<s n="n"/></l><r>palata<s n="n"/></r></p></e>
+<e><p><l>palača<s n="n"/></l><r>palata<s n="n"/></r></p></e>
 <e><p><l>gušterača<s n="n"/><s n="f"/></l><r>pankreas<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>pantera<s n="n"/><s n="f"/></l><r>panter<s n="n"/><s n="ma"/></r></p></e>
 <e><p><l>pastrva<s n="n"/></l><r>pastrmka<s n="n"/></r></p></e>
@@ -650,8 +654,8 @@
 <e><p><l>tužitelj<s n="n"/></l><r>tužilac<s n="n"/></r></p></e>
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
-<e><p><l>vanjski<s n="adj"/><s n="pst"/><s n="def"/></l><r>inostran<s n="adj"/><s n="pst"/><s n="def"/></r></p></e>
-<e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/><s n="def"/></l><r>spoljni<s n="adj"/><s n="pst"/><s n="def"/></r></p></e>
+<e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>inostran<s n="adj"/><s n="pst"/></r></p></e>
+<e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>spoljni<s n="adj"/><s n="pst"/></r></p></e>
 <e><p><l>Cipar<s n="np"/></l><r>Kipar<s n="np"/></r></p></e>
 <e><p><l>diplomacija<s n="n"/></l><r>diplomatija<s n="n"/></r></p></e>
 <e><p><l>točka<s n="n"/></l><r>tačka<s n="n"/></r></p></e>
