@@ -40,11 +40,15 @@
     <cat-item lemma="sebe" tags="prn.ref.clt.pers.mfn.sp.acc"/>
   </def-cat>
   <def-cat n="CAT__da_li_">
-    <cat-item lemma="da li" tags="cnjsub.*"/>
+    <cat-item lemma="da li" tags="part.itg"/>
     <cat-item lemma="da li" tags="cnjsub"/>
   </def-cat>
   <def-cat n="CAT__htjeticlt_">
     <cat-item lemma="htjeti" tags="vbmod.clt.futI.*"/>
+  </def-cat>
+  <def-cat n="CAT__vbclt_">
+    <cat-item tags="vbser.clt.*"/>
+    <cat-item tags="vbmod.clt.*"/>
   </def-cat>
   <def-cat n="CAT__vbhtjetibitineg_">
     <cat-item lemma="htjeti" tags="vbmod.clt.futI.*"/>
@@ -135,6 +139,13 @@
  <def-cat n="CAT__vblexpp_">
     <cat-item tags="vblex.*.pp.*"/>
   </def-cat>
+
+  <def-cat n="CAT__vblexmodpres_">
+    <cat-item tags="vblex.*.pres.*"/>
+    <cat-item tags="vbmod.pres.*"/>
+  </def-cat>
+
+
 
 <def-cat n="CAT__HASGENDER_NUMBER">
     <cat-item tags="*.m.*"/>
@@ -1547,46 +1558,12 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="RULE: da li + vb = vb + li. da li će -> hoće li, da li možeš -> možeš li">
+<rule comment="RULE: da li + vb = vb + li. da li možeš -> možeš li">
   <pattern>
     <pattern-item n="CAT__da_li_"/>
-    <pattern-item n="CAT__vb_"/>
+    <pattern-item n="CAT__vblexmodpres_"/>
   </pattern>
   <action>
-    <choose>
-      <when>
-        <test>
-               <equal>
-                 <clip pos="2" side="tl" part="learned_isclt"/>
-                 <lit-tag v="clt"/>
-               </equal>
-        </test>
-       <out>
-          <lu>
-            <clip pos="2" side="tl" part="lemh"/>
-            <clip pos="2" side="sl" part="learned_verbcat"/>
-            <clip pos="2" side="sl" part="learned_isclt"/>
-            <clip pos="2" side="sl" part="learned_verbaspect"/>
-            <clip pos="2" side="sl" part="learned_verbtype"/>
-            <clip pos="2" side="sl" part="learned_isrefvb"/>
-            <lit-tag v="pres"/>
-            <clip pos="2" side="sl" part="learned_isadv"/>
-            <clip pos="2" side="sl" part="learned_issfx"/>
-            <clip pos="2" side="sl" part="learned_person"/>
-            <clip pos="2" side="sl" part="learned_numberat"/>
-            <clip pos="2" side="sl" part="learned_gender"/>
-            <clip pos="2" side="sl" part="learned_case"/>
-            <clip pos="2" side="sl" part="learned_definiteness"/>
-            <clip pos="2" side="tl" part="lemq"/>
-          </lu>
-          <b pos="1"/>
-          <lu>
-            <lit v="li"/>
-            <lit-tag v="part.itg"/>
-          </lu>
-      </out>
-     </when>
-     <otherwise>
      <out>
           <lu>
             <clip pos="2" side="tl" part="lemh"/>
@@ -1610,12 +1587,77 @@ If no format information is present it is removed. -->
             <lit-tag v="part.itg"/>
           </lu>
       </out>
+</action>
+</rule>
 
+<rule comment="RULE: da li + vbser = vb + li. da li sam/ću/bi -> jesam/hoću/bi li">
+  <pattern>
+    <pattern-item n="CAT__da_li_"/>
+    <pattern-item n="CAT__vbclt_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+               <equal>
+                 <clip pos="2" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="aor"/>
+               </equal>
+        </test>
+     <out>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="sl" part="learned_verbcat"/>
+            <clip pos="2" side="sl" part="learned_isclt"/>
+            <clip pos="2" side="sl" part="learned_verbaspect"/>
+            <clip pos="2" side="sl" part="learned_verbtype"/>
+            <clip pos="2" side="sl" part="learned_isrefvb"/>
+            <clip pos="2" side="sl" part="learned_verbtime"/>
+            <clip pos="2" side="sl" part="learned_isadv"/>
+            <clip pos="2" side="sl" part="learned_issfx"/>
+            <clip pos="2" side="sl" part="learned_person"/>
+            <clip pos="2" side="sl" part="learned_numberat"/>
+            <clip pos="2" side="sl" part="learned_gender"/>
+            <clip pos="2" side="sl" part="learned_case"/>
+            <clip pos="2" side="sl" part="learned_definiteness"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <lit v="li"/>
+            <lit-tag v="part.itg"/>
+          </lu>
+      </out>
+
+     </when>
+     <otherwise>
+       <out>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="sl" part="learned_verbcat"/>
+            <clip pos="2" side="sl" part="learned_verbaspect"/>
+            <clip pos="2" side="sl" part="learned_verbtype"/>
+            <clip pos="2" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="pres"/>
+            <clip pos="2" side="sl" part="learned_isadv"/>
+            <clip pos="2" side="sl" part="learned_issfx"/>
+            <clip pos="2" side="sl" part="learned_person"/>
+            <clip pos="2" side="sl" part="learned_numberat"/>
+            <clip pos="2" side="sl" part="learned_gender"/>
+            <clip pos="2" side="sl" part="learned_case"/>
+            <clip pos="2" side="sl" part="learned_definiteness"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <lit v="li"/>
+            <lit-tag v="part.itg"/>
+          </lu>
+      </out>
      </otherwise>
     </choose>
 </action>
 </rule>
-
 
 
 <rule comment="RULE: ne/ni + vbhtjetibiti = nevb -> neće -> neće, ni sam -> nisam check">
