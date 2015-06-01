@@ -524,7 +524,7 @@
 <e><p><l>žarulja<s n="n"/></l><r>sijalica<s n="n"/></r></p></e>
 <e><p><l>sinkronizacija<s n="n"/></l><r>sinhronizacija<s n="n"/></r></p></e>
 <e><p><l>spašavanje<s n="n"/></l><r>spasavanje<s n="n"/></r></p></e>
-<e><p><l>sportistica<s n="n"/></l><r>sportistkinja<s n="n"/></r></p></e>
+<e><p><l>sportašica<s n="n"/></l><r>sportistica<s n="n"/></r></p></e>
 <e><p><l>kat<s n="n"/></l><r>sprat<s n="n"/></r></p></e>
 <e><p><l>kip<s n="n"/><s n="mi"/></l><r>statua<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>stupanj<s n="n"/></l><r>stepen<s n="n"/></r></p></e>
@@ -637,7 +637,8 @@
 <e><p><l>regulirati<s n="vblex"/></l><r>regulisati<s n="vblex"/></r></p></e>
 <e><p><l>reformirati<s n="vblex"/></l><r>reformisati<s n="vblex"/></r></p></e>
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
-<e><p><l>ostvariti<s n="vblex"/></l><r>realizovati<s n="vblex"/></r></p></e>
+<e><p><l>ostvariti<s n="vblex"/><s n="perf"/></l><r>realizovati<s n="vblex"/><s n="perf"/></r></p></e>
+<e><p><l>ostvarivati<s n="vblex"/><s n="imperf"/></l><r>realizovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>prakticirati<s n="vblex"/><s n="perf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
