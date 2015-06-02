@@ -84,9 +84,8 @@
     <cat-item tags="part"/>
   </def-cat>
 
-  <def-cat n="CAT__nenipart_">
+  <def-cat n="CAT__nepart_">
     <cat-item lemma="ne" tags="part.neg"/>
-    <!-- <cat-item lemma="ni" tags="part.neg"/> -->
   </def-cat>
 
   <def-cat n="CAT__pr_">
@@ -335,6 +334,29 @@
   <def-var n="EOS" v="true"/>
 </section-def-vars>
 <section-def-macros>
+
+
+<def-macro n="f_agreement" npar="2">
+  <choose>
+     <when>
+	  <test> <!-- do the main and second parameter agree in case?-->
+	    <equal>
+	       <clip pos="2" side="sl" part="learned_case"/>
+	       <clip pos="1" side="sl" part="learned_case"/>
+	     </equal>
+	  </test>
+        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="2" side="tl" part="learned_gender"/></let> 
+        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="2" side="tl" part="learned_numberat"/></let> 
+        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="2" side="tl" part="learned_case"/></let> 
+	</when>
+	<otherwise> 
+        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="1" side="sl" part="learned_gender"/></let> 
+        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="1" side="sl" part="learned_numberat"/></let> 
+        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="1" side="sl" part="learned_case"/></let> 
+	</otherwise>
+      </choose>
+    </def-macro>
+
 <def-macro n="f_bcond" npar="2">
 <!--To test whether a blank contains format information.
 If no format information is present it is removed. -->
@@ -397,57 +419,21 @@ If no format information is present it is removed. -->
     </when>
   </choose>
 </def-macro>
-<def-macro n="f_set_gender_num" npar="1">
-<!--To set the gender of those words with GD, and the number of those words with ND. -->
-<!--This is only used in no alignment template at all is applied. -->
+<def-macro n="f_set_definiteness" npar="1">
   <choose>
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_gen"/>
-          <lit-tag v="GD"/>
+          <clip pos="1" side="tl" part="learned_definiteness"/>
+          <lit-tag v="ind"/>
         </equal>
       </test>
-      <choose>
-        <when>
-          <test>
-            <equal>
-              <var n="gender"/>
-              <lit-tag v="f"/>
-            </equal>
-          </test>
-          <let><clip pos="1" side="tl" part="learned_gen"/><lit-tag v="f"/></let>
+          <let><clip pos="1" side="tl" part="learned_definiteness"/><lit-tag v="def"/></let>
         </when>
         <otherwise>
-          <let><clip pos="1" side="tl" part="learned_gen"/><lit-tag v="m"/></let>
+          <let><clip pos="1" side="tl" part="learned_definiteness"/><lit-tag v="def"/></let>
         </otherwise>
       </choose>
-    </when>
-  </choose>
-  <choose>
-    <when>
-      <test>
-        <equal>
-          <clip pos="1" side="tl" part="learned_num"/>
-          <lit-tag v="ND"/>
-        </equal>
-      </test>
-      <choose>
-        <when>
-          <test>
-            <equal>
-              <var n="number"/>
-              <lit-tag v="pl"/>
-            </equal>
-          </test>
-          <let><clip pos="1" side="tl" part="learned_num"/><lit-tag v="pl"/></let>
-        </when>
-        <otherwise>
-          <let><clip pos="1" side="tl" part="learned_num"/><lit-tag v="sg"/></let>
-        </otherwise>
-      </choose>
-    </when>
-  </choose>
 </def-macro>
   <def-macro n="firstWord" npar="1">
       <choose>
@@ -481,15 +467,15 @@ If no format information is present it is removed. -->
 
     <!-- Noun phrases -->
 
- <rule comment="adj nom agreement, crveni paradajz -> crvena rajčica,  uzgojeni paradajz -> uzgojena rajčica. Check  Mislavov paradajz">
+
+ <rule comment="adj or pp definiteness">
       <pattern>
 	<pattern-item n="CAT__adjpp_"/>
-	<pattern-item n="CAT__n_"/>
       </pattern>
       <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="2" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="2" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="2" side="tl" part="learned_case"/></let> 
+       <call-macro n="f_set_definiteness">
+       <with-param pos="1"/>
+       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -499,6 +485,34 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
 	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+    </rule>
+
+
+
+
+ <rule comment="adj nom agreement, crveni paradajz -> crvena rajčica,  uzgojeni paradajz -> uzgojena rajčica. Check  Mislavov paradajz">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+      </pattern>
+      <action>
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="2"/>
+       </call-macro>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_numberat"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -516,19 +530,21 @@ If no format information is present it is removed. -->
 
 
 
-    <rule comment="adj adj nom, veliki crveni paradajz -> velika crvena rajčica  Check why is not">
+    <rule comment="adj adj nom, veliki crveni paradajz -> velika crvena rajčica">
       <pattern>
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__n_"/>
       </pattern>
       <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="3" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="3" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="3" side="tl" part="learned_case"/></let>
-        <let><clip pos="2" side="tl" part="learned_gender"/><clip pos="3" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="2" side="tl" part="learned_numberat"/><clip pos="3" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="2" side="tl" part="learned_case"/><clip pos="3" side="tl" part="learned_case"/></let> 
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="3"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="2"/>
+       <with-param pos="3"/>
+       </call-macro> 
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -537,7 +553,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
-	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -548,7 +564,7 @@ If no format information is present it is removed. -->
 	      <clip pos="2" side="tl" part="learned_gender"/>
 	      <clip pos="2" side="tl" part="learned_numberat"/>
 	      <clip pos="2" side="tl" part="learned_case"/>
-	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="2" side="tl" part="lemq"/>
 	    </lu>
             <b pos="2"/>
@@ -565,20 +581,22 @@ If no format information is present it is removed. -->
     </rule>
 
 
-    <rule comment="adj adv adj nom, veliki danas crveni paradajz -> velika danas crvena rajčica Check why this is not working with the first adj">
+    <rule comment="adj adv adj nom, veliki danas crveni paradajz -> velika danas crvena rajčica">
       <pattern>
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__adv_"/>
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__n_"/>
       </pattern>
-      <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="4" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="4" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="4" side="tl" part="learned_case"/></let>
-        <let><clip pos="3" side="tl" part="learned_gender"/><clip pos="4" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="3" side="tl" part="learned_numberat"/><clip pos="4" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="3" side="tl" part="learned_case"/><clip pos="4" side="tl" part="learned_case"/></let> 
+      <action>       
+      <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="4"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="3"/>
+       <with-param pos="4"/>
+       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -587,7 +605,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
-	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -602,7 +620,7 @@ If no format information is present it is removed. -->
 	      <clip pos="3" side="tl" part="learned_gender"/>
 	      <clip pos="3" side="tl" part="learned_numberat"/>
 	      <clip pos="3" side="tl" part="learned_case"/>
-	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="3" side="tl" part="lemq"/>
 	    </lu>  
             <b pos="3"/>
@@ -626,16 +644,19 @@ If no format information is present it is removed. -->
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__n_"/>
       </pattern>
-      <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="4" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="4" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="4" side="tl" part="learned_case"/></let> 
-        <let><clip pos="2" side="tl" part="learned_gender"/><clip pos="4" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="2" side="tl" part="learned_numberat"/><clip pos="4" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="2" side="tl" part="learned_case"/><clip pos="4" side="tl" part="learned_case"/></let> 
-        <let><clip pos="3" side="tl" part="learned_gender"/><clip pos="4" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="3" side="tl" part="learned_numberat"/><clip pos="4" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="3" side="tl" part="learned_case"/><clip pos="4" side="tl" part="learned_case"/></let> 
+      <action>  
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="4"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="2"/>
+       <with-param pos="4"/>
+       </call-macro>
+       <call-macro n="f_agreement">
+       <with-param pos="3"/>
+       <with-param pos="4"/>
+       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -644,7 +665,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
-	      <clip pos="1" side="tl" part="learned_definiteness"/>
+              <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -655,7 +676,7 @@ If no format information is present it is removed. -->
 	      <clip pos="2" side="tl" part="learned_gender"/>
 	      <clip pos="2" side="tl" part="learned_numberat"/>
 	      <clip pos="2" side="tl" part="learned_case"/>
-	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="2" side="tl" part="lemq"/>
 	    </lu>
             <b pos="2"/>
@@ -666,7 +687,7 @@ If no format information is present it is removed. -->
 	      <clip pos="3" side="tl" part="learned_gender"/>
 	      <clip pos="3" side="tl" part="learned_numberat"/>
 	      <clip pos="3" side="tl" part="learned_case"/>
-	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="3" side="tl" part="lemq"/>
 	    </lu>
             <b pos="3"/>
@@ -692,15 +713,18 @@ If no format information is present it is removed. -->
 	<pattern-item n="CAT__n_"/>
       </pattern>
       <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
-        <let><clip pos="3" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="3" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="3" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
-        <let><clip pos="4" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="4" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="4" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="5"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="3"/>
+       <with-param pos="5"/>
+       </call-macro>
+       <call-macro n="f_agreement">
+       <with-param pos="4"/>
+       <with-param pos="5"/>
+       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -709,7 +733,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
-	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
 	     <b pos="1"/>
@@ -724,7 +748,7 @@ If no format information is present it is removed. -->
 	      <clip pos="3" side="tl" part="learned_gender"/>
 	      <clip pos="3" side="tl" part="learned_numberat"/>
 	      <clip pos="3" side="tl" part="learned_case"/>
-	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="3" side="tl" part="lemq"/>
 	    </lu>
             <b pos="3"/>
@@ -735,7 +759,7 @@ If no format information is present it is removed. -->
 	      <clip pos="4" side="tl" part="learned_gender"/>
 	      <clip pos="4" side="tl" part="learned_numberat"/>
 	      <clip pos="4" side="tl" part="learned_case"/>
-	      <clip pos="4" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="4" side="tl" part="lemq"/>
 	    </lu>
             <b pos="4"/>
@@ -760,15 +784,18 @@ If no format information is present it is removed. -->
 	<pattern-item n="CAT__n_"/>
       </pattern>
       <action>
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
-        <let><clip pos="2" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="2" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="2" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
-        <let><clip pos="4" side="tl" part="learned_gender"/><clip pos="5" side="tl" part="learned_gender"/></let> 
-        <let><clip pos="4" side="tl" part="learned_numberat"/><clip pos="5" side="tl" part="learned_numberat"/></let> 
-        <let><clip pos="4" side="tl" part="learned_case"/><clip pos="5" side="tl" part="learned_case"/></let> 
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="5"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="2"/>
+       <with-param pos="5"/>
+       </call-macro>
+       <call-macro n="f_agreement">
+       <with-param pos="4"/>
+       <with-param pos="5"/>
+       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
@@ -777,7 +804,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_numberat"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
-	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -788,7 +815,7 @@ If no format information is present it is removed. -->
 	      <clip pos="2" side="tl" part="learned_gender"/>
 	      <clip pos="2" side="tl" part="learned_numberat"/>
 	      <clip pos="2" side="tl" part="learned_case"/>
-	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="2" side="tl" part="lemq"/>
 	    </lu>
 	     <b pos="2"/>
@@ -803,7 +830,7 @@ If no format information is present it is removed. -->
 	      <clip pos="4" side="tl" part="learned_gender"/>
 	      <clip pos="4" side="tl" part="learned_numberat"/>
 	      <clip pos="4" side="tl" part="learned_case"/>
-	      <clip pos="4" side="tl" part="learned_definiteness"/>
+	      <lit-tag v="def"/>
 	      <clip pos="4" side="tl" part="lemq"/>
 	    </lu>
             <b pos="4"/>
@@ -911,11 +938,14 @@ If no format information is present it is removed. -->
         </test>
        <out>
           <lu>
-            <clip pos="3" side="tl" part="whole"/>
+           <get-case-from pos="1">
+            <clip pos="3" side="tl" part="lem"/>
+           </get-case-from>
+           <clip pos="3" side="tl" part="tags"/>
           </lu>
           <b pos="1"/>
           <lu>
-           <get-case-from pos="1">
+           <get-case-from pos="3">
             <lit v="trebati"/>
            </get-case-from>
             <lit-tag v="vbmod"/>
@@ -939,11 +969,14 @@ If no format information is present it is removed. -->
      <otherwise>
        <out>
           <lu>
-            <clip pos="3" side="tl" part="whole"/>
+           <get-case-from pos="1">
+            <clip pos="3" side="tl" part="lem"/>
+           </get-case-from>
+           <clip pos="3" side="tl" part="tags"/>
           </lu>
           <b pos="1"/>
           <lu>
-            <get-case-from pos="1">
+            <get-case-from pos="3">
             <lit v="trebati"/>
             </get-case-from>
             <lit-tag v="vbmod"/>
@@ -1085,7 +1118,7 @@ If no format information is present it is removed. -->
           </lu>
           <b pos="1"/>
           <lu>
-          <get-case-from pos="1">
+          <get-case-from pos="2">
             <lit v="trebati"/>
           </get-case-from>
             <lit-tag v="vbmod"/>
@@ -1160,7 +1193,7 @@ If no format information is present it is removed. -->
           </lu>
           <b pos="2"/>
           <lu>
-            <get-case-from pos="1">
+            <get-case-from pos="3">
               <lit v="trebati"/>
             </get-case-from>
             <lit-tag v="vbmod"/>
@@ -1562,7 +1595,9 @@ If no format information is present it is removed. -->
   <action>
      <out>
           <lu>
+            <get-case-from pos="1">
             <clip pos="2" side="tl" part="lemh"/>
+            </get-case-from>
             <clip pos="2" side="sl" part="learned_verbcat"/>
             <clip pos="2" side="sl" part="learned_verbaspect"/>
             <clip pos="2" side="sl" part="learned_verbtype"/>
@@ -1602,7 +1637,9 @@ If no format information is present it is removed. -->
         </test>
      <out>
           <lu>
+            <get-case-from pos="1">
             <clip pos="2" side="tl" part="lemh"/>
+            </get-case-from>
             <clip pos="2" side="sl" part="learned_verbcat"/>
             <clip pos="2" side="sl" part="learned_isclt"/>
             <clip pos="2" side="sl" part="learned_verbaspect"/>
@@ -1629,7 +1666,9 @@ If no format information is present it is removed. -->
      <otherwise>
        <out>
           <lu>
+	   <get-case-from pos="1">
             <clip pos="2" side="tl" part="lemh"/>
+            </get-case-from>
             <clip pos="2" side="sl" part="learned_verbcat"/>
             <clip pos="2" side="sl" part="learned_verbaspect"/>
             <clip pos="2" side="sl" part="learned_verbtype"/>
@@ -1658,7 +1697,7 @@ If no format information is present it is removed. -->
 
 <rule comment="RULE: ne/ni + vbhtjetibiti = nevb -> neće -> neće, ni sam -> nisam check">
   <pattern>
-    <pattern-item n="CAT__nenipart_"/>
+    <pattern-item n="CAT__nepart_"/>
     <pattern-item n="CAT__vbhtjetibitineg_"/>
   </pattern>
   <action>
@@ -1742,9 +1781,6 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="RULE 35 set gender and number of isolated words ">
-<pattern><pattern-item n="CAT__HASGENDER_NUMBER"/></pattern><action> <call-macro n="f_gender_num"><with-param pos="1"/></call-macro> <call-macro n="f_set_gender_num"><with-param pos="1"/></call-macro> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> </action><!--isolated word-->
-</rule>
 <rule comment=" RULE 36 punctuation">
 <pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="gender"/><lit-tag v="m"/></let> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out></action><!--isolated word-->
 </rule>
