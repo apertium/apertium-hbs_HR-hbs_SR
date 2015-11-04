@@ -337,6 +337,10 @@
 <section-def-lists>
 
   <def-list n="only_def_in_HR">
+      <list-item v="ekvilibristički"/>
+      <list-item v="evolucijski"/>
+      <list-item v="gospodarstveni"/>
+      <list-item v="prvostupanjski"/>
       <list-item v="vanjski"/>
   </def-list>
 
@@ -492,6 +496,24 @@ If no format information is present it is removed. -->
 
 
     <!-- Noun phrases -->
+
+    <rule comment="noun">
+      <pattern>
+	<pattern-item n="CAT__n_"/>
+      </pattern>      
+      <action>
+        <out>
+          <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_nom"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
 
 
  <rule comment="adj or pp definiteness">
@@ -1855,7 +1877,6 @@ If no format information is present it is removed. -->
 <rule comment=" RULE 37 any word">
 <pattern><pattern-item n="any"/></pattern><action>  <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> </action><!--isolated word-->
 </rule>
-
 
 
 </section-rules>

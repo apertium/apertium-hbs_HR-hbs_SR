@@ -92,6 +92,16 @@
     <cat-item lemma="pos" tags="adj.*"/>
   </def-cat>
 
+ <def-cat n="CAT__adjpp_">
+    <cat-item tags="adj.*"/>
+    <cat-item tags="vblex.perf.tv.pp.*"/>
+    <cat-item tags="vblex.imperf.tv.pp.*"/>
+    <cat-item tags="vblex.perf.iv.pp.*"/>
+    <cat-item tags="vblex.imperf.iv.pp.*"/>
+    <cat-item tags="vblex.perf.ref.pp.*"/>
+    <cat-item tags="vblex.imperf.ref.pp.*"/>
+  </def-cat>
+
   <def-cat n="CAT__vbinf_">
     <cat-item tags="vblex.*.inf"/>
     <cat-item tags="vbmod.inf"/>
@@ -259,7 +269,37 @@
   <def-var n="genre"/>
   <def-var n="number"/>
 </section-def-vars>
+
+<section-def-lists>
+
+  <def-list n="only_def_in_SR">
+      <list-item v="metalski"/>
+  </def-list>
+
+</section-def-lists>
+
 <section-def-macros>
+
+<def-macro n="f_set_definiteness" npar="1">
+  <choose>
+    <when>
+     <test>
+       <in caseless="yes">
+	 <clip pos="1" side="tl" part="lem"/>
+	 <list n="only_def_in_SR"/>
+       </in>
+     </test>
+     <let><clip pos="1" side="tl" part="learned_definiteness"/><lit-tag v="def"/></let>
+    </when>
+    <otherwise>
+      <let>
+         <clip pos="1" side="tl" part="learned_definiteness"/>
+         <clip pos="1" side="sl" part="learned_definiteness"/>
+      </let>
+    </otherwise>
+ </choose>
+</def-macro>
+
 <def-macro n="f_bcond" npar="2">
 <!--To test whether a blank contains format information.
 If no format information is present it is removed. -->
@@ -377,7 +417,28 @@ If no format information is present it is removed. -->
 </section-def-macros>
 <section-rules>
 
-
+ <rule comment="adj or pp definiteness">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+      </pattern>
+      <action>
+       <call-macro n="f_set_definiteness">
+         <with-param pos="1"/>
+       </call-macro>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+    </rule>
 
 <rule comment="RULE: vblex + vblex.inf -> vblex + da + vblex.pres.  Trebam lupati -> Treba da lupam, Trebao okončati -> trebalo da okonča">
   <pattern>
@@ -587,13 +648,56 @@ If no format information is present it is removed. -->
 </rule>
 
 <rule comment="RULE 35 set gender and number of isolated words ">
-<pattern><pattern-item n="CAT__HASGENDER_NUMBER"/></pattern><action> <call-macro n="f_genre_num"><with-param pos="1"/></call-macro> <call-macro n="f_set_genre_num"><with-param pos="1"/></call-macro> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> </action><!--isolated word-->
+  <pattern>
+    <pattern-item n="CAT__HASGENDER_NUMBER"/>
+  </pattern>
+  <action>
+    <call-macro n="f_genre_num">
+      <with-param pos="1"/>
+    </call-macro>
+    <call-macro n="f_set_genre_num">
+      <with-param pos="1"/>
+    </call-macro>
+    <out>
+      <lu>
+        <clip pos="1" side="tl" part="whole"/>
+      </lu>
+    </out>
+  </action><!--isolated word-->
 </rule>
+
 <rule comment=" RULE 36 punctuation">
-<pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="genre"/><lit-tag v="m"/></let> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out></action><!--isolated word-->
+  <pattern>
+    <pattern-item n="sent"/>
+  </pattern>
+  <action>
+    <let>
+      <var n="number"/>
+      <lit-tag v="sg"/>
+    </let>
+    <let>
+      <var n="genre"/>
+      <lit-tag v="m"/>
+    </let>
+    <out>
+      <lu>
+        <clip pos="1" side="tl" part="whole"/>
+      </lu>
+    </out>
+  </action><!--isolated word-->
 </rule>
+
 <rule comment=" RULE 37 any word">
-<pattern><pattern-item n="any"/></pattern><action>  <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> </action><!--isolated word-->
+  <pattern>
+    <pattern-item n="any"/>
+  </pattern>
+  <action>
+    <out>
+      <lu>
+        <clip pos="1" side="tl" part="whole"/>
+      </lu>
+    </out>
+  </action><!--isolated word-->
 </rule>
 
 

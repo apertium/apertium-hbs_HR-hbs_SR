@@ -175,7 +175,7 @@
 <e><p><l>aristokracija<s n="n"/></l><r>aristokratija<s n="n"/></r></p></e>
 <e><p><l>autobusni<s n="adj"/></l><r>autobuski<s n="adj"/></r></p></e>
 <e><p><l>autokracija<s n="n"/></l><r>autokratija<s n="n"/></r></p></e>
-<e r="LR"><p><l>samovlašće<s n="n"/></l><r>autokratija<s n="n"/></r></p></e>
+<e r="LR"><p><l>samovlašće<s n="n"/><s n="nt"/></l><r>autokratija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>kolovoz<s n="n"/></l><r>avgust<s n="n"/></r></p></e>
 <e><p><l>kolovoški<s n="adj"/></l><r>avgustovski<s n="adj"/></r></p></e>
 <e><p><l>dvorište<s n="n"/><s n="nt"/></l><r>avlija<s n="n"/><s n="f"/></r></p></e>
@@ -186,7 +186,7 @@
 <e><p><l>oznaka<s n="n"/><s n="f"/></l><r>beleg<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>brijač<s n="n"/></l><r>berberin<s n="n"/></r></p></e>
 <e><p><l>burza<s n="n"/></l><r>berza<s n="n"/></r></p></e>
-<e><p><l>bijesan<s n="n"/></l><r>besan<s n="n"/></r></p></e>
+<!-- <e><p><l>bijesan<s n="n"/></l><r>besan<s n="n"/></r></p></e> -->
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>bezuvjetan<s n="adj"/></l><r>bezuslovan<s n="adj"/></r></p></e>
 <e><p><l>milijarda<s n="n"/><s n="f"/></l><r>bilion<s n="n"/><s n="mi"/></r></p></e>
@@ -239,7 +239,7 @@
 <e r="LR"><p><l>eliminirati<s n="vblex"/></l><r>eliminisati<s n="vblex"/></r></p></e>
 <e><p><l>zametak<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
 <e r="LR"><p><l>embrij<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
-<e><p><l>odašiljač<s n="n"/></l><r>emitent<s n="n"/></r></p></e>
+<!-- <e><p><l>odašiljač<s n="n"/></l><r>emitent<s n="n"/></r></p></e> not really the same thing -->
 <e><p><l>odašiljanje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e r="LR"><p><l>emitiranje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e><p><l>odašiljati<s n="vblex"/></l><r>emitovati<s n="vblex"/></r></p></e>
@@ -341,14 +341,15 @@
 <e><p><l>uže<s n="n"/><s n="nt"/></l><r>kanap<s n="n"/><s n="mi"/></r></p></e>
 <e r="LR"><p><l>konop<s n="n"/></l><r>kanap<s n="n"/></r></p></e>
 <e r="LR"><p><l>konopac<s n="n"/></l><r>kanap<s n="n"/></r></p></e>
-<e><p><l>vrata<s n="n"/></l><r>kapija<s n="n"/></r></p></e>
+<e><p><l>vrata<s n="n"/><s n="nt"/></l><r>kapija<s n="n"/><s n="f"/></r></p></e>
+<e r="RL"><p><l>vrata<s n="n"/><s n="nt"/><s n="pl"/></l><r>kapija<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>kapetan<s n="n"/></l><r>kapiten<s n="n"/></r></p></e>
 <e r="RL"><p><l>gradić<s n="n"/><s n="mi"/></l><r>kasaba<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>kotao<s n="n"/></l><r>kazan<s n="n"/></r></p></e>
 <e><p><l>mol<s n="n"/></l><r>kej<s n="n"/></r></p></e>
 <e><p><l>konobar<s n="n"/></l><r>kelner<s n="n"/></r></p></e>
 <e><p><l>klokan<s n="n"/></l><r>kengur<s n="n"/></r></p></e>
-<e><p><l>pas<s n="n"/></l><r>ker<s n="n"/></r></p></e>
+<e><p><l>pas<s n="n"/><s n="ma"/></l><r>ker<s n="n"/><s n="ma"/></r></p></e>
 <e><p><l>vreća<s n="n"/></l><r>kesa<s n="n"/></r></p></e>
 <e><p><l>prehlada<s n="n"/></l><r>kijavica<s n="n"/></r></p></e>
 <e><p><l>klaun<s n="n"/></l><r>klovn<s n="n"/></r></p></e>
@@ -359,9 +360,9 @@
 <e><p><l>auto<s n="n"/><s n="mi"/></l><r>kola<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>zapovjednik<s n="n"/></l><r>komandant<s n="n"/></r></p></e>
 <e><p><l>kombiniranje<s n="n"/></l><r>kombinovanje<s n="n"/></r></p></e>
-<e><p><l>prenoćište<s n="n"/><s n="nt"/></l><r>konak<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>prenoćište<s n="n"/><s n="nt"/></l><r>konak<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>konstituiranje<s n="n"/></l><r>konstituisanje<s n="n"/></r></p></e>
-<e><p><l>korijenje<s n="n"/></l><r>korenje<s n="n"/></r></p></e>
+<!-- <e><p><l>korijenje<s n="n"/></l><r>korenje<s n="n"/></r></p></e> -->
 <e><p><l>uštipak<s n="n"/><s n="mi"/></l><r>krofna<s n="n"/><s n="f"/></r></p></e>
 <e r="LR"><p><l>krafna<s n="n"/></l><r>krofna<s n="n"/></r></p></e>
 <e><p><l>krumpir<s n="n"/></l><r>krompir<s n="n"/></r></p></e>
@@ -435,7 +436,7 @@
 <e><p><l>nominirati<s n="vblex"/></l><r>nominovati<s n="vblex"/></r></p></e>
 
 <e><p><l>obrana<s n="n"/></l><r>odbrana<s n="n"/></r></p></e>
-<e><p><l>odljev<s n="n"/></l><r>odliv<s n="n"/></r></p></e>
+<!-- <e><p><l>odljev<s n="n"/></l><r>odliv<s n="n"/></r></p></e> -->
 <e><p><l>listopad<s n="n"/></l><r>oktobar<s n="n"/></r></p></e>
 <e><p><l>pokus<s n="n"/></l><r>opit<s n="n"/></r></p></e>
 <e><p><l>oklada<s n="n"/></l><r>opklada<s n="n"/></r></p></e>
@@ -469,7 +470,7 @@
 <e><p><l>pravobranitelj<s n="n"/></l><r>pravobranilac<s n="n"/></r></p></e>
 <e><p><l>pravokutnik<s n="n"/></l><r>pravougaonik<s n="n"/></r></p></e>
 <e><p><l>poriluk<s n="n"/></l><r>praziluk<s n="n"/></r></p></e>
-<e><p><l>prazničnje<s n="n"/></l><r>praznovanje<s n="n"/></r></p></e>
+<e><p><l>prazničenje<s n="n"/></l><r>praznovanje<s n="n"/></r></p></e>
 <e><p><l>prijedlog<s n="n"/></l><r>predlog<s n="n"/></r></p></e>
 <e><p><l>preduvjet<s n="n"/></l><r>preduslov<s n="n"/></r></p></e>
 <e><p><l>poduzetan<s n="adj"/></l><r>preduzimljiv<s n="adj"/></r></p></e>
@@ -496,7 +497,7 @@
 <e><p><l>regija<s n="n"/><s n="f"/></l><r>region<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>registracija<s n="n"/><s n="f"/></l><r>registrovanje<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>reguliranje<s n="n"/></l><r>regulisanje<s n="n"/></r></p></e>
-<e><p><l>pordučje<s n="n"/><s n="nt"/></l><r>rejon<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>područje<s n="n"/><s n="nt"/></l><r>rejon<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>pećnica<s n="n"/></l><r>rerna<s n="n"/></r></p></e>
 <e><p><l>restartanje<s n="n"/></l><r>restartovanje<s n="n"/></r></p></e>
 <e><p><l>restrukturiranje<s n="n"/></l><r>restrukturisanje<s n="n"/></r></p></e>
@@ -565,14 +566,14 @@
 <e><p><l>zrak<s n="n"/></l><r>vazduh<s n="n"/></r></p></e>
 <e><p><l>zrakoplovstvo<s n="n"/></l><r>vazduhoplovstvo<s n="n"/></r></p></e>
 <e><p><l>zrakoplov<s n="n"/></l><r>vazduhoplov<s n="n"/></r></p></e>
-<e r="LR"><p><l>zrakoplov<s n="n"/></l><r>aeroplan<s n="n"/></r></p></e>
-<e r="LR"><p><l>zrakoplov<s n="n"/></l><r>avion<s n="n"/></r></p></e>
+<e r="RL"><p><l>zrakoplov<s n="n"/></l><r>aeroplan<s n="n"/></r></p></e>
+<e r="RL"><p><l>zrakoplov<s n="n"/></l><r>avion<s n="n"/></r></p></e>
 <e><p><l>štruca<s n="n"/></l><r>vekna<s n="n"/></r></p></e>
 <e><p><l>dug<s n="n"/><s n="mi"/></l><r>veresija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>počinitelj<s n="n"/></l><r>vinovnik<s n="n"/></r></p></e>
 <e><p><l>vlak<s n="n"/></l><r>voz<s n="n"/></r></p></e>
-<e><p><l>zaljev<s n="n"/></l><r>zaliv<s n="n"/></r></p></e>
-<e><p><l>zapovjed<s n="n"/></l><r>zapoved<s n="n"/></r></p></e>
+<!-- <e><p><l>zaljev<s n="n"/></l><r>zaliv<s n="n"/></r></p></e> -->
+<!-- <e><p><l>zapovjed<s n="n"/></l><r>zapoved<s n="n"/></r></p></e> actually spelled "zapovijed" -->
 <e><p><l>ulje<s n="n"/><s n="nt"/></l><r>zejtin<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>financije<s n="n"/></l><r>finansije<s n="n"/></r></p></e>
 <e><p><l>ovlaštenje<s n="n"/></l><r>ovlašćenje<s n="n"/></r></p></e>
@@ -639,8 +640,9 @@
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
 <e><p><l>ostvariti<s n="vblex"/><s n="perf"/></l><r>realizovati<s n="vblex"/><s n="perf"/></r></p></e>
 <e><p><l>ostvarivati<s n="vblex"/><s n="imperf"/></l><r>realizovati<s n="vblex"/><s n="imperf"/></r></p></e>
-<e><p><l>prakticirati<s n="vblex"/><s n="perf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
-<e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
+<!-- <e><p><l>prakticirati<s n="vblex"/><s n="perf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
+<e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e> why non-existent HR perf into SR imperf? -->
+<e><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
 <e><p><l>osjećati<s n="vblex"/></l><r>čuvstvovati<s n="vblex"/></r></p></e>
 <e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
@@ -696,7 +698,7 @@
 <!-- MWE -->
 
 <e><p><l>morski pas<s n="n"/><s n="ma"/></l><r>ajkula<s n="n"/><s n="f"/></r></p></e>
-<e><p><l>valjak za tijesto<s n="n"/><s n="mi"/></l><r>oklagija<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>valjak<g><b/>za<b/>tijesto</g><s n="n"/><s n="mi"/></l><r>oklagija<s n="n"/><s n="f"/></r></p></e>
 
 <!-- to be checked --> 
 
