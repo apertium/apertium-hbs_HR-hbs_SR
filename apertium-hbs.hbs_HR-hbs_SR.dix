@@ -241,7 +241,7 @@
 <e r="LR"><p><l>eliminirati<s n="vblex"/></l><r>eliminisati<s n="vblex"/></r></p></e>
 <e><p><l>zametak<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
 <e r="LR"><p><l>embrij<s n="n"/></l><r>embrion<s n="n"/></r></p></e>
-<!-- <e><p><l>odašiljač<s n="n"/></l><r>emitent<s n="n"/></r></p></e> not really the same thing -->
+
 <e><p><l>odašiljanje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e r="LR"><p><l>emitiranje<s n="n"/></l><r>emitovanje<s n="n"/></r></p></e>
 <e><p><l>odašiljati<s n="vblex"/></l><r>emitovati<s n="vblex"/></r></p></e>
@@ -642,9 +642,7 @@
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
 <e><p><l>ostvariti<s n="vblex"/><s n="perf"/></l><r>realizovati<s n="vblex"/><s n="perf"/></r></p></e>
 <e><p><l>ostvarivati<s n="vblex"/><s n="imperf"/></l><r>realizovati<s n="vblex"/><s n="imperf"/></r></p></e>
-<!-- <e><p><l>prakticirati<s n="vblex"/><s n="perf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
-<e r="LR"><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e> why non-existent HR perf into SR imperf? -->
-<e><p><l>prakticirati<s n="vblex"/><s n="imperf"/></l><r>praktikovati<s n="vblex"/><s n="imperf"/></r></p></e>
+<e><p><l>prakticirati<s n="vblex"/></l><r>praktikovati<s n="vblex"/></r></p></e>
 <e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
 <e><p><l>osjećati<s n="vblex"/></l><r>čuvstvovati<s n="vblex"/></r></p></e>
 <e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
