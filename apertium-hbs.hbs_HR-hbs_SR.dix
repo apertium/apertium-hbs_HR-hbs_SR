@@ -222,8 +222,9 @@
 <e><p><l>saopćenje<s n="n"/></l><r>saopštenje<s n="n"/></r></p></e>
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
 <e><p><l>promovirati<s n="vblex"/></l><r>promovisati<s n="vblex"/></r></p></e>
-<e><p><l>obojiti<s n="vblex"/></l><r>ofarbati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>obojiti<s n="vblex"/></l><r>ofarbati<s n="vblex"/></r></p></e>
 <e><p><l>izolirati<s n="vblex"/></l><r>izolovati<s n="vblex"/></r></p></e>
+<e><p><l>bombardirati<s n="vblex"/></l><r>bombardovati<s n="vblex"/></r></p></e>
 <e><p><l>kriminalizirati<s n="vblex"/></l><r>kriminalizovati<s n="vblex"/></r></p></e>
 <e><p><l>pomicati<s n="vblex"/></l><r>pomerati<s n="vblex"/></r></p></e>
 <e><p><l>pomaknuti<s n="vblex"/></l><r>pomeriti<s n="vblex"/></r></p></e>
@@ -234,6 +235,7 @@
 <e><p><l>falsificirati<s n="vblex"/></l><r>falsifikovati<s n="vblex"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/><s n="nt"/></l><r>decenija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>desetljeće<s n="n"/><s n="nt"/></l><r>dekada<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>kvaliteta<s n="n"/><s n="f"/></l><r>kvalitet<s n="n"/><s n="m"/></r></p></e>
 <e><p><l>poduzetnik<s n="n"/></l><r>preduzetnik<s n="n"/></r></p></e>
 <e><p><l>gospodarstvo<s n="n"/><s n="nt"/></l><r>privreda<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
@@ -274,7 +276,7 @@
 <e><p><l>babilonski<s n="adj"/></l><r>vavilonski<s n="adj"/></r></p></e>
 <e><p><l>europeizacija<s n="n"/></l><r>evropeizacija<s n="n"/></r></p></e>
 <e><p><l>europski<s n="adj"/></l><r>evropski<s n="adj"/></r></p></e>
-<e><p><l>jednosveščan<s n="adj"/></l><r>jednotomni<s n="adj"/></r></p></e>
+<e><p><l>jednosveščan<s n="adj"/></l><r>jednotoman<s n="adj"/></r></p></e>
 <e><p><l>tvornica<s n="n"/></l><r>fabrika<s n="n"/></r></p></e>
 <e><p><l>činjenica<s n="n"/><s n="f"/></l><r>fakt<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>krivotvorenje<s n="n"/></l><r>falsifikovanje<s n="n"/></r></p></e>
@@ -373,6 +375,8 @@
 <e><p><l>konobar<s n="n"/></l><r>kelner<s n="n"/></r></p></e>
 <e><p><l>klokan<s n="n"/></l><r>kengur<s n="n"/></r></p></e>
 <e><p><l>pas<s n="n"/><s n="ma"/></l><r>ker<s n="n"/><s n="ma"/></r></p></e>
+<e><p><l>dužnosnik<s n="n"/></l><r>zvaničnik<s n="n"/></r></p></e>
+<e><p><l>trenutak<s n="n"/></l><r>momenat<s n="n"/></r></p></e>
 <e><p><l>vreća<s n="n"/></l><r>kesa<s n="n"/></r></p></e>
 <e><p><l>prehlada<s n="n"/></l><r>kijavica<s n="n"/></r></p></e>
 <e><p><l>klaun<s n="n"/></l><r>klovn<s n="n"/></r></p></e>
@@ -522,6 +526,7 @@
 <e><p><l>reguliranje<s n="n"/></l><r>regulisanje<s n="n"/></r></p></e>
 <e><p><l>područje<s n="n"/><s n="nt"/></l><r>rejon<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>pećnica<s n="n"/></l><r>rerna<s n="n"/></r></p></e>
+<e r="LR"><p><l>plaća<s n="n"/></l><r>plata<s n="n"/></r></p></e>
 <e><p><l>restartanje<s n="n"/></l><r>restartovanje<s n="n"/></r></p></e>
 <e><p><l>restrukturiranje<s n="n"/></l><r>restrukturisanje<s n="n"/></r></p></e>
 <e><p><l>razlog<s n="n"/></l><r>rezon<s n="n"/></r></p></e>
@@ -666,19 +671,27 @@
 <e><p><l>prakticirati<s n="vblex"/></l><r>praktikovati<s n="vblex"/></r></p></e>
 <e><p><l>finalizirati<s n="vblex"/></l><r>finalizovati<s n="vblex"/></r></p></e>
 <e><p><l>osjećati<s n="vblex"/></l><r>čuvstvovati<s n="vblex"/></r></p></e>
+<e><p><l>proizlaziti<s n="vblex"/></l><r>proisticati<s n="vblex"/></r></p></e>
 <e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
 <e><p><l>prikazati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
+<e><p><l>priopćiti<s n="vblex"/></l><r>saopštiti<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>prezentirati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
 
 <e><p><l>španjolski<s n="adj"/></l><r>španski<s n="adj"/></r></p></e>
 <e><p><l>rumunjski<s n="adj"/></l><r>rumunski<s n="adj"/></r></p></e>
 <e><p><l>europski<s n="adj"/></l><r>evropski<s n="adj"/></r></p></e>
 <e><p><l>kršćanin<s n="n"/></l><r>hrišćanin<s n="n"/></r></p></e>
+<e><p><l>poduzeće<s n="n"/></l><r>preduzeće<s n="n"/></r></p></e>
+<e><p><l>sustav<s n="n"/></l><r>sistem<s n="n"/></r></p></e>
+<e><p><l>vodstvo<s n="n"/></l><r>vođstvo<s n="n"/></r></p></e>
+<e><p><l>tužiteljstvo<s n="n"/></l><r>tužilaštvo<s n="n"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
+<e><p><l>poduzeti<s n="vblex"/></l><r>preduzeti<s n="vblex"/></r></p></e>
 <e><p><l>tužitelj<s n="n"/></l><r>tužilac<s n="n"/></r></p></e>
 <e><p><l>sigurnost<s n="n"/></l><r>bezbednost<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
 <e><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>inostran<s n="adj"/><s n="pst"/></r></p></e>
+<e><p><l>siguran<s n="adj"/><s n="pst"/></l><r>bezbedan<s n="adj"/><s n="pst"/></r></p></e>
 <e r="RL"><p><l>vanjski<s n="adj"/><s n="pst"/></l><r>spoljni<s n="adj"/><s n="pst"/></r></p></e>
 <e><p><l>Cipar<s n="np"/></l><r>Kipar<s n="np"/></r></p></e>
 <e><p><l>diplomacija<s n="n"/></l><r>diplomatija<s n="n"/></r></p></e>
@@ -686,11 +699,13 @@
 <e><p><l>suradnja<s n="n"/></l><r>saradnja<s n="n"/></r></p></e>
 <e><p><l>kronika<s n="n"/></l><r>hronika<s n="n"/></r></p></e>
 <e><p><l>profesorica<s n="n"/></l><r>profesorka<s n="n"/></r></p></e>
+<e><p><l>odvjetnik<s n="n"/></l><r>advokat<s n="n"/></r></p></e>
 <e><p><l>protueuropski<s n="adj"/></l><r>antievropski<s n="adj"/></r></p></e>
 
 <e><p><l>zračan<s n="adj"/></l><r>vazdušan<s n="adj"/></r></p></e>
 <e><p><l>posto<s n="adv"/></l><r>odsto<s n="adv"/></r></p></e>
 <e><p><l>jučer<s n="adv"/></l><r>juče<s n="adv"/></r></p></e>
+<e><p><l>natrag<s n="adv"/></l><r>nazad<s n="adv"/></r></p></e>
 <e><p><l>prekjučer<s n="adv"/></l><r>prekjuče<s n="adv"/></r></p></e>
 
 <!-- irati ovati verbs -->
@@ -704,6 +719,7 @@
 <e><p><l>sudjelovanje<s n="n"/></l><r>učestvovanje<s n="n"/></r></p></e>
 <e><p><l>djelovati<s n="vblex"/></l><r>dejstvovati<s n="vblex"/></r></p></e> 
 <e><p><l>djelovanje<s n="n"/></l><r>dejstvovanje<s n="n"/></r></p></e>
+<e><p><l>sudjelovanje<s n="n"/></l><r>učešće<s n="n"/></r></p></e>
 
 <!-- Proper nouns -->
 
@@ -715,6 +731,10 @@
 <!-- Abbreviations -->
 
 <e><p><l>EULEX<s n="abbr"/></l><r>EULEKS<s n="abbr"/></r></p></e>
+
+<!-- Abbreviations -->
+
+<e><p><l>tijekom<s n="pr"/></l><r>tokom<s n="pr"/></r></p></e>
 
 <!-- MWE -->
 
