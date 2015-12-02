@@ -240,7 +240,7 @@
 <e><p><l>gospodarstvo<s n="n"/><s n="nt"/></l><r>privreda<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>gospodarstvenik<s n="n"/></l><r>privrednik<s n="n"/></r></p></e>
 <e><p><l>gospodarstveni<s n="adj"/></l><r>privredan<s n="adj"/></r></p></e>
-<e><p><l>vjerojatan<s n="adj"/></l><r>vjerovatan<s n="adj"/></r></p></e>
+<e><p><l>vjerojatan<s n="adj"/></l><r>verovatan<s n="adj"/></r></p></e>
 <e><p><l>tromjesječje<s n="n"/><s n="nt"/></l><r>kvartal<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>deklariranje<s n="n"/></l><r>deklarisanje<s n="n"/></r></p></e>
 <e><p><l>demokracija<s n="n"/></l><r>demokratija<s n="n"/></r></p></e>
@@ -352,7 +352,7 @@
 <e><p><l>siječanjski<s n="adj"/></l><r>januarski<s n="adj"/></r></p></e>
 
 <e><p><l>heretik<s n="n"/></l><r>jeretik<s n="n"/></r></p></e>
-<e r="LR"><p><l>interesiranje<s n="n"/></l><r>interesovanje<s n="n"/></r></p></e>
+<e><p><l>interesiranje<s n="n"/></l><r>interesovanje<s n="n"/></r></p></e>
 <e><p><l>ion<s n="n"/></l><r>jon<s n="n"/></r></p></e>
 <e><p><l>ionosfera<s n="n"/></l><r>jonosfera<s n="n"/></r></p></e>
 <e><p><l>poplun<s n="n"/></l><r>jorgan<s n="n"/></r></p></e>
@@ -806,7 +806,27 @@
 <e><p><l>funkcionirati<s n="vblex"/></l><r>funkcionisati<s n="vblex"/></r></p></e>
 <e><p><l>lajkati<s n="vblex"/></l><r>lajkovati<s n="vblex"/></r></p></e>
 <e><p><l>prešutjeti<s n="vblex"/></l><r>prećutati<s n="vblex"/></r></p></e>
+<e><p><l>saopćiti<s n="vblex"/></l><r>saopštiti<s n="vblex"/></r></p></e>
 <e><p><l>prometni<s n="adj"/></l><r>saobraćajni<s n="adj"/></r></p></e>
+
+<e><p><l>aktualan<s n="adj"/></l><r>aktuelan<s n="adj"/></r></p></e>
+<e><p><l>gluh<s n="adj"/></l><r>gluv<s n="adj"/></r></p></e>
+<e><p><l>med<s n="n"/></l><r>med<s n="n"/></r></p></e>
+<e><p><l>nepasteriziran<s n="adj"/></l><r>nepasterizovan<s n="adj"/></r></p></e>
+<e><p><l>obiteljski<s n="adj"/></l><r>porodični<s n="adj"/></r></p></e>
+<e r="RL"><p><l>okus<s n="n"/></l><r>ukus<s n="n"/></r></p></e>
+<e><p><l>općina<s n="n"/></l><r>opština<s n="n"/></r></p></e>
+<e><p><l>šalica<s n="n"/></l><r>šolja<s n="n"/></r></p></e>
+<e><p><l>turist<s n="n"/></l><r>turista<s n="n"/></r></p></e>
+<e><p><l>vrećica<s n="n"/></l><r>kesica<s n="n"/></r></p></e>
+<e><p><l>kaos<s n="n"/></l><r>haos<s n="n"/></r></p></e>
+<e r="RL"><p><l>domovina<s n="n"/></l><r>otadžbina<s n="n"/></r></p></e>
+<e><p><l>zainteresiran<s n="adj"/></l><r>zainteresovan<s n="adj"/></r></p></e>
+<e><p><l>zemljište<s n="n"/><s n="nt"/></l><r>plac<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>integrirati<s n="vblex"/></l><r>integrisati<s n="vblex"/></r></p></e>
+<e><p><l>obuhvaćati<s n="vblex"/></l><r>obuhvatati<s n="vblex"/></r></p></e>
+<e><p><l>prevladati<s n="vblex"/></l><r>prevazići<s n="vblex"/></r></p></e>
+<e><p><l>naprosto<s n="adv"/></l><r>prosto<s n="adv"/></r></p></e>
 
 
 </section>
