@@ -147,11 +147,148 @@
 
 <e><i>XZX</i></e>
 
+<!-- result of student coursework at unizg -->
+
+<e><p><l>stup<s n="n"/></l><r>stub<s n="n"/></r></p></e>
+<e><p><l>snimka<s n="n"/><s n="f"/></l><r>snimak<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>nesreća<s n="n"/><s n="f"/></l><r>udes<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>objašnjenje<s n="n"/></l><r>obrazloženje<s n="n"/></r></p></e>
+<e><p><l>redovit<s n="adj"/></l><r>redovan<s n="adj"/></r></p></e>
+<e><p><l>trg<s n="n"/><s n="mi"/></l><r>čaršija<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>hitan<s n="adj"/></l><r>urgentan<s n="adj"/></r></p></e>
+<e><p><l>utvrditi<s n="vblex"/></l><r>konstatovati<s n="vblex"/></r></p></e>
+<e><p><l>zavesti<s n="vblex"/></l><r>smuvati<s n="vblex"/></r></p></e>
+<e><p><l>spolni<s n="adj"/></l><r>polni<s n="adj"/></r></p></e>
+<e><p><l>spolni<s n="adj"/></l><r>polni<s n="adj"/></r></p></e>
+<e><p><l>izumiti<s n="vblex"/></l><r>iznaći<s n="vblex"/></r></p></e>
+<e><p><l>prodefilirati<s n="vblex"/></l><r>prodefilovati<s n="vblex"/></r></p></e>
+<e><p><l>postojati<s n="vblex"/></l><r>bitisati<s n="vblex"/></r></p></e>
+<e><p><l>uspoređivati<s n="vblex"/></l><r>komparirati<s n="vblex"/></r></p></e>
+<e><p><l>usporediti<s n="vblex"/></l><r>porediti<s n="vblex"/></r></p></e>
+<e><p><l>prirodoznanstven<s n="adj"/></l><r>prirodno-naučan<s n="adj"/></r></p></e>
+<e><p><l>iskorištenost<s n="n"/></l><r>iskorišćenost<s n="n"/></r></p></e>
+<e><p><l>karizmatičan<s n="adj"/></l><r>harizmatičan<s n="adj"/></r></p></e>
+<e><p><l>znanstven<s n="adj"/></l><r>naučnjački<s n="adj"/></r></p></e>
+<e><p><l>područje<s n="n"/><s n="nt"/></l><r>oblast<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>demistificirati<s n="vblex"/></l><r>demistifikovati<s n="vblex"/></r></p></e>
+<e><p><l>naočale<s n="n"/></l><r>naočare<s n="n"/></r></p></e>
+<e><p><l>okvir<s n="n"/><s n="mi"/></l><r>rama<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>stranka<s n="n"/></l><r>partija<s n="n"/></r></p></e>
+<e><p><l>kotačić<s n="n"/></l><r>točkić<s n="n"/></r></p></e>
+<e><p><l>šovinist<s n="n"/></l><r>šovinista<s n="n"/></r></p></e>
+<e><p><l>nacionalist<s n="n"/></l><r>nacionalista<s n="n"/></r></p></e>
+<e><p><l>reći<s n="vblex"/></l><r>kazati<s n="vblex"/></r></p></e>
+<e><p><l>financijski<s n="adj"/></l><r>finansijski<s n="adj"/></r></p></e>
+<e><p><l>službeno<s n="adv"/></l><r>zvanično<s n="adv"/></r></p></e>
+<e><p><l>surađivati<s n="vblex"/></l><r>sarađivati<s n="vblex"/></r></p></e>
+<e><p><l>trenirka<s n="n"/></l><r>trenerka<s n="n"/></r></p></e>
+<e><p><l>prijatelj<s n="n"/></l><r>drugar<s n="n"/></r></p></e>
+<e><p><l>tečaj<s n="n"/></l><r>kurs<s n="n"/></r></p></e>
+<e><p><l>priopćen<s n="adj"/></l><r>saopšten<s n="adj"/></r></p></e>
+<e><p><l>vrijediti<s n="vblex"/></l><r>vredeti<s n="vblex"/></r></p></e>
+<e><p><l>inozemstvo<s n="n"/></l><r>inostranstvo<s n="n"/></r></p></e>
+<e><p><l>prvenstvo<s n="n"/><s n="n"/></l><r>šampionat<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>živčan<s n="adj"/></l><r>nervozan<s n="adj"/></r></p></e>
+<e><p><l>polovica<s n="n"/></l><r>polovina<s n="n"/></r></p></e>
+<e><p><l>fotografirati<s n="vblex"/></l><r>fotografisati<s n="vblex"/></r></p></e>
+<e><p><l>zaželjeti<s n="vblex"/></l><r>uželjeti<s n="vblex"/></r></p></e>
+<e><p><l>kćerkica<s n="n"/></l><r>ćerkica<s n="n"/></r></p></e>
+<e><p><l>općina<s n="n"/></l><r>opština<s n="n"/></r></p></e>
+<e><p><l>čitatelj<s n="n"/></l><r>čitalac<s n="n"/></r></p></e>
+<e><p><l>tiskati<s n="vblex"/></l><r>štampati<s n="vblex"/></r></p></e>
+<e><p><l>direktorica<s n="n"/></l><r>direktorka<s n="n"/></r></p></e>
+<e><p><l>tvrtka<s n="n"/></l><r>kompanija<s n="n"/></r></p></e>
+<e><p><l>osiguravati<s n="vblex"/></l><r>obezbjeđivati<s n="vblex"/></r></p></e>
+<e><p><l>vjerojatnost<s n="n"/></l><r>vjerovatnoća<s n="n"/></r></p></e>
+<e><p><l>kazneni<s n="adj"/></l><r>krivični<s n="adj"/></r></p></e>
+<e><p><l>prisila<s n="n"/></l><r>prinuda<s n="n"/></r></p></e>
+<e><p><l>poticanje<s n="n"/></l><r>podstrekivanje<s n="n"/></r></p></e>
+<e><p><l>osiguravati<s n="vblex"/></l><r>obezbjeđivati<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>reći<s n="vblex"/></l><r>reknuti<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>reći<s n="vblex"/></l><r>reći<s n="vblex"/></r></p></e>
+<e><p><l>netko<s n="prn"/></l><r>neko<s n="prn"/></r></p></e>
+<e><p><l>usput<b/>rečeno<s n="adv"/></l><r>uzgred<b/>budi<b/>rečeno<s n="adv"/></r></p></e>
+<e><p><l>loš<s n="adj"/></l><r>grd<s n="adj"/></r></p></e>
+<e><p><l>specijalizirati<s n="vblex"/></l><r>specijalizovati<s n="vblex"/></r></p></e>
+<e><p><l>sat<s n="n"/></l><r>čas<s n="n"/></r></p></e>
+<e><p><l>eurozona<s n="n"/></l><r>evrozona<s n="n"/></r></p></e>
+<e><p><l>Europa<s n="np"/></l><r>Evropa<s n="np"/></r></p></e>
+<e><p><l>minuta<s n="n"/><s n="f"/></l><r>minut<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>srijeda<s n="n"/></l><r>sreda<s n="n"/></r></p></e>
+<e><p><l>učiniti<s n="vblex"/></l><r>uraditi<s n="vblex"/></r></p></e>
+
+<e><p><l>provođenje<s n="n"/></l><r>sprovođenje<s n="n"/></r></p></e>
+<e><p><l>tisak<s n="n"/><s n="mi"/></l><r>štampa<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>nitko<s n="prn"/></l><r>niko<s n="prn"/></r></p></e>
+<e><p><l>aktualan<s n="adj"/></l><r>aktuelan<s n="adj"/></r></p></e>
+<e><p><l>reagirati<s n="vblex"/></l><r>reagovati<s n="vblex"/></r></p></e>
+<e><p><l>spekulirati<s n="vblex"/></l><r>spekulisati<s n="vblex"/></r></p></e>
+<e><p><l>zezati<s n="vblex"/></l><r>blesaviti<s n="vblex"/></r></p></e>
+<e><p><l>nasmijavati<s n="vblex"/></l><r>zasmejavati<s n="vblex"/></r></p></e>
+<e><p><l>pratitelj<s n="n"/></l><r>pratioc<s n="n"/></r></p></e>
+<e><p><l>obiteljski<s n="adj"/></l><r>porodični<s n="adj"/></r></p></e>
+<e><p><l>provesti<s n="vblex"/></l><r>sprovesti<s n="vblex"/></r></p></e>
+<e><p><l>očevid<s n="n"/></l><r>uviđaj<s n="n"/></r></p></e>
+<e><p><l>organiziranje<s n="n"/></l><r>organizovanje<s n="n"/></r></p></e>
+<e><p><l>diplomat<s n="n"/></l><r>diplomata<s n="n"/></r></p></e>
+<e><p><l>sudionik<s n="n"/></l><r>učesnik<s n="n"/></r></p></e>
+<e><p><l>eurointegracija<s n="n"/></l><r>evrointegracija<s n="n"/></r></p></e>
+<e><p><l>osiguranje<s n="n"/></l><r>obezbeđenje<s n="n"/></r></p></e>
+<e><p><l>spriječiti<s n="vblex"/></l><r>preduprediti<s n="vblex"/></r></p></e>
+<e><p><l>raspakirati<s n="vblex"/></l><r>otpakovati<s n="vblex"/></r></p></e>
+<e><p><l>poduzetnički<s n="adj"/></l><r>preduzetnički<s n="adj"/></r></p></e>
+<e><p><l>središte<s n="n"/><s n="nt"/></l><r>žiža<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>sportaš<s n="n"/></l><r>sportista<s n="n"/></r></p></e>
+<e><p><l>zaklada<s n="n"/></l><r>fondacija<s n="n"/></r></p></e>
+<e><p><l>svećenik<s n="n"/></l><r>sveštenik<s n="n"/></r></p></e>
+<e><p><l>protuzračan<s n="adj"/></l><r>protivvazdušni<s n="adj"/></r></p></e>
+<e><p><l>obrana<s n="n"/></l><r>odbrana<s n="n"/></r></p></e>
+<e><p><l>nadvladavanje<s n="n"/></l><r>prevazilaženje<s n="n"/></r></p></e>
+<e><p><l>stoljeće<s n="n"/><s n="nt"/></l><r>vek<s n="n"/><s n="mi"/></r></p></e>
+<e><p><l>akt<s n="n"/></l><r>ukaz<s n="n"/></r></p></e>
+<e><p><l>protuzakonit<s n="adj"/></l><r>protivpravan<s n="adj"/></r></p></e>
+
+<e><p><l>ukloniti<s n="vblex"/></l><r>odkloniti<s n="vblex"/></r></p></e>
+<e><p><l>natjecanje<s n="n"/></l><r>takmičenje<s n="n"/></r></p></e>
+<e><p><l>zainteresiran<s n="adj"/></l><r>zainteresovan<s n="adj"/></r></p></e>
+<e><p><l>ovisno<s n="adv"/></l><r>zavisno<s n="adv"/></r></p></e>
+<e><p><l>preglednik<s n="n"/></l><r>pregledač<s n="n"/></r></p></e>
+<e><p><l>vizualno<s n="adv"/></l><r>vizuelno<s n="adv"/></r></p></e>
+<e><p><l>prilagodba<s n="n"/><s n="f"/></l><r>podešenje<s n="n"/><s n="n"/></r></p></e>
+<e><p><l>sučelje<s n="n"/><s n="n"></l><r>interfejs<s n="n"/><s n="mi"></r></p></e>
+<e><p><l>posuditi<s n="vblex"/></l><r>pozajmiti<s n="vblex"/></r></p></e>
+<e><p><l>personalizirati<s n="vblex"/></l><r>personalizovati<s n="vblex"/></r></p></e>
+<e><p><l>izvana<s n="adv"/></l><r>spolja<s n="adv"/></r></p></e>
+<e><p><l>cijel<s n="adj"/></l><r>ceo<s n="adj"/></r></p></e>
+<e><p><l>milijunski<s n="adj"/></l><r>milionski<s n="adj"/></r></p></e>
+<e><p><l>ploča<s n="n"/></l><r>tabla<s n="n"/></r></p></e>
+<e><p><l>virtualan<s n="adj"/></l><r>virtuelni<s n="adj"/></r></p></e>
+<e><p><l>suparnik<s n="n"/></l><r>supernik<s n="n"/></r></p></e>
+<e><p><l>uspoređivati<s n="vblex"/></l><r>poređati<s n="vblex"/></r></p></e>
+<e><p><l>reproduciranje<s n="n"/></l><r>reprodukovanje<s n="n"/></r></p></e>
+<e><p><l>raditi<s n="vblex"/></l><r>praviti<s n="vblex"/></r></p></e>
+<e><p><l>reagirati<s n="vblex"/></l><r>reagovati<s n="vblex"/></r></p></e>
+<e><p><l>naredba<s n="n"/></l><r>komanda<s n="n"/></r></p></e>
+<e><p><l>telekomunikacijski<s n="adj"/></l><r>telekomunikacioni<s n="adj"/></r></p></e>
+<e><p><l>angažirati<s n="vblex"/></l><r>angažovati<s n="vblex"/></r></p></e>
+<e><p><l>automatizirati<s n="vblex"/></l><r>automatizovati<s n="vblex"/></r></p></e>
+<e><p><l>sigurno<s n="adv"/></l><r>bezbedno<s n="adv"/></r></p></e>
+<e><p><l>tvrtka<s n="n"/></l><r>firma<s n="n"/></r></p></e>
+<e r="RL"><p><l>interes<s n="n"/></l><r>interesovanje<s n="n"/></r></p></e>
+<e><p><l>zakleti<b/>neprijatelj<s n="n"/></l><r>arhineprijatelj<s n="n"/></r></p></e>
+
+<!-- end of result of student coursework at unizg -->
+
+<e><p><l>pornoglumica<s n="n"/></l><r>pornićarka<s n="n"/></r></p></e>
+<e><p><l>napad<s n="n"/><s n="mi"/></l><r>ofanziva<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>inspiriran<s n="adj"/></l><r>inspirisan<s n="adj"/></r></p></e>
+<e><p><l>promatrač<s n="n"/></l><r>posmatrač<s n="n"/></r></p></e>
+<e><p><l>promatrati<s n="vblex"/></l><r>posmatrati<s n="vblex"/></r></p></e>
 <e><p><l>kći<s n="n"/></l><r>kćerka<s n="n"/></r></p></e>
 <e><p><l>automobil<s n="n"/><s n="mi"/><s n="sg"/></l><r>kola<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
 <e><p><l>susjedski<s n="adj"/></l><r>komšijski<s n="adj"/></r></p></e>
 <e><p><l>otac<s n="n"/></l><r>ćale<s n="n"/></r></p></e>
-<e><p><l>znanstven<s n="adj"/></l><r>naučan<s n="adj"/></r></p></e>
+<e r="RL"><p><l>znanstven<s n="adj"/></l><r>naučan<s n="adj"/></r></p></e>
 <e><p><l>kemija<s n="n"/></l><r>hemija<s n="n"/></r></p></e>
 <e><p><l>Skoplje<s n="np"/></l><r>Skoplje<s n="np"/></r></p></e>
 <e r="LR"><p><l>Skopje<s n="np"/></l><r>Skoplje<s n="np"/></r></p></e>
@@ -566,7 +703,7 @@
 <e><p><l>tipka<s n="n"/><s n="f"/></l><r>taster<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>uteg<s n="n"/></l><r>teg<s n="n"/></r></p></e>
 <e><p><l>tijelo<s n="n"/></l><r>telo<s n="n"/></r></p></e>
-<e><p><l>natječaj<s n="n"/></l><r>tender<s n="n"/></r></p></e>
+<e r="RL"><p><l>natječaj<s n="n"/></l><r>tender<s n="n"/></r></p></e>
 <e><p><l>teritorij<s n="n"/><s n="mi"/></l><r>teritorija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>pila<s n="n"/></l><r>testera<s n="n"/></r></p></e>
 <e><p><l>tava<s n="n"/><s n="f"/></l><r>tiganj<s n="n"/><s n="mi"/></r></p></e>
