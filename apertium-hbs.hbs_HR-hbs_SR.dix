@@ -550,8 +550,8 @@
 <e><p><l>redovnica<s n="n"/></l><r>monahinja<s n="n"/></r></p></e>
 <e><p><l>muha<s n="n"/></l><r>muva<s n="n"/></r></p></e>
 <e><p><l>priroda<s n="n"/></l><r>natura<s n="n"/></r></p></e>
-<e><p><l>tjedan<s n="n"/><s n="mi"/></l><r>nedelja<s n="n"/><s n="f"/></r></p></e>
-<e r="LR"><p><l>nedjelja<s n="n"/></l><r>nedelja<s n="n"/></r></p></e>
+<e r="LR"><p><l>tjedan<s n="n"/><s n="mi"/></l><r>nedelja<s n="n"/><s n="f"/></r></p></e>
+<!-- <e r="LR"><p><l>nedjelja<s n="n"/></l><r>nedelja<s n="n"/></r></p></e> -->
 <e><p><l>živac<s n="n"/></l><r>nerv<s n="n"/></r></p></e>
 <e><p><l>studeni<s n="n"/></l><r>novembar<s n="n"/></r></p></e>
 <e><p><l>broj<s n="n"/><s n="mi"/></l><r>numera<s n="n"/><s n="f"/></r></p></e>
