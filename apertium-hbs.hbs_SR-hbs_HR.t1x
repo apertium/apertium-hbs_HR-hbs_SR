@@ -243,6 +243,11 @@
     <attr-item tags="nom"/>
     <attr-item tags="voc"/>
   </def-attr>
+  <def-attr n="learned_person">
+    <attr-item tags="p1"/>
+    <attr-item tags="p2"/>
+    <attr-item tags="p3"/>
+  </def-attr>
   <def-attr n="learned_definiteness">
     <attr-item tags="def"/>
     <attr-item tags="ind"/>
@@ -974,6 +979,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="lemh"/>
 	      <clip pos="1" side="tl" part="a_prn"/>
 	      <clip pos="1" side="tl" part="learned_prntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_number"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
@@ -1017,6 +1023,7 @@ If no format information is present it is removed. -->
 	      <clip pos="1" side="tl" part="lemh"/>
 	      <clip pos="1" side="tl" part="a_prn"/>
 	      <clip pos="1" side="tl" part="learned_prntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_number"/>
 	      <clip pos="1" side="tl" part="learned_case"/>
