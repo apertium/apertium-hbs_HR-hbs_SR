@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- -*- nxml -*- -->
+
 <transfer>
+
 <section-def-cats>
   <def-cat n="CAT__adj_">
     <cat-item tags="adj.*"/>
@@ -75,6 +78,12 @@
     <cat-item tags="np.*"/>
     <cat-item tags="np"/>
   </def-cat>
+  <def-cat n="CAT__alln_">
+    <cat-item tags="np.*"/>
+    <cat-item tags="n.*"/>
+    <cat-item tags="n"/>
+    <cat-item tags="np"/>
+  </def-cat>
   <def-cat n="CAT__num_">
     <cat-item tags="num.*"/>
     <cat-item tags="num"/>
@@ -103,7 +112,6 @@
     <cat-item tags="prn.tot.*"/>
     <!-- <cat-item tags="prn.itg.*"/>
     <cat-item tags="prn.rel.*"/>  have fun future me -->
-    <cat-item tags="prn"/>
   </def-cat>
   <def-cat n="CAT__vblex_">
     <cat-item tags="vblex.*"/>
@@ -121,6 +129,7 @@
     <cat-item lemma="znati" tags="vblex.*"/>
     <cat-item lemma="trebati" tags="vblex.*"/>
     <cat-item lemma="morati" tags="vbmod.*"/>
+    <cat-item lemma="morati" tags="vblex.*"/>
     <cat-item lemma="smjeti" tags="vblex.*"/>
     <cat-item lemma="željeti" tags="vblex.*"/>
     <cat-item lemma="voljeti" tags="vblex.*"/>
@@ -130,6 +139,10 @@
   <def-cat n="CAT__vbser_">
     <cat-item tags="vbser.*"/>
     <cat-item tags="vbser"/>
+  </def-cat>
+
+  <def-cat n="CAT__vbseraor_">
+    <cat-item tags="vbser.*.aor.*"/>
   </def-cat>
 
   <def-cat n="CAT__vb_">
@@ -143,14 +156,35 @@
     <cat-item tags="vbmod.inf"/>
     <cat-item tags="vbser.inf"/>
   </def-cat>
+  
+  <def-cat n="CAT__vbtrans_">
+    <cat-item tags="vblex.*.tv.lp.*"/>
+    <cat-item tags="vblex.*.tv.pres.*"/>    
+  </def-cat>  
+  
+  <def-cat n="CAT__vblexlp_">
+    <cat-item tags="vblex.*.*.lp.*"/>    
+  </def-cat>  
+
+  <def-cat n="CAT__vbtransref_">
+    <cat-item tags="vblex.*.tv.lp.*"/>
+    <cat-item tags="vblex.*.tv.pres.*"/>  
+    <cat-item tags="vblex.*.ref.lp.*"/>
+    <cat-item tags="vblex.*.ref.pres.*"/>
+  </def-cat>  
 
  <def-cat n="CAT__vblexpp_">
     <cat-item tags="vblex.*.pp.*"/>
   </def-cat>
 
   <def-cat n="CAT__vblexmodpres_">
-    <cat-item tags="vblex.*.pres.*"/>
+    <cat-item tags="vblex.*.*.pres.*"/>
     <cat-item tags="vbmod.pres.*"/>
+  </def-cat>
+  
+  <def-cat n="CAT__vblexpres_">
+    <cat-item tags="vblex.*.*.pres.*"/>
+    <cat-item tags="vbser.futII.pres.*"/>
   </def-cat>
 
 
@@ -173,6 +207,10 @@
     <cat-item tags="sent"/>
     <cat-item tags="RESsent.sent"/>
   </def-cat>
+  <def-cat n="commasent">
+    <cat-item tags="sent"/>
+    <cat-item tags="cm"/>
+  </def-cat>
   <def-cat n="any">
     <cat-item tags="*"/>
   </def-cat>
@@ -192,6 +230,10 @@
   <def-attr n="a_adj">
       <attr-item tags="adj"/>
     </def-attr>
+
+<!--  <def-attr n="a_posadj">
+      <attr-item tags="???"/>
+    </def-attr>-->
 
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -311,13 +353,14 @@
     <attr-item tags="p2"/>
     <attr-item tags="p3"/>
   </def-attr>
-  <def-attr n="learned_prntype">
+  <def-attr n="learned_premprntype">
     <attr-item tags="dem"/>
-    <attr-item tags="itg"/>
-    <attr-item tags="neg"/>
-    <attr-item tags="pers"/>
-    <attr-item tags="rel"/>
+    <attr-item tags="ref"/>
+    <attr-item tags="ref.pos"/>
     <attr-item tags="tot"/>
+    <attr-item tags="pos"/>
+<!--    <attr-item tags="itg"/>
+    <attr-item tags="rel"/> in case future me decides to deal with this-->
   </def-attr>
   <def-attr n="learned_verbaspect">
     <attr-item tags="imperf"/>
@@ -359,6 +402,7 @@
   <def-var n="number"/>
   <def-var n="caseFirstWord"/>	
   <def-var n="EOS" v="true"/>
+  <def-var n="punct"/>
 </section-def-vars>
 
 <section-def-lists>
@@ -377,22 +421,46 @@
 
 <def-macro n="f_agreement" npar="2">
   <choose>
-     <when>
+     <when>	  
 	  <test> 
-          <and>
-	    <equal><!-- do the main and second parameter agree in gender in SL?-->
-	       <clip pos="2" side="sl" part="learned_gender"/>
-	       <clip pos="1" side="sl" part="learned_gender"/>
-	    </equal>
-            <equal><!-- do the main and second parameter agree in number in SL?-->
-	       <clip pos="2" side="sl" part="learned_number"/>
-	       <clip pos="1" side="sl" part="learned_number"/>
-	    </equal>
-            <equal><!-- do the main and second parameter agree in case in SL?-->
-	       <clip pos="2" side="sl" part="learned_case"/>
-	       <clip pos="1" side="sl" part="learned_case"/>
-	    </equal>
-	  </and>
+		<and>
+			<or>
+				<equal><!-- do the main and second parameter agree in gender in SL?-->
+					<clip pos="2" side="sl" part="learned_gender"/>
+					<clip pos="1" side="sl" part="learned_gender"/>
+				</equal>
+				<or>
+					<and>
+						<equal><!-- do the main and second parameter agree in gender in SL?-->
+							<clip pos="1" side="sl" part="learned_gender"/>	
+							<lit-tag n="ma"/>
+						</equal>
+						<equal><!-- do the main and second parameter agree in gender in SL?-->
+							<clip pos="2" side="sl" part="learned_gender"/>
+							<lit-tag n="mi"/>
+						</equal>
+					</and>
+					<and>
+						<equal><!-- do the main and second parameter agree in gender in SL?-->
+							<clip pos="1" side="sl" part="learned_gender"/>
+							<lit-tag n="mi"/>
+						</equal>
+						<equal><!-- do the main and second parameter agree in gender in SL?-->
+							<clip pos="2" side="sl" part="learned_gender"/>
+							<lit-tag n="ma"/>
+						</equal>
+					</and>
+				</or>
+			</or>
+	            <equal><!-- do the main and second parameter agree in number in SL?-->
+		       <clip pos="2" side="sl" part="learned_number"/>
+		       <clip pos="1" side="sl" part="learned_number"/>
+		    </equal>
+	            <equal><!-- do the main and second parameter agree in case in SL?-->
+		       <clip pos="2" side="sl" part="learned_case"/>
+		       <clip pos="1" side="sl" part="learned_case"/>
+		    </equal>
+		</and>
 	  </test>
           <!-- if yes, then make them agree in TL as well -->
           <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="2" side="tl" part="learned_gender"/></let> 
@@ -400,10 +468,9 @@
           <let><clip pos="1" side="tl" part="learned_case"/><clip pos="2" side="tl" part="learned_case"/></let> 
 	</when>
 	<otherwise> 
-        <!-- otherwise, keep the gender, number and case as is -->
-        <let><clip pos="1" side="tl" part="learned_gender"/><clip pos="1" side="sl" part="learned_gender"/></let> 
-        <let><clip pos="1" side="tl" part="learned_number"/><clip pos="1" side="sl" part="learned_number"/></let> 
-        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="1" side="sl" part="learned_case"/></let> 
+				<let><clip pos="1" side="tl" part="learned_gender"/><clip pos="1" side="sl" part="learned_gender"/></let> 
+		        <let><clip pos="1" side="tl" part="learned_number"/><clip pos="1" side="sl" part="learned_number"/></let> 
+		        <let><clip pos="1" side="tl" part="learned_case"/><clip pos="1" side="sl" part="learned_case"/></let> 
 	</otherwise>
       </choose>
     </def-macro>
@@ -566,10 +633,7 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-
-
-
- <rule comment="adj nom agreement, crveni paradajz -> crvena rajčica,  uzgojeni paradajz -> uzgojena rajčica. Check  Mislavov paradajz">
+ <rule comment="adj nom agreement, crveni paradajz -> crvena rajčica,  uzgojeni paradajz -> uzgojena rajčica">
       <pattern>
 	<pattern-item n="CAT__adjpp_"/>
 	<pattern-item n="CAT__n_"/>
@@ -606,6 +670,65 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+ <rule comment="possessive adjective agreement, vojnikov paradajz; Mislavov računar -> vojnikova rajčica, Mislavovo računalo">
+      <pattern>
+	<pattern-item n="CAT__alln_"/>		  
+	<pattern-item n="CAT__posadj_"/>
+	<pattern-item n="CAT__n_"/>
+      </pattern>
+      <action>
+
+		<choose>
+	      <when>
+	        <test>
+				<or>
+					<equal>
+						<clip pos="3" side="tl" part="learned_gender"/>
+						<lit-tag v="nt"/>
+	               </equal>
+	               <equal>
+						<clip pos="3" side="tl" part="learned_gender"/>
+						<lit-tag v="f"/>
+	               </equal>
+				</or>       
+	        </test>
+	               <let>
+					 <clip pos="2" side="tl" part="learned_definiteness"/>
+	                 <lit-tag v="def"/>
+	               </let>
+
+	      </when>
+	     </choose>
+	<out>
+		<mlu>
+		  <lu>
+			  <clip pos="1" side="tl" part="lemh"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="learned_gender"/>
+	      </lu> 
+	      <lu>  
+		      <clip pos="2" side="tl" part="lemh"/>
+		      <clip pos="2" side="tl" part="a_adjpp"/>
+		      <clip pos="2" side="tl" part="learned_adjtype"/>
+		      <clip pos="3" side="tl" part="learned_gender"/>
+		      <clip pos="3" side="tl" part="learned_number"/>
+		      <clip pos="3" side="tl" part="learned_case"/>
+		      <clip pos="2" side="tl" part="learned_definiteness"/>
+		      <clip pos="2" side="tl" part="lemq"/>
+	      </lu>
+        </mlu>    
+			<b pos="1"/>
+	    <lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_nom"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+ </rule>
 
 
     <rule comment="adj adj nom, veliki crveni paradajz -> velika crvena rajčica">
@@ -663,6 +786,85 @@ If no format information is present it is removed. -->
 	</out>
       </action>
     </rule>
+
+ <rule comment="posadj + adj + nom agreement, vojnikov crveni paradajz; Mislavov veliki računar -> vojnikova crvena rajčica, Mislavovo veliko računalo">
+      <pattern>
+	<pattern-item n="CAT__alln_"/>		  
+	<pattern-item n="CAT__posadj_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+      </pattern>
+      <action>
+       <call-macro n="f_set_definiteness">
+         <with-param pos="3"/>
+	   </call-macro>
+       <call-macro n="f_agreement">
+		<with-param pos="3"/>
+		<with-param pos="4"/>
+       </call-macro> 
+       
+		<choose>
+	      <when>
+	        <test>
+				<or>
+					<equal>
+						<clip pos="4" side="tl" part="learned_gender"/>
+						<lit-tag v="nt"/>
+	               </equal>
+	               <equal>
+						<clip pos="4" side="tl" part="learned_gender"/>
+						<lit-tag v="f"/>
+	               </equal>
+				</or>       
+	        </test>
+	               <let>
+					 <clip pos="2" side="tl" part="learned_definiteness"/>
+	                 <lit-tag v="def"/>
+	               </let>
+
+	      </when>
+	     </choose>
+	<out>
+		<mlu>
+		  <lu>
+			  <clip pos="1" side="tl" part="lemh"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="learned_gender"/>
+	      </lu> 
+	      <lu>  
+		      <clip pos="2" side="tl" part="lemh"/>
+		      <clip pos="2" side="tl" part="a_adjpp"/>
+		      <clip pos="2" side="tl" part="learned_adjtype"/>
+		      <clip pos="4" side="tl" part="learned_gender"/>
+		      <clip pos="4" side="tl" part="learned_number"/>
+		      <clip pos="4" side="tl" part="learned_case"/>
+		      <clip pos="2" side="tl" part="learned_definiteness"/>
+		      <clip pos="2" side="tl" part="lemq"/>
+	      </lu>
+        </mlu>    
+			<b pos="1"/>
+		<lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_adjpp"/>
+	      <clip pos="3" side="tl" part="learned_adjtype"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="4" side="tl" part="lemh"/>
+	      <clip pos="4" side="tl" part="a_nom"/>
+	      <clip pos="4" side="tl" part="learned_gender"/>
+	      <clip pos="4" side="tl" part="learned_number"/>
+	      <clip pos="4" side="tl" part="learned_case"/>
+	      <clip pos="4" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+ </rule>
 
 
     <rule comment="adj adv adj nom, veliki danas crveni paradajz -> velika danas crvena rajčica">
@@ -964,25 +1166,21 @@ If no format information is present it is removed. -->
     </rule>
 
 
- <rule comment="prn + nom agreement, moj računar -> moje računalo"> <!-- might not work -->
+ <rule comment="prn + nom agreement, moj računar -> moje računalo"> <!-- might not work --> <!-- does not work --> <!-- well, not fully anyway --> 
       <pattern>
 	<pattern-item n="CAT__premprn_"/>
 	<pattern-item n="CAT__n_"/>
       </pattern>
       <action>
-       <call-macro n="f_agreement">
-       <with-param pos="1"/>
-       <with-param pos="2"/>
-       </call-macro>
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
-	      <clip pos="1" side="tl" part="a_prn"/>
-	      <clip pos="1" side="tl" part="learned_prntype"/>
+   	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
 	      <clip pos="1" side="tl" part="learned_person"/>
-	      <clip pos="1" side="tl" part="learned_gender"/>
-	      <clip pos="1" side="tl" part="learned_number"/>
-	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
 	      <clip pos="1" side="tl" part="lemq"/>
 	    </lu>
             <b pos="1"/>
@@ -1000,7 +1198,7 @@ If no format information is present it is removed. -->
     
 
 
-    <rule comment="prn + adj + nom agreement, naš brzi računar -> naše brzo računalo"> <!-- possible additions: also perhaps add naše uvijek brzo računalo; naše veliko brzo računalo -->
+    <rule comment="prn + adj + nom agreement, naš brzi računar -> naše brzo računalo">
       <pattern>
 	<pattern-item n="CAT__premprn_"/>
 	<pattern-item n="CAT__adjpp_"/>
@@ -1021,8 +1219,8 @@ If no format information is present it is removed. -->
 	<out>
 	    <lu>
 	      <clip pos="1" side="tl" part="lemh"/>
-	      <clip pos="1" side="tl" part="a_prn"/>
-	      <clip pos="1" side="tl" part="learned_prntype"/>
+	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
 	      <clip pos="1" side="tl" part="learned_person"/>
 	      <clip pos="1" side="tl" part="learned_gender"/>
 	      <clip pos="1" side="tl" part="learned_number"/>
@@ -1037,7 +1235,7 @@ If no format information is present it is removed. -->
 	      <clip pos="2" side="tl" part="learned_gender"/>
 	      <clip pos="2" side="tl" part="learned_number"/>
 	      <clip pos="2" side="tl" part="learned_case"/>
-	        <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="learned_definiteness"/>
 	      <clip pos="2" side="tl" part="lemq"/>
 	    </lu>
             <b pos="2"/>
@@ -1053,7 +1251,211 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="prn + posadj + nom agreement, onaj Mislavov računar -> ono Mislavovo računalo">
+	<pattern>
+		<pattern-item n="CAT__premprn_"/>
+		<pattern-item n="CAT__alln_"/>		  
+		<pattern-item n="CAT__posadj_"/>
+		<pattern-item n="CAT__n_"/>
+	</pattern>
+	<action>
+		<call-macro n="f_agreement">
+			<with-param pos="1"/>
+			<with-param pos="4"/>
+		</call-macro>
+		<choose>
+			<when>
+				<test>
+					<or>
+						<equal>
+							<clip pos="4" side="tl" part="learned_gender"/>
+							<lit-tag v="nt"/>
+						</equal>
+						<equal>
+							<clip pos="4" side="tl" part="learned_gender"/>
+							<lit-tag v="f"/>
+						</equal>
+					</or>       
+				</test>
+				<let>
+					<clip pos="3" side="tl" part="learned_definiteness"/>
+					<lit-tag v="def"/>
+				</let>
+			</when>
+		</choose>
+		<out>
+			<lu>
+				<clip pos="1" side="tl" part="lemh"/>
+				<lit-tag n="prn"/>
+				<clip pos="1" side="tl" part="learned_premprntype"/>
+				<clip pos="1" side="tl" part="learned_person"/>
+				<clip pos="1" side="tl" part="learned_gender"/>
+				<clip pos="1" side="tl" part="learned_number"/>
+				<clip pos="1" side="tl" part="learned_case"/>
+				<clip pos="1" side="tl" part="lemq"/>
+			</lu>
+			<b pos="1"/>
+			<mlu>
+				<lu>
+					<clip pos="2" side="tl" part="lemh"/>
+					<clip pos="2" side="tl" part="a_nom"/>
+					<clip pos="2" side="tl" part="learned_gender"/>
+				</lu> 
+				<lu>  
+					<clip pos="3" side="tl" part="lemh"/>
+					<clip pos="3" side="tl" part="a_adjpp"/>
+					<clip pos="3" side="tl" part="learned_adjtype"/>
+					<clip pos="4" side="tl" part="learned_gender"/>
+					<clip pos="4" side="tl" part="learned_number"/>
+					<clip pos="4" side="tl" part="learned_case"/>
+					<clip pos="3" side="tl" part="learned_definiteness"/>
+					<clip pos="3" side="tl" part="lemq"/>
+				</lu>
+	        </mlu>    
+			<b pos="2"/>
+			<lu>
+				<clip pos="4" side="tl" part="lemh"/>
+				<clip pos="4" side="tl" part="a_nom"/>
+				<clip pos="4" side="tl" part="learned_gender"/>
+				<clip pos="4" side="tl" part="learned_number"/>
+				<clip pos="4" side="tl" part="learned_case"/>
+				<clip pos="4" side="tl" part="lemq"/>
+			</lu>
+		</out>
+	</action>
+</rule>
+    
+<rule comment="prn + adv + adj + nom agreement, naš jako brzi računar -> naše jako brzo računalo">
+	<pattern>
+		<pattern-item n="CAT__premprn_"/>
+		<pattern-item n="CAT__adv_"/>
+		<pattern-item n="CAT__adjpp_"/>
+		<pattern-item n="CAT__n_"/>
+	</pattern>
+	<action>
+		<call-macro n="f_agreement">
+			<with-param pos="1"/>
+			<with-param pos="4"/>
+		</call-macro>  
+		<call-macro n="f_agreement">
+			<with-param pos="3"/>
+			<with-param pos="4"/>
+		</call-macro> 
+		<call-macro n="f_set_definiteness">
+			<with-param pos="3"/>
+		</call-macro>
+		<out>
+			<lu>
+				<clip pos="1" side="tl" part="lemh"/>
+				<lit-tag n="prn"/>
+				<clip pos="1" side="tl" part="learned_premprntype"/>
+				<clip pos="1" side="tl" part="learned_person"/>
+				<clip pos="1" side="tl" part="learned_gender"/>
+				<clip pos="1" side="tl" part="learned_number"/>
+				<clip pos="1" side="tl" part="learned_case"/>
+				<clip pos="1" side="tl" part="lemq"/>
+			</lu>
+			<b pos="1"/>
+			<lu>
+				<clip pos="2" side="tl" part="whole"/>
+			</lu>
+            <b pos="2"/>
+			<lu>
+				<clip pos="3" side="tl" part="lemh"/>
+				<clip pos="3" side="tl" part="a_adjpp"/>
+				<clip pos="3" side="tl" part="learned_adjtype"/>
+				<clip pos="3" side="tl" part="learned_gender"/>
+				<clip pos="3" side="tl" part="learned_number"/>
+				<clip pos="3" side="tl" part="learned_case"/>
+				<clip pos="3" side="tl" part="learned_definiteness"/>
+				<clip pos="3" side="tl" part="lemq"/>
+			</lu>
+			<b pos="3"/>
+			<lu>
+				<clip pos="4" side="tl" part="lemh"/>
+				<clip pos="4" side="tl" part="a_nom"/>
+				<clip pos="4" side="tl" part="learned_gender"/>
+				<clip pos="4" side="tl" part="learned_number"/>
+				<clip pos="4" side="tl" part="learned_case"/>
+				<clip pos="4" side="tl" part="lemq"/>
+			</lu>
+		</out>
+	</action>
+</rule>
 
+
+
+<rule comment="prn + adj + adj + nom agreement, naš veliki brzi računar -> naše veliko brzo računalo">
+      <pattern>
+	<pattern-item n="CAT__premprn_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+      </pattern>
+      <action>
+       <call-macro n="f_agreement">
+       <with-param pos="1"/>
+       <with-param pos="4"/>
+       </call-macro>  
+       <call-macro n="f_agreement">
+       <with-param pos="2"/>
+       <with-param pos="4"/>
+       </call-macro> 
+       <call-macro n="f_agreement">
+       <with-param pos="3"/>
+       <with-param pos="4"/>
+       </call-macro> 
+       <call-macro n="f_set_definiteness">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="f_set_definiteness">
+         <with-param pos="3"/>
+       </call-macro>       
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="lemh"/>
+	      <clip pos="2" side="tl" part="a_adjpp"/>
+	      <clip pos="2" side="tl" part="learned_adjtype"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
+	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_adjpp"/>
+	      <clip pos="3" side="tl" part="learned_adjtype"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="3"/>
+  	    <lu>
+	      <clip pos="4" side="tl" part="lemh"/>
+	      <clip pos="4" side="tl" part="a_nom"/>
+	      <clip pos="4" side="tl" part="learned_gender"/>
+	      <clip pos="4" side="tl" part="learned_number"/>
+	      <clip pos="4" side="tl" part="learned_case"/>
+	      <clip pos="4" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+    </rule>
 
 
 
@@ -1209,12 +1611,11 @@ If no format information is present it is removed. -->
      </otherwise>
     </choose>
     <call-macro n="f_bcond">
+       <with-param pos="2"/>
        <with-param pos="3"/>
-       <with-param pos="4"/>
     </call-macro>
 </action>
 </rule>
-
 
 
 <rule comment="RULE: trebalo + vbser + da + vbser + pp = trebati.infofromvblex + vbser + vbser.inf + pp. trebalo bi da bude provjeren -> trebao bi biti provjeren">
@@ -1282,8 +1683,8 @@ If no format information is present it is removed. -->
           </lu>
       </out>
     <call-macro n="f_bcond">
+       <with-param pos="3"/>
        <with-param pos="4"/>
-       <with-param pos="5"/>
     </call-macro>
 </action>
 </rule>
@@ -1504,11 +1905,93 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-
-
-<rule comment="RULE: vblex + da + vblex.pres = vblex + vblex.inf. Planiram da potroši -> Planiram potrošiti">
+<rule comment="RULE: vbmod + da + adv + vblex.pres = vbmod + adv + vblex.inf. Moram da jako lupam -> Moram jako lupati"> <!-- why doesn't this work what -->
   <pattern>
+    <pattern-item n="CAT__vbmodals_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__adv_"/>
     <pattern-item n="CAT__vblex_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+          <or>
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="pres"/>
+               </equal> 
+               <equal>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="futII.pres"/>
+               </equal>
+          </or>
+        </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_number"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+	        <clip pos="3" side="tl" part="whole"/>
+	      </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>          
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
+
+<rule comment="RULE: vbmod + adv + da + vblex.pres = vbmod + adv + vblex.inf. Moram jako da lupam -> Moram jako lupati">
+  <pattern>
+    <pattern-item n="CAT__vbmodals_"/>
+    <pattern-item n="CAT__adv_"/>
     <pattern-item n="CAT__da_"/>
     <pattern-item n="CAT__vblex_"/>
   </pattern>
@@ -1518,15 +2001,83 @@ If no format information is present it is removed. -->
         <test>
           <or>
                <equal>
-                 <clip pos="3" side="tl" part="learned_verbtime"/>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
                  <lit-tag v="pres"/>
                </equal> 
                <equal>
-                 <clip pos="3" side="tl" part="learned_verbtime"/>
+                 <clip pos="4" side="tl" part="learned_verbtime"/>
                  <lit-tag v="futII.pres"/>
                </equal>
           </or>
         </test>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_number"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+	        <clip pos="2" side="tl" part="whole"/>
+	      </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+     </when>
+    <otherwise>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <b pos="3"/>          
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+      </out>
+    </otherwise>
+    </choose>
+</action>
+</rule>
+
+<rule comment="RULE: vblex.tv + da + vblex.pres/futII = vblex.tv + vblex.inf. Planiram da potrošim -> Planiram potrošiti">
+  <pattern>
+    <pattern-item n="CAT__vbtrans_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vblexpres_"/>
+  </pattern>
+  <action>
        <out>
           <lu>
             <clip pos="1" side="tl" part="lemh"/>
@@ -1560,23 +2111,55 @@ If no format information is present it is removed. -->
           <with-param pos="2"/>
           <with-param pos="3"/>
         </call-macro>
-     </when>
-    <otherwise>
+</action>
+</rule>
+
+
+<rule comment="RULE: vblex.tv + da + se + vblex.pres/futII = vblex.tv + se + vblex.inf. Planiram da se naspavam -> Planiram se naspavati">
+  <pattern>
+    <pattern-item n="CAT__vbtrans_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__se_"/>    
+    <pattern-item n="CAT__vblexpres_"/>
+  </pattern>
+  <action>
        <out>
           <lu>
-            <clip pos="1" side="tl" part="whole"/>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="sl" part="learned_verbcat"/>
+            <clip pos="1" side="sl" part="learned_isclt"/>
+            <clip pos="1" side="sl" part="learned_verbaspect"/>
+            <clip pos="1" side="sl" part="learned_verbtype"/>
+            <clip pos="1" side="sl" part="learned_isrefvb"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="1" side="sl" part="learned_isadv"/>
+            <clip pos="1" side="sl" part="learned_issfx"/>
+            <clip pos="1" side="sl" part="learned_person"/>
+            <clip pos="1" side="sl" part="learned_gender"/>
+            <clip pos="1" side="sl" part="learned_number"/>
+            <clip pos="1" side="sl" part="learned_case"/>
+            <clip pos="1" side="sl" part="learned_definiteness"/>
+            <clip pos="1" side="tl" part="lemq"/>
           </lu>
           <b pos="1"/>
           <lu>
-            <clip pos="2" side="tl" part="whole"/>
+			  <clip pos="3" side="tl" part="whole"/>
           </lu>
-          <b pos="2"/>
+          <b pos="2"/>          
           <lu>
-            <clip pos="3" side="tl" part="whole"/>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
           </lu>
-      </out>
-    </otherwise>
-    </choose>
+      </out>      
+        <call-macro n="f_bcond">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
 </action>
 </rule>
 
@@ -1665,7 +2248,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<rule comment="RULE: vblex + da + se + vblex.pres = vblex + vblex.inf. Uspjela da se probije -> Uspjela se probiti">
+<rule comment="RULE: vblex + da + se + vblex.pres = vblex + vblex.inf. Uspela da se probije -> Uspjela se probiti">
   <pattern>
     <pattern-item n="CAT__vblex_"/>
     <pattern-item n="CAT__da_"/>
@@ -2113,6 +2696,42 @@ If no format information is present it is removed. -->
 
      </when>
      <otherwise>
+		 <choose>
+			<when>
+				<test>
+					<equal>
+						<clip pos="2" side="sl" part="tags"/>
+						<lit-tag v="vbser.clt.pres.p3.sg"/>
+					</equal>
+				</test>
+				<out>
+		          <lu>
+					<get-case-from pos="1">
+						<clip pos="2" side="tl" part="lemh"/>
+		            </get-case-from>
+		            <clip pos="2" side="sl" part="learned_verbcat"/>
+		            <clip pos="2" side="sl" part="learned_isclt"/>
+		            <clip pos="2" side="sl" part="learned_verbaspect"/>
+		            <clip pos="2" side="sl" part="learned_verbtype"/>
+		            <clip pos="2" side="sl" part="learned_isrefvb"/>
+		            <lit-tag v="pres"/>
+		            <clip pos="2" side="sl" part="learned_isadv"/>
+		            <clip pos="2" side="sl" part="learned_issfx"/>
+		            <clip pos="2" side="sl" part="learned_person"/>
+		            <clip pos="2" side="sl" part="learned_number"/>
+		            <clip pos="2" side="sl" part="learned_gender"/>
+		            <clip pos="2" side="sl" part="learned_case"/>
+		            <clip pos="2" side="sl" part="learned_definiteness"/>
+		            <clip pos="2" side="tl" part="lemq"/>
+		          </lu>
+		          <b pos="1"/>
+		          <lu>
+		            <lit v="li"/>
+		            <lit-tag v="part.itg"/>
+		          </lu>
+				</out>
+			</when>
+			<otherwise>
        <out>
           <lu>
 	   <get-case-from pos="1">
@@ -2138,8 +2757,66 @@ If no format information is present it is removed. -->
             <lit-tag v="part.itg"/>
           </lu>
       </out>
+	</otherwise>
+    </choose>
+
      </otherwise>
     </choose>
+</action>
+</rule>
+
+<rule comment="RULE (at the beginning of sentence): da + bi (vbser.aor) + vblex.lp = kako + bi (vbser.aor) + vblex.lp. Da bi izgledao -> Kako bi izgledao">
+  <pattern>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__vbseraor_"/>
+    <pattern-item n="CAT__vblexlp_"/>
+  </pattern>
+  <action>
+	  <choose>
+		<when>
+			<test>
+				<equal>
+					<var n="punct"/>
+					<lit v="true"/>
+				</equal>
+			</test>
+	       <out>
+	          <lu>
+				<get-case-from pos="1">  
+    	            <lit v="kako"/>
+	            </get-case-from>
+	            <lit-tag v="cnjsub"/>
+	          </lu>
+	          <b pos="1"/>
+	          <lu>
+	            <clip pos="2" side="tl" part="whole"/>
+	          </lu>
+	          <b pos="2"/>
+	          <lu>
+	            <clip pos="3" side="tl" part="whole"/>
+	          </lu>
+	        </out>
+		  <let>
+			<var n="punct"/>
+			<lit v="false"/>
+		  </let>
+		</when>
+		<otherwise>
+		    <out>
+			  <lu>
+				<clip pos="1" side="tl" part="whole"/>	
+			  </lu>
+	          <b pos="1"/>
+	          <lu>
+				<clip pos="2" side="tl" part="whole"/>	
+	          </lu>
+	          <b pos="2"/>
+	          <lu>
+	            <clip pos="3" side="tl" part="whole"/>
+	          </lu>
+	        </out>
+		</otherwise>
+  	  </choose>
 </action>
 </rule>
 
