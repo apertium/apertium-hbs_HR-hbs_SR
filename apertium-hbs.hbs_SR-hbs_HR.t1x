@@ -207,8 +207,7 @@
     <cat-item tags="sent"/>
     <cat-item tags="RESsent.sent"/>
   </def-cat>
-  <def-cat n="commasent">
-    <cat-item tags="sent"/>
+  <def-cat n="comma">
     <cat-item tags="cm"/>
   </def-cat>
   <def-cat n="any">
@@ -2775,10 +2774,16 @@ If no format information is present it is removed. -->
 	  <choose>
 		<when>
 			<test>
+                             <or>
+				<equal caseless="no">
+				  <clip pos="1" side="sl" part="lem"/>
+				  <lit v="Da"/>
+				</equal>
 				<equal>
 					<var n="punct"/>
 					<lit v="true"/>
 				</equal>
+                             </or>
 			</test>
 	       <out>
 	          <lu>
@@ -2910,6 +2915,11 @@ If no format information is present it is removed. -->
 <rule comment=" RULE 36 punctuation">
 <pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="gender"/><lit-tag v="m"/></let> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out></action><!--isolated word-->
 </rule>
+
+<rule comment=" RULE coma and sent">
+<pattern><pattern-item n="comma"/></pattern><action> <let><var n="punct"/> <lit v="true"/></let><out><lu><clip pos="1" side="tl" part="whole"/></lu></out></action><!--isolated word-->
+</rule>
+
 <rule comment=" RULE 37 any word">
 <pattern><pattern-item n="any"/></pattern><action>  <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> </action><!--isolated word-->
 </rule>
