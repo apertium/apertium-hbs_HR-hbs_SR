@@ -2764,7 +2764,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<rule comment="RULE (at the beginning of sentence): da + bi (vbser.aor) + vblex.lp = kako + bi (vbser.aor) + vblex.lp. Da bi izgledao -> Kako bi izgledao">
+<rule comment="RULE (at the beginning of sentence or after a comma): da + bi (vbser.aor) + vblex.lp = kako + bi (vbser.aor) + vblex.lp. Da bi izgledao -> Kako bi izgledao">
   <pattern>
     <pattern-item n="CAT__da_"/>
     <pattern-item n="CAT__vbseraor_"/>
