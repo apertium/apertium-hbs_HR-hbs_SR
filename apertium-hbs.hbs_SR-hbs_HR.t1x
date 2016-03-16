@@ -110,7 +110,7 @@
   </def-cat>
   <def-cat n="CAT__premprn_"> <!-- premodifying pronouns -->
     <cat-item tags="prn.dem.*"/>
-    <cat-item tags="prn.ref.*"/>
+    <cat-item tags="prn.ref.pos.*"/>
     <cat-item tags="prn.pos.*"/>
     <cat-item tags="prn.tot.*"/>
     <!-- <cat-item tags="prn.itg.*"/>
@@ -858,6 +858,85 @@ If no format information is present it is removed. -->
 	      <clip pos="3" side="tl" part="learned_definiteness"/>
 	      <clip pos="3" side="tl" part="lemq"/>
 	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="4" side="tl" part="lemh"/>
+	      <clip pos="4" side="tl" part="a_nom"/>
+	      <clip pos="4" side="tl" part="learned_gender"/>
+	      <clip pos="4" side="tl" part="learned_number"/>
+	      <clip pos="4" side="tl" part="learned_case"/>
+	      <clip pos="4" side="tl" part="lemq"/>
+	    </lu>
+	</out>
+      </action>
+ </rule>
+
+ <rule comment="adj + posadj + nom agreement, crveni vojnikov paradajz; veliki Mislavov računar -> crvena vojnikova rajčica, veliko Mislavovo računalo">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__alln_"/>		  
+	<pattern-item n="CAT__posadj_"/>
+	<pattern-item n="CAT__n_"/>
+      </pattern>
+      <action>
+       <call-macro n="f_set_definiteness">
+         <with-param pos="1"/>
+	   </call-macro>
+       <call-macro n="f_agreement">
+		<with-param pos="1"/>
+		<with-param pos="4"/>
+       </call-macro> 
+       
+		<choose>
+	      <when>
+	        <test>
+				<or>
+					<equal>
+						<clip pos="4" side="tl" part="learned_gender"/>
+						<lit-tag v="nt"/>
+	               </equal>
+	               <equal>
+						<clip pos="4" side="tl" part="learned_gender"/>
+						<lit-tag v="f"/>
+	               </equal>
+				</or>       
+	        </test>
+	               <let>
+					 <clip pos="3" side="tl" part="learned_definiteness"/>
+	                 <lit-tag v="def"/>
+	               </let>
+
+	      </when>
+	     </choose>
+	<out>
+		<lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+			<b pos="1"/>
+		<mlu>
+		  <lu>
+			  <clip pos="2" side="tl" part="lemh"/>
+		      <clip pos="2" side="tl" part="a_nom"/>
+		      <clip pos="2" side="tl" part="learned_gender"/>
+	      </lu> 
+	      <lu>  
+		      <clip pos="3" side="tl" part="lemh"/>
+		      <clip pos="3" side="tl" part="a_adjpp"/>
+		      <clip pos="3" side="tl" part="learned_adjtype"/>
+		      <clip pos="4" side="tl" part="learned_gender"/>
+		      <clip pos="4" side="tl" part="learned_number"/>
+		      <clip pos="4" side="tl" part="learned_case"/>
+		      <clip pos="3" side="tl" part="learned_definiteness"/>
+		      <clip pos="3" side="tl" part="lemq"/>
+	      </lu>
+        </mlu>    
             <b pos="2"/>
 	    <lu>
 	      <clip pos="4" side="tl" part="lemh"/>
@@ -5764,6 +5843,364 @@ If no format information is present it is removed. -->
 	</out>
       </action>
     </rule>
+
+<!-- This is to deal with mistagged proper nouns (patterns like: opustošeni Putin, ovaj ženin...) --> 
+
+ <rule comment="adj nom agreement, crveni paradajz -> crvena rajčica,  uzgojeni paradajz -> uzgojena rajčica">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/>
+	    </lu>
+            <b pos="1"/>
+        <mlu>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="3" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+
+    <rule comment="adj adj nom, veliki crveni paradajz -> velika crvena rajčica">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="lemh"/>
+	      <clip pos="2" side="tl" part="a_adjpp"/>
+	      <clip pos="2" side="tl" part="learned_adjtype"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
+	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+        <mlu>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="4" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+
+    <rule comment="adj adv adj nom, veliki danas crveni paradajz -> velika danas crvena rajčica">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adv_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+    </pattern>
+      <action>       
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	        <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_adjpp"/>
+	      <clip pos="3" side="tl" part="learned_adjtype"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	        <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>  
+            <b pos="3"/>
+        <mlu>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="5" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+
+
+    <rule comment="adj adj adj nom.  veliki lepi crveni paradajz -> velika lijepa crvena rajčica">
+      <pattern>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>  
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_adjpp"/>
+	      <clip pos="1" side="tl" part="learned_adjtype"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+                <clip pos="1" side="tl" part="learned_definiteness"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="lemh"/>
+	      <clip pos="2" side="tl" part="a_adjpp"/>
+	      <clip pos="2" side="tl" part="learned_adjtype"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
+	        <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_adjpp"/>
+	      <clip pos="3" side="tl" part="learned_adjtype"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	        <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="3"/>
+        <mlu>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="5" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+
+ <rule comment="prn + nom agreement, moj računar -> moje računalo">
+      <pattern>
+	<pattern-item n="CAT__premprn_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+   	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+        <mlu>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="3" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+     	</out>
+      </action>
+    </rule>
+    
+
+
+    <rule comment="prn + adj + nom agreement, naš brzi računar -> naše brzo računalo">
+      <pattern>
+	<pattern-item n="CAT__premprn_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="lemh"/>
+	      <clip pos="2" side="tl" part="a_adjpp"/>
+	      <clip pos="2" side="tl" part="learned_adjtype"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
+	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+        <mlu>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="4" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+
+    
+<rule comment="prn + adv + adj + nom agreement, naš jako brzi računar -> naše jako brzo računalo">
+	<pattern>
+		<pattern-item n="CAT__premprn_"/>
+		<pattern-item n="CAT__adv_"/>
+		<pattern-item n="CAT__adjpp_"/>
+		<pattern-item n="CAT__n_"/>
+		<pattern-item n="CAT__posadj_"/>
+	</pattern>
+	<action>
+		<out>
+			<lu>
+				<clip pos="1" side="tl" part="lemh"/>
+				<lit-tag n="prn"/>
+				<clip pos="1" side="tl" part="learned_premprntype"/>
+				<clip pos="1" side="tl" part="learned_person"/>
+				<clip pos="1" side="tl" part="learned_gender"/>
+				<clip pos="1" side="tl" part="learned_number"/>
+				<clip pos="1" side="tl" part="learned_case"/>
+				<clip pos="1" side="tl" part="lemq"/>
+			</lu>
+			<b pos="1"/>
+			<lu>
+				<clip pos="2" side="tl" part="whole"/>
+			</lu>
+            <b pos="2"/>
+			<lu>
+				<clip pos="3" side="tl" part="lemh"/>
+				<clip pos="3" side="tl" part="a_adjpp"/>
+				<clip pos="3" side="tl" part="learned_adjtype"/>
+				<clip pos="3" side="tl" part="learned_gender"/>
+				<clip pos="3" side="tl" part="learned_number"/>
+				<clip pos="3" side="tl" part="learned_case"/>
+				<clip pos="3" side="tl" part="learned_definiteness"/>
+				<clip pos="3" side="tl" part="lemq"/>
+			</lu>
+			<b pos="3"/>
+        <mlu>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="5" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+		</out>
+	</action>
+</rule>
+
+
+
+<rule comment="prn + adj + adj + nom agreement, naš veliki brzi računar -> naše veliko brzo računalo">
+      <pattern>
+	<pattern-item n="CAT__premprn_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__adjpp_"/>
+	<pattern-item n="CAT__n_"/>
+	<pattern-item n="CAT__posadj_"/>
+      </pattern>
+      <action>      
+	<out>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag n="prn"/>
+	      <clip pos="1" side="tl" part="learned_premprntype"/>
+	      <clip pos="1" side="tl" part="learned_person"/>
+	      <clip pos="1" side="tl" part="learned_gender"/>
+	      <clip pos="1" side="tl" part="learned_number"/>
+	      <clip pos="1" side="tl" part="learned_case"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="lemh"/>
+	      <clip pos="2" side="tl" part="a_adjpp"/>
+	      <clip pos="2" side="tl" part="learned_adjtype"/>
+	      <clip pos="2" side="tl" part="learned_gender"/>
+	      <clip pos="2" side="tl" part="learned_number"/>
+	      <clip pos="2" side="tl" part="learned_case"/>
+	      <clip pos="2" side="tl" part="learned_definiteness"/>
+	      <clip pos="2" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="2"/>
+	    <lu>
+	      <clip pos="3" side="tl" part="lemh"/>
+	      <clip pos="3" side="tl" part="a_adjpp"/>
+	      <clip pos="3" side="tl" part="learned_adjtype"/>
+	      <clip pos="3" side="tl" part="learned_gender"/>
+	      <clip pos="3" side="tl" part="learned_number"/>
+	      <clip pos="3" side="tl" part="learned_case"/>
+	      <clip pos="3" side="tl" part="learned_definiteness"/>
+	      <clip pos="3" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="3"/>
+        <mlu>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+          <lu>
+             <clip pos="5" side="tl" part="whole"/>
+          </lu>
+         </mlu>
+	</out>
+      </action>
+    </rule>
+    
+
+<!-- end this weird section --> 
     
 
 <!-- end noun phrases --> 
