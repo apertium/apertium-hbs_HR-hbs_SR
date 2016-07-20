@@ -6205,13 +6205,13 @@ If no format information is present it is removed. -->
 
 <!-- end noun phrases --> 
 
-
+<!-- Start verb related phrases -->
 
 <rule comment="RULE: treba/trebalo + da + vb.pres = trebati.infofromvb + vblex.inf. Treba da lupam -> Trebam lupati, trebalo da okonča -> Trebao okončati">
   <pattern>
     <pattern-item n="CAT__trebati_"/>
     <pattern-item n="CAT__da_"/>
-    <pattern-item n="CAT__vb_"/>
+    <pattern-item n="CAT__vblexmodpres_"/>
   </pattern>
   <action>
     <choose>
@@ -6265,6 +6265,7 @@ If no format information is present it is removed. -->
             <clip pos="3" side="sl" part="learned_verbtype"/>
             <clip pos="3" side="sl" part="learned_isrefvb"/>
             <lit-tag v="inf"/>
+            <clip pos="3" side="tl" part="lemq"/>
           </lu>
         </out>
      </otherwise>
@@ -6649,7 +6650,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<rule comment="RULE: vbmod + da + adv + vblex.pres = vbmod + adv + vblex.inf. Moram da jako lupam -> Moram jako lupati"> <!-- why doesn't this work what -->
+<rule comment="RULE: vbmod + da + adv + vblex.pres = vbmod + adv + vblex.inf. Moram da jako lupam -> Moram jako lupati">
   <pattern>
     <pattern-item n="CAT__vbmodals_"/>
     <pattern-item n="CAT__da_"/>
@@ -7075,7 +7076,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<rule comment="RULE: vblex.perf + da + se + vblex.pres = vblex.perf + vblex.inf. Uspjela je da se probije -> Uspjela se probiti">
+<rule comment="RULE: vblex.perf + vbser + da + se + vblex.pres = vblex.perf + vblex.inf. Uspjela je da se probije -> Uspjela se probiti">
   <pattern>
     <pattern-item n="CAT__vblex_"/>
     <pattern-item n="CAT__vbser_"/>
@@ -7397,7 +7398,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
-<rule comment="RULE: da li + vbser = vb + li. da li sam/ću/bi -> jesam/hoću/bi li">
+<rule comment="RULE: da li + vbclt = vb + li. da li sam/ću/bi -> jesam/hoću/bi li">
   <pattern>
     <pattern-item n="CAT__da_li_"/>
     <pattern-item n="CAT__vbclt_"/>
@@ -7570,6 +7571,7 @@ If no format information is present it is removed. -->
 </action>
 </rule>
 
+<!-- end verb related phrases -->
 
 <rule comment="RULE: ne/ni + vbhtjetibiti = nevb -> neće -> neće, ni sam -> nisam check">
   <pattern>
