@@ -977,7 +977,7 @@
 <e><p><l>tok<s n="n"/></l><r>fluks<s n="n"/></r></p></e>
 <e><p><l>topljiv<s n="adj"/></l><r>rastvorljiv<s n="adj"/></r></p></e>
 <e><p><l>topljivost<s n="n"/></l><r>rastvorljivost<s n="n"/></r></p></e>
-<e><p><l>točka<s n="n"/><s n="f"/></l><r>punkt<s n="n"/><s n="mi"/></r></p></e>
+<e r="LR"><p><l>točka<s n="n"/><s n="f"/></l><r>punkt<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>točkast<s n="adj"/></l><r>tačkast<s n="adj"/></r></p></e>
 <e><p><l>transformirati<s n="vblex"/></l><r>transformisati<s n="vblex"/></r></p></e>
 <e><p><l>transponirati<s n="vblex"/></l><r>transponovati<s n="vblex"/></r></p></e>
@@ -1624,7 +1624,7 @@
 <!-- <e r="LR"><p><l>nedjelja<s n="n"/></l><r>nedelja<s n="n"/></r></p></e> -->
 <e><p><l>živac<s n="n"/></l><r>nerv<s n="n"/></r></p></e>
 <e><p><l>studeni<s n="n"/></l><r>novembar<s n="n"/></r></p></e>
-<e><p><l>broj<s n="n"/><s n="mi"/></l><r>numera<s n="n"/><s n="f"/></r></p></e>
+<!-- <e><p><l>broj<s n="n"/><s n="mi"/></l><r>numera<s n="n"/><s n="f"/></r></p></e> -->
 <e><p><l>opseg<s n="n"/></l><r>obim<s n="n"/></r></p></e>
 <e><p><l>objekt<s n="n"/></l><r>objekat<s n="n"/></r></p></e>
 <e><p><l>neboder<s n="n"/></l><r>oblakoder<s n="n"/></r></p></e>
@@ -1798,7 +1798,7 @@
 <e><p><l>vlak<s n="n"/></l><r>voz<s n="n"/></r></p></e>
 <!-- <e><p><l>zaljev<s n="n"/></l><r>zaliv<s n="n"/></r></p></e> -->
 <!-- <e><p><l>zapovjed<s n="n"/></l><r>zapoved<s n="n"/></r></p></e> actually spelled "zapovijed" -->
-<e><p><l>ulje<s n="n"/><s n="nt"/></l><r>zejtin<s n="n"/><s n="mi"/></r></p></e>
+<e r="LR"><p><l>ulje<s n="n"/><s n="nt"/></l><r>zejtin<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>financije<s n="n"/></l><r>finansije<s n="n"/></r></p></e>
 <e><p><l>ovlaštenje<s n="n"/></l><r>ovlašćenje<s n="n"/></r></p></e>
 <e><p><l>korištenje<s n="n"/></l><r>korišćenje<s n="n"/></r></p></e>
