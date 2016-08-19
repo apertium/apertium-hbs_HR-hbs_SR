@@ -197,6 +197,8 @@
 <e><p><l>znanstven<s n="adj"/></l><r>naučnjački<s n="adj"/></r></p></e>
 <e><p><l>područje<s n="n"/><s n="nt"/></l><r>oblast<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>demistificirati<s n="vblex"/></l><r>demistifikovati<s n="vblex"/></r></p></e>
+<e><p><l>mistificirati<s n="vblex"/></l><r>mistifikovati<s n="vblex"/></r></p></e>
+<e><p><l>dezinficirati<s n="vblex"/></l><r>dezinfikovati<s n="vblex"/></r></p></e>
 <e><p><l>naočale<s n="n"/></l><r>naočare<s n="n"/></r></p></e>
 <e><p><l>karizma<s n="n"/></l><r>harizma<s n="n"/></r></p></e>
 <e><p><l>okvir<s n="n"/><s n="mi"/></l><r>rama<s n="n"/><s n="f"/></r></p></e>
@@ -385,6 +387,7 @@
 <e><p><l>minimizirati<s n="vblex"/></l><r>minimizovati<s n="vblex"/></r></p></e>
 <e><p><l>marginalizirati<s n="vblex"/></l><r>marginalizovati<s n="vblex"/></r></p></e>
 <e><p><l>materijalizirati<s n="vblex"/></l><r>materijalizovati<s n="vblex"/></r></p></e>
+<e><p><l>dematerijalizirati<s n="vblex"/></l><r>dematerijalizovati<s n="vblex"/></r></p></e>
 <e><p><l>inzistirati<s n="vblex"/></l><r>insistirati<s n="vblex"/></r></p></e>
 <e><p><l>iskorištavati<s n="vblex"/></l><r>iskorišćavati<s n="vblex"/></r></p></e>
 <e><p><l>intervjuirati<s n="vblex"/></l><r>intervjuisati<s n="vblex"/></r></p></e>
@@ -407,6 +410,7 @@
 <e><p><l>karcinom<s n="n"/></l><r>kancer<s n="n"/></r></p></e>
 <e><p><l>kirurški<s n="adj"/></l><r>hirurški<s n="adj"/></r></p></e>
 <e><p><l>klasificirati<s n="vblex"/></l><r>klasifikovati<s n="vblex"/></r></p></e>
+<e><p><l>deklasificirati<s n="vblex"/></l><r>deklasifikovati<s n="vblex"/></r></p></e>
 <e><p><l>valorizirati<s n="vblex"/></l><r>valorizovati<s n="vblex"/></r></p></e>
 <e><p><l>kolegij<s n="n"/></l><r>kolegijum<s n="n"/></r></p></e>
 <e><p><l>komorni<s n="adj"/></l><r>kamerni<s n="adj"/></r></p></e>
@@ -604,9 +608,10 @@
 <e><p><l>ugljen<s n="n"/></l><r>ugalj<s n="n"/></r></p></e>
 <e><p><l>uhititi<s n="vblex"/></l><r>pohapsiti<s n="vblex"/></r></p></e>
 <e><p><l>uhićen<s n="adj"/></l><r>uhapšen<s n="adj"/></r></p></e>
-<e><p><l>uhićenje<s n="n"/></l><r>hapšenje<s n="n"/></r></p></e>
+<e><p><l>hapšenje<s n="n"/></l><r>apšenje<s n="n"/></r></p></e>
 <e><p><l>ujutro<s n="adv"/></l><r>ujutru<s n="adv"/></r></p></e>
-<e><p><l>umak<s n="n"/></l><r>sos<s n="n"/></r></p></e>
+<e r="RL"><p><l>umak<s n="n"/></l><r>sos<s n="n"/></r></p></e>
+<e><p><l>harlekin<s n="n"/></l><r>arlekin<s n="n"/></r></p></e>
 <e><p><l>upalni<s n="adj"/></l><r>inflamatoran<s n="adj"/></r></p></e>
 <e><p><l>uskrsnuće<s n="n"/></l><r>vaskrsenje<s n="n"/></r></p></e>
 <e><p><l>uspoređivati<s n="vblex"/></l><r>upoređivati<s n="vblex"/></r></p></e>
@@ -723,7 +728,6 @@
 <e><p><l>karakterizirati<s n="vblex"/></l><r>karakterisati<s n="vblex"/></r></p></e>
 <e><p><l>harmonizirati<s n="vblex"/></l><r>harmonizovati<s n="vblex"/></r></p></e>
 <e><p><l>homogenizirati<s n="vblex"/></l><r>homogenizovati<s n="vblex"/></r></p></e>
-<e><p><l>hospitalizovati<s n="vblex"/></l><r>hospitalizirati<s n="vblex"/></r></p></e>
 <e><p><l>idealizirati<s n="vblex"/></l><r>idealizovati<s n="vblex"/></r></p></e>
 <e><p><l>kasan<s n="adj"/></l><r>pozan<s n="adj"/></r></p></e>
 <e r="LR"><p><l>kasnije<s n="adv"/></l><r>docnije<s n="adv"/></r></p></e>
@@ -741,6 +745,8 @@
 <e><p><l>menadžerica<s n="n"/></l><r>menadžerka<s n="n"/></r></p></e>
 <e><p><l>obožavateljica<s n="n"/></l><r>obožavateljka<s n="n"/></r></p></e>
 <e><p><l>organizatorica<s n="n"/></l><r>organizatorka<s n="n"/></r></p></e>
+<e><p><l>predsjedateljica<s n="n"/></l><r>predsjedateljka<s n="n"/></r></p></e>
+<e><p><l>stanarica<s n="n"/></l><r>stanarka<s n="n"/></r></p></e>
 <e><p><l>mentorica<s n="n"/></l><r>mentorka<s n="n"/></r></p></e>
 <e><p><l>povjesničarka<s n="n"/></l><r>istoričarka<s n="n"/></r></p></e>
 <e><p><l>kršćanka<s n="n"/></l><r>hrišćanka<s n="n"/></r></p></e>
@@ -805,6 +811,7 @@
 <e><p><l>novačenje<s n="n"/></l><r>regrutovanje<s n="n"/></r></p></e>
 <e><p><l>obalni<s n="adj"/></l><r>obalski<s n="adj"/></r></p></e>
 <e><p><l>obavještavati<s n="vblex"/></l><r>saopštavati<s n="vblex"/></r></p></e>
+<e r="RL"><p><l>saopćavati<s n="vblex"/></l><r>saopštavati<s n="vblex"/></r></p></e>
 <e><p><l>obilježje<s n="n"/></l><r>obeležje<s n="n"/></r></p></e>
 <e><p><l>obiteljski<s n="adj"/></l><r>porodičan<s n="adj"/></r></p></e>
 <e><p><l>objašnjenje<s n="n"/></l><r>objašnjavanje<s n="n"/></r></p></e>
@@ -984,7 +991,7 @@
 <e><p><l>trbuh<s n="n"/></l><r>stomak<s n="n"/></r></p></e>
 <e><p><l>tvrdnja<s n="n"/><s n="f"/></l><r>tvrđenje<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>udaljenost<s n="n"/></l><r>razdaljina<s n="n"/></r></p></e>
-<e><p><l>uhićivati<s n="vblex"/></l><r>hapsiti<s n="vblex"/></r></p></e>
+<e><p><l>hapsiti<s n="vblex"/></l><r>apsiti<s n="vblex"/></r></p></e>
 <e><p><l>prepakirati<s n="vblex"/></l><r>prepakovati<s n="vblex"/></r></p></e>
 <e><p><l>pretendirati<s n="vblex"/></l><r>pretendovati<s n="vblex"/></r></p></e>
 <e><p><l>umor<s n="n"/></l><r>zamor<s n="n"/></r></p></e>
@@ -1020,6 +1027,7 @@
 <e><p><l>zainteresirati<s n="vblex"/></l><r>zainteresovati<s n="vblex"/></r></p></e>
 <e><p><l>zanemariv<s n="adj"/></l><r>zanemarljiv<s n="adj"/></r></p></e>
 <e><p><l>zaplijeniti<s n="vblex"/></l><r>konfiskovati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>konfiscirati<s n="vblex"/></l><r>konfiskovati<s n="vblex"/></r></p></e>
 <e><p><l>zapovijedati<s n="vblex"/></l><r>komandovati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>komandirati<s n="vblex"/></l><r>komandovati<s n="vblex"/></r></p></e>
 <e><p><l>zapovjedan<s n="adj"/></l><r>komandan<s n="adj"/></r></p></e>
@@ -1091,17 +1099,23 @@
 <e><p><l>pijanistica<s n="n"/></l><r>pijanistkinja<s n="n"/></r></p></e>
 <e><p><l>solistica<s n="n"/></l><r>solistkinja<s n="n"/></r></p></e>
 <e><p><l>stilistica<s n="n"/></l><r>stilistkinja<s n="n"/></r></p></e>
+<e><p><l>turistica<s n="n"/></l><r>turistkinja<s n="n"/></r></p></e>
+<e><p><l>šahistica<s n="n"/></l><r>šahistkinja<s n="n"/></r></p></e>
+<e r="RL"><p><l>terapeutica<s n="n"/></l><r>terapeutkinja<s n="n"/></r></p></e>
 <e><p><l>cestovan<s n="adj"/></l><r>drumski<s n="adj"/></r></p></e>
 <e><p><l>cluster<s n="n"/></l><r>klaster<s n="n"/></r></p></e>
 <e><p><l>crkvenoslavenski<s n="adj"/></l><r>crkvenoslovenski<s n="adj"/></r></p></e>
 <e><p><l>davatelj<s n="n"/></l><r>davalac<s n="n"/></r></p></e>
 <e><p><l>deformirati<s n="vblex"/></l><r>deformisati<s n="vblex"/></r></p></e>
 <e><p><l>demokrat<s n="n"/></l><r>demokrata<s n="n"/></r></p></e>
+<e><p><l>kaotičnost<s n="n"/></l><r>haotičnost<s n="n"/></r></p></e>
 <e><p><l>deportirati<s n="vblex"/></l><r>deportovati<s n="vblex"/></r></p></e>
 <e><p><l>dešifrirati<s n="vblex"/></l><r>dešifrovati<s n="vblex"/></r></p></e>
 <e><p><l>šifrirati<s n="vblex"/></l><r>šifrovati<s n="vblex"/></r></p></e>
+<e><p><l>docirati<s n="vblex"/></l><r>dokovati<s n="vblex"/></r></p></e>
 <e><p><l>dijagnosticirati<s n="vblex"/></l><r>dijagnostikovati<s n="vblex"/></r></p></e>
 <e><p><l>divovski<s n="adj"/></l><r>džinovski<s n="adj"/></r></p></e>
+<e><p><l>discipliniran<s n="adj"/></l><r>disciplinovan<s n="adj"/></r></p></e>
 <e><p><l>domena<s n="n"/><s n="f"/></l><r>domen<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>dopisivanje<s n="n"/><s n="n"/></l><r>prepiska<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>dosje<s n="n"/></l><r>dosije<s n="n"/></r></p></e>
@@ -1132,6 +1146,7 @@
 <e><p><l>ishoditi<s n="vblex"/></l><r>izdejstvovati<s n="vblex"/></r></p></e>
 <e><p><l>iskra<s n="n"/></l><r>varnica<s n="n"/></r></p></e>
 <e><p><l>istočnoeuropski<s n="adj"/></l><r>istočnoevropski<s n="adj"/></r></p></e>
+<e><p><l>južnoeuropski<s n="adj"/></l><r>južnoevropski<s n="adj"/></r></p></e>
 <e><p><l>hrvački<s n="adj"/></l><r>rvački<s n="adj"/></r></p></e>
 <e><p><l>izražavanje<s n="n"/></l><r>ispoljavanje<s n="n"/></r></p></e>
 <e><p><l>izvanbračni<s n="adj"/></l><r>vanbračni<s n="adj"/></r></p></e>
@@ -1204,6 +1219,7 @@
 <e><p><l>općeprihvaćen<s n="adj"/></l><r>opšteprihvaćen<s n="adj"/></r></p></e>
 <e><p><l>orijentirati<s n="vblex"/></l><r>orijentisati<s n="vblex"/></r></p></e>
 <e><p><l>paralizirati<s n="vblex"/></l><r>paralizovati<s n="vblex"/></r></p></e>
+<e><p><l>regenerirati<s n="vblex"/></l><r>regenerisati<s n="vblex"/></r></p></e>
 <e><p><l>osjetilan<s n="adj"/></l><r>čulan<s n="adj"/></r></p></e>
 <e><p><l>osloboditelj<s n="n"/></l><r>oslobodilac<s n="n"/></r></p></e>
 <e><p><l>otapalo<s n="n"/><s n="n"/></l><r>rastvarač<s n="n"/><s n="mi"/></r></p></e>
@@ -1211,7 +1227,12 @@
 <e><p><l>otopina<s n="n"/><s n="f"/></l><r>rastvor<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>otopiti<s n="vblex"/></l><r>rastvoriti<s n="vblex"/></r></p></e>
 <e><p><l>pakirati<s n="vblex"/></l><r>pakovati<s n="vblex"/></r></p></e>
+<e><p><l>spakirati<s n="vblex"/></l><r>spakovati<s n="vblex"/></r></p></e>
+<e><p><l>specificirati<s n="vblex"/></l><r>specifikovati<s n="vblex"/></r></p></e>
+<e><p><l>personificirati<s n="vblex"/></l><r>personifikovati<s n="vblex"/></r></p></e>
+<e><p><l>prefabricirati<s n="vblex"/></l><r>prefabrikovati<s n="vblex"/></r></p></e>
 <e><p><l>pariški<s n="adj"/></l><r>pariski<s n="adj"/></r></p></e>
+<e><p><l>orijentiran<s n="adj"/></l><r>orijentisan<s n="adj"/></r></p></e>
 <e><p><l>pisač<s n="n"/></l><r>štampač<s n="n"/></r></p></e>
 <e><p><l>pobočnik<s n="n"/></l><r>ađutant<s n="n"/></r></p></e>
 <e><p><l>poduzimanje<s n="n"/></l><r>preduzimanje<s n="n"/></r></p></e>
@@ -1241,6 +1262,7 @@
 <e><p><l>ravnina<s n="n"/></l><r>ravan<s n="n"/></r></p></e>
 <e><p><l>redati<s n="vblex"/></l><r>ređati<s n="vblex"/></r></p></e>
 <e><p><l>reducirati<s n="vblex"/></l><r>redukovati<s n="vblex"/></r></p></e>
+<e><p><l>educirati<s n="vblex"/></l><r>edukovati<s n="vblex"/></r></p></e>
 <e><p><l>regrutirati<s n="vblex"/></l><r>regrutovati<s n="vblex"/></r></p></e>
 <e><p><l>reorganizirati<s n="vblex"/></l><r>reorganizovati<s n="vblex"/></r></p></e>
 <e><p><l>opstruirati<s n="vblex"/></l><r>opstruisati<s n="vblex"/></r></p></e>
@@ -1263,6 +1285,7 @@
 <e><p><l>slušatelj<s n="n"/></l><r>slušalac<s n="n"/></r></p></e>
 <e><p><l>spasiti<s n="vblex"/></l><r>spasti<s n="vblex"/></r></p></e>
 <e><p><l>specijaliziran<s n="adj"/></l><r>specijalizovan<s n="adj"/></r></p></e>
+<e><p><l>standardiziran<s n="adj"/></l><r>standardizovan<s n="adj"/></r></p></e>
 <e><p><l>spomen<s n="n"/></l><r>pomen<s n="n"/></r></p></e>
 <e><p><l>spominjanje<s n="n"/></l><r>pominjanje<s n="n"/></r></p></e>
 <e><p><l>stimulirati<s n="vblex"/></l><r>stimulisati<s n="vblex"/></r></p></e>
@@ -1319,6 +1342,7 @@
 <e><p><l>znanstvenoistraživački<s n="adj"/></l><r>naučnoistraživački<s n="adj"/></r></p></e>
 <e><p><l>časnik<s n="n"/></l><r>oficir<s n="n"/></r></p></e>
 <e><p><l>časnički<s n="adj"/></l><r>oficirski<s n="adj"/></r></p></e>
+<e><p><l>akreditiran<s n="adj"/></l><r>akreditovan<s n="adj"/></r></p></e>
 <e><p><l>šifriranje<s n="n"/></l><r>šifrovanje<s n="n"/></r></p></e>
 <e><p><l>šijitski<s n="adj"/></l><r>šiitski<s n="adj"/></r></p></e>
 <e><p><l>žandar<s n="n"/></l><r>žandarm<s n="n"/></r></p></e>
@@ -1329,6 +1353,19 @@
 <!-- end of result of student coursework at unizg -->
 
 <e><p><l>pornoglumica<s n="n"/></l><r>pornićarka<s n="n"/></r></p></e>
+<e><p><l>aktivistica<s n="n"/></l><r>aktivistkinja<s n="n"/></r></p></e>
+<e><p><l>ateistica<s n="n"/></l><r>ateistkinja<s n="n"/></r></p></e>
+<e><p><l>finalistica<s n="n"/></l><r>finalistkinja<s n="n"/></r></p></e>
+<e><p><l>ekonomistica<s n="n"/></l><r>ekonomistkinja<s n="n"/></r></p></e>
+<e><p><l>kandidatica<s n="n"/></l><r>kandidatkinja<s n="n"/></r></p></e>
+<e><p><l>nutricionistica<s n="n"/></l><r>nutricionistkinja<s n="n"/></r></p></e>
+<e><p><l>protagonistica<s n="n"/></l><r>protagonistkinja<s n="n"/></r></p></e>
+<e><p><l>producentica<s n="n"/></l><r>producentkinja<s n="n"/></r></p></e>
+<e><p><l>protestantica<s n="n"/></l><r>protestantkinja<s n="n"/></r></p></e>
+<e><p><l>regentica<s n="n"/></l><r>regentkinja<s n="n"/></r></p></e>
+<e><p><l>sindikalistica<s n="n"/></l><r>sindikalistkinja<s n="n"/></r></p></e>
+<e><p><l>socijalistica<s n="n"/></l><r>socijalistkinja<s n="n"/></r></p></e>
+<e><p><l>specijalistica<s n="n"/></l><r>specijalistkinja<s n="n"/></r></p></e>
 <e><p><l>napad<s n="n"/><s n="mi"/></l><r>ofanziva<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>inspiriran<s n="adj"/></l><r>inspirisan<s n="adj"/></r></p></e>
 <e><p><l>promatrač<s n="n"/></l><r>posmatrač<s n="n"/></r></p></e>
@@ -1392,6 +1429,7 @@
 <e><p><l>milijarda<s n="n"/><s n="f"/></l><r>bilion<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>biokemija<s n="n"/></l><r>biohemija<s n="n"/></r></p></e>
 <e><p><l>biokemijski<s n="adj"/></l><r>biohemijski<s n="adj"/></r></p></e>
+<e><p><l>kemoterapijski<s n="adj"/></l><r>hemoterapijski<s n="adj"/></r></p></e>
 <e><p><l>općeobrazovni<s n="adj"/></l><r>opšteobrazovni<s n="adj"/></r></p></e>
 <e><p><l>kino<s n="n"/><s n="nt"/></l><r>bioskop<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>kinematografski<s n="adj"/></l><r>bioskopski<s n="adj"/></r></p></e>
@@ -1411,6 +1449,7 @@
 <e><p><l>saopćenje<s n="n"/></l><r>saopštenje<s n="n"/></r></p></e>
 <e><p><l>općenje<s n="n"/></l><r>opštenje<s n="n"/></r></p></e>
 <e><p><l>definirati<s n="vblex"/></l><r>definisati<s n="vblex"/></r></p></e>
+<e><p><l>dezinformirati<s n="vblex"/></l><r>dezinformisati<s n="vblex"/></r></p></e>
 <e><p><l>promovirati<s n="vblex"/></l><r>promovisati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>obojiti<s n="vblex"/></l><r>ofarbati<s n="vblex"/></r></p></e>
 <e><p><l>izolirati<s n="vblex"/></l><r>izolovati<s n="vblex"/></r></p></e>
@@ -1500,11 +1539,16 @@
 <e><p><l>gesta<s n="n"/><s n="f"/></l><r>gest<s n="n"/><s n="mi"/></r></p></e>
 
 <e><p><l>gruda<s n="n"/></l><r>grudva<s n="n"/></r></p></e>
+<e><p><l>ambasadorica<s n="n"/></l><r>ambasadorka<s n="n"/></r></p></e>
+<e><p><l>kompozitorica<s n="n"/></l><r>kompozitorka<s n="n"/></r></p></e>
+<e><p><l>bankarica<s n="n"/></l><r>bankarka<s n="n"/></r></p></e>
+<e><p><l>liderica<s n="n"/></l><r>liderka<s n="n"/></r></p></e>
 <e><p><l>željezni<s n="n"/></l><r>gvozdeni<s n="n"/></r></p></e>
 <e><p><l>papir<s n="n"/><s n="mi"/></l><r>hartija<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>zatvor<s n="n"/></l><r>haps<s n="n"/></r></p></e>
 <e><p><l>kila<s n="n"/></l><r>hernija<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
+<e><p><l>hiljada<s n="n"/></l><r>iljada<s n="n"/></r></p></e>
 <e><p><l>tisućica<s n="n"/></l><r>hiljadarka<s n="n"/></r></p></e>
 <e><p><l>kirurg<s n="n"/></l><r>hirurg<s n="n"/></r></p></e>
 <e><p><l>klor<s n="n"/></l><r>hlor<s n="n"/></r></p></e>
@@ -1540,6 +1584,7 @@
 <e r="LR"><p><l>insuficijencija<s n="n"/></l><r>insuficijencija<s n="n"/></r></p></e>
 <e><p><l>identifikacija<s n="n"/><s n="f"/></l><r>identifikovanje<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>identificirati<s n="vblex"/></l><r>identifikovati<s n="vblex"/></r></p></e>
+<e><p><l>globalizirati<s n="vblex"/></l><r>globalizovati<s n="vblex"/></r></p></e>
 <e><p><l>zanimati<s n="vblex"/></l><r>interesovati<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>dogoditi<s n="vblex"/></l><r>desiti<s n="vblex"/></r></p></e>
 <e r="RL"><p><l>događati<s n="vblex"/></l><r>dešavati<s n="vblex"/></r></p></e>
@@ -1614,6 +1659,7 @@
 <e><p><l>metoda<s n="n"/><s n="f"/></l><r>metod<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>milijun<s n="n"/></l><r>milion<s n="n"/></r></p></e>
 <e><p><l>milijunaš<s n="n"/></l><r>milioner<s n="n"/></r></p></e>
+<e><p><l>glorificiranje<s n="n"/></l><r>glorifikovanje<s n="n"/></r></p></e>
 <e><p><l>ministrica<s n="n"/></l><r>ministerka<s n="n"/></r></p></e>
 <e r="RL"><p><l>ministrica<s n="n"/></l><r>ministarka<s n="n"/></r></p></e>
 <e><p><l>redovnik<s n="n"/></l><r>monah<s n="n"/></r></p></e>
@@ -1646,7 +1692,11 @@
 <e><p><l>napuhan<s n="adj"/></l><r>naduven<s n="adj"/></r></p></e>
 <e><p><l>neugodan<s n="adj"/></l><r>neprijatan<s n="adj"/></r></p></e>
 <e><p><l>nominiran<s n="adj"/></l><r>nominovan<s n="adj"/></r></p></e>
+<e><p><l>globaliziran<s n="adj"/></l><r>globalizovan<s n="adj"/></r></p></e>
+<e><p><l>kultiviran<s n="adj"/></l><r>kultivisan<s n="adj"/></r></p></e>
+<e><p><l>motiviran<s n="adj"/></l><r>motivisan<s n="adj"/></r></p></e>
 <e><p><l>opsežan<s n="adj"/></l><r>obiman<s n="adj"/></r></p></e>
+<e><p><l>glorificirati<s n="vblex"/></l><r>glorifikovati<s n="vblex"/></r></p></e>
 <e><p><l>nadzirati<s n="vblex"/></l><r>kontrolisati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>nadgledati<s n="vblex"/></l><r>kontrolisati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="imperf"/></l><r>kontrolisati<s n="vblex"/><s n="imperf"/></r></p></e>
@@ -1657,10 +1707,14 @@
 <e><p><l>kvalificirati<s n="vblex"/></l><r>kvalifikovati<s n="vblex"/></r></p></e>
 <e><p><l>letjeti<s n="vblex"/></l><r>leteti<s n="vblex"/></r></p></e>
 <e><p><l>nominirati<s n="vblex"/></l><r>nominovati<s n="vblex"/></r></p></e>
+<e><p><l>indicirati<s n="vblex"/></l><r>indikovati<s n="vblex"/></r></p></e>
+<e><p><l>inducirati<s n="vblex"/></l><r>indukovati<s n="vblex"/></r></p></e>
+<e><p><l>hospitalizirati<s n="vblex"/></l><r>hospitalizovati<s n="vblex"/></r></p></e>
 
 <e><p><l>obrana<s n="n"/></l><r>odbrana<s n="n"/></r></p></e>
 <!-- <e><p><l>odljev<s n="n"/></l><r>odliv<s n="n"/></r></p></e> -->
 <e><p><l>listopad<s n="n"/></l><r>oktobar<s n="n"/></r></p></e>
+<e><p><l>improviziranje<s n="n"/></l><r>improvizovanje<s n="n"/></r></p></e>
 <e><p><l>pokus<s n="n"/></l><r>opit<s n="n"/></r></p></e>
 <e><p><l>oklada<s n="n"/></l><r>opklada<s n="n"/></r></p></e>
 <e><p><l>oporbenjak<s n="n"/></l><r>opozicionar<s n="n"/></r></p></e>
@@ -1803,6 +1857,8 @@
 <e><p><l>ovlaštenje<s n="n"/></l><r>ovlašćenje<s n="n"/></r></p></e>
 <e><p><l>korištenje<s n="n"/></l><r>korišćenje<s n="n"/></r></p></e>
 <e><p><l>talent<s n="n"/></l><r>talenat<s n="n"/></r></p></e>
+<e><p><l>škare<s n="n"/></l><r>makaze<s n="n"/></r></p></e>
+<e><p><l>insstitucionaliziranje<s n="n"/></l><r>institucionalizovanje<s n="n"/></r></p></e>
 
 <e><p><l>listopadski<s n="adj"/></l><r>oktobarski<s n="adj"/></r></p></e>
 <e><p><l>bizantski<s n="adj"/></l><r>vizantijski<s n="adj"/></r></p></e>
@@ -1831,6 +1887,7 @@
 <e><p><l>postotan<s n="adj"/></l><r>procentualan<s n="adj"/></r></p></e>
 <e><p><l>proeuropski<s n="adj"/></l><r>proevropski<s n="adj"/></r></p></e>
 <e><p><l>srednjoeuropski<s n="adj"/></l><r>srednjoevropski<s n="adj"/></r></p></e>
+<e><p><l>centralnoeuropski<s n="adj"/></l><r>centralnoevropski<s n="adj"/></r></p></e>
 <e r="LR"><p><l>prvosvibanjski<s n="adj"/></l><r>prvomajski<s n="adj"/></r></p></e>
 <e><p><l>prvostupanjski<s n="adj"/></l><r>prvostepen<s n="adj"/></r></p></e>
 <e><p><l>registriran<s n="adj"/></l><r>registrovan<s n="adj"/></r></p></e>
@@ -1864,6 +1921,7 @@
 <e><p><l>regulirati<s n="vblex"/></l><r>regulisati<s n="vblex"/></r></p></e>
 <e><p><l>reformirati<s n="vblex"/></l><r>reformisati<s n="vblex"/></r></p></e>
 <e><p><l>potvrditi<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
+<e r="LR"><p><l>ratificirati<s n="vblex"/></l><r>ratifikovati<s n="vblex"/></r></p></e>
 <e><p><l>ostvariti<s n="vblex"/><s n="perf"/></l><r>realizovati<s n="vblex"/><s n="perf"/></r></p></e>
 <e><p><l>ostvarivati<s n="vblex"/><s n="imperf"/></l><r>realizovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>prakticirati<s n="vblex"/></l><r>praktikovati<s n="vblex"/></r></p></e>
@@ -1878,12 +1936,14 @@
 <e><p><l>problematizirati<s n="vblex"/></l><r>problematizovati<s n="vblex"/></r></p></e>
 <e><p><l>štrajkati<s n="vblex"/></l><r>štrajkovati<s n="vblex"/></r></p></e>
 <e><p><l>prikazati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
+<e><p><l>producirati<s n="vblex"/></l><r>produkovati<s n="vblex"/></r></p></e>
 <e><p><l>privilegirati<s n="vblex"/></l><r>privilegovati<s n="vblex"/></r></p></e>
 <e><p><l>priopćiti<s n="vblex"/></l><r>saopštiti<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>prezentirati<s n="vblex"/></l><r>prezentovati<s n="vblex"/></r></p></e>
 
 <e><p><l>španjolski<s n="adj"/></l><r>španski<s n="adj"/></r></p></e>
 <e><p><l>rumunjski<s n="adj"/></l><r>rumunski<s n="adj"/></r></p></e>
+<e><p><l>argumentiran<s n="adj"/></l><r>argumentovan<s n="adj"/></r></p></e>
 <e><p><l>europski<s n="adj"/></l><r>evropski<s n="adj"/></r></p></e>
 <e><p><l>kršćanin<s n="n"/></l><r>hrišćanin<s n="n"/></r></p></e>
 <e><p><l>poduzeće<s n="n"/></l><r>preduzeće<s n="n"/></r></p></e>
@@ -1903,15 +1963,20 @@
 <e><p><l>suradnja<s n="n"/></l><r>saradnja<s n="n"/></r></p></e>
 <e><p><l>kronika<s n="n"/></l><r>hronika<s n="n"/></r></p></e>
 <e><p><l>profesorica<s n="n"/></l><r>profesorka<s n="n"/></r></p></e>
+<e><p><l>kondenziranje<s n="n"/></l><r>kondenzovanje<s n="n"/></r></p></e>
 <e><p><l>sekretarica<s n="n"/></l><r>sekretarka<s n="n"/></r></p></e>
 <e><p><l>selektorica<s n="n"/></l><r>selektorka<s n="n"/></r></p></e>
 <e><p><l>slikarica<s n="n"/></l><r>slikarka<s n="n"/></r></p></e>
 <e><p><l>odvjetnik<s n="n"/></l><r>advokat<s n="n"/></r></p></e>
 <e><p><l>dokument<s n="n"/></l><r>dokumenat<s n="n"/></r></p></e>
 <e><p><l>protueuropski<s n="adj"/></l><r>antievropski<s n="adj"/></r></p></e>
+<e><p><l>civiliziran<s n="adj"/></l><r>civilizovan<s n="adj"/></r></p></e>
 <e><p><l>euharistijski<s n="adj"/></l><r>evharistijski<s n="adj"/></r></p></e>
 <e><p><l>bitka<s n="n"/><s n="f"/></l><r>boj<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>zračan<s n="adj"/></l><r>vazdušan<s n="adj"/></r></p></e>
+<e><p><l>centraliziran<s n="adj"/></l><r>centralizovan<s n="adj"/></r></p></e>
+<e><p><l>decentraliziran<s n="adj"/></l><r>decentralizovan<s n="adj"/></r></p></e>
+<e><p><l>emancipiran<s n="adj"/></l><r>emancipovan<s n="adj"/></r></p></e>
 <e><p><l>posto<s n="adv"/></l><r>odsto<s n="adv"/></r></p></e>
 <e><p><l>jučer<s n="adv"/></l><r>juče<s n="adv"/></r></p></e>
 <e><p><l>natrag<s n="adv"/></l><r>nazad<s n="adv"/></r></p></e>
@@ -1924,7 +1989,13 @@
 <e r="LR"><p><l>diskutirati<s n="vblex"/><s n="imperf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e r="LR"><p><l>diskutirati<s n="vblex"/><s n="perf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
+<e><p><l>iskomplicirati<s n="vblex"/></l><r>iskomplikovati<s n="vblex"/></r></p></e>
+<e><p><l>zakomplicirati<s n="vblex"/></l><r>zakomplikovati<s n="vblex"/></r></p></e>
+<e><p><l>zapakirati<s n="vblex"/></l><r>zapakovati<s n="vblex"/></r></p></e>
 <e><p><l>organizirati<s n="vblex"/></l><r>organizovati<s n="vblex"/></r></p></e>
+<e><p><l>banirati<s n="vblex"/></l><r>banovati<s n="vblex"/></r></p></e>
+<e><p><l>aplicirati<s n="vblex"/></l><r>aplikovati<s n="vblex"/></r></p></e>
+<e><p><l>instrumentalizirati<s n="vblex"/></l><r>instrumentalizovati<s n="vblex"/></r></p></e>
 <e><p><l>amortizirati<s n="vblex"/></l><r>amortizovati<s n="vblex"/></r></p></e>
 <e><p><l>argumentirati<s n="vblex"/></l><r>argumentovati<s n="vblex"/></r></p></e>
 <e><p><l>artikulirati<s n="vblex"/></l><r>artikulisati<s n="vblex"/></r></p></e>
@@ -2031,6 +2102,7 @@
 <e><p><l>kćerka<s n="n"/></l><r>ćerka<s n="n"/></r></p></e>
 <e><p><l>kolegica<s n="n"/></l><r>koleginica<s n="n"/></r></p></e>
 <e><p><l>kombinirati<s n="vblex"/></l><r>kombinovati<s n="vblex"/></r></p></e>
+<e><p><l>rekombinirati<s n="vblex"/></l><r>rekombinovati<s n="vblex"/></r></p></e>
 <e><p><l>koncentrirati<s n="vblex"/></l><r>koncentrisati<s n="vblex"/></r></p></e>
 <e><p><l>kondenzirati<s n="vblex"/></l><r>kondenzovati<s n="vblex"/></r></p></e>
 <e><p><l>kršćanski<s n="adj"/></l><r>hrišćanski<s n="adj"/></r></p></e>
@@ -2094,14 +2166,28 @@
 <e><p><l>obuhvaćati<s n="vblex"/></l><r>obuhvatati<s n="vblex"/></r></p></e>
 <e><p><l>prevladati<s n="vblex"/></l><r>prevazići<s n="vblex"/></r></p></e>
 <e><p><l>konkretizirati<s n="vblex"/></l><r>konkretizovati<s n="vblex"/></r></p></e>
+<e><p><l>okvalificirati<s n="vblex"/></l><r>okvalifikovati<s n="vblex"/></r></p></e>
+<e><p><l>prekvalificirati<s n="vblex"/></l><r>prekvalifikovati<s n="vblex"/></r></p></e>
+<e><p><l>optimizirati<s n="vblex"/></l><r>optimizovati<s n="vblex"/></r></p></e>
+<e><p><l>kvantificirati<s n="vblex"/></l><r>kvantifikovati<s n="vblex"/></r></p></e>
+<e><p><l>lobirati<s n="vblex"/></l><r>lobovati<s n="vblex"/></r></p></e>
+<e><p><l>pacificirati<s n="vblex"/></l><r>pacifikovati<s n="vblex"/></r></p></e>
+<e><p><l>verificirati<s n="vblex"/></l><r>verifikovati<s n="vblex"/></r></p></e>
 <e><p><l>naprosto<s n="adv"/></l><r>prosto<s n="adv"/></r></p></e>
 
 <e><p><l>neiskorišten<s n="adj"/></l><r>neikorišćen<s n="adj"/></r></p></e>
 <e r="LR"><p><l>barbar<s n="n"/></l><r>varvar<s n="n"/></r></p></e>
 <e><p><l>barbarin<s n="n"/></l><r>varvar<s n="n"/></r></p></e>
+<e><p><l>kvalificiranost<s n="n"/></l><r>kvalifikovanost<s n="n"/></r></p></e>
 <e><p><l>hitan<s n="adj"/></l><r>urgentan<s n="adj"/></r></p></e>
 <e><p><l>izvanredan<s n="adj"/></l><r>vanredan<s n="adj"/></r></p></e>
 <e><p><l>kazališni<s n="adj"/></l><r>pozorišni<s n="adj"/></r></p></e>
+<e><p><l>kvalificiran<s n="adj"/></l><r>kvalifikovan<s n="adj"/></r></p></e>
+<e><p><l>polukvalificiran<s n="adj"/></l><r>polukvalifikovan<s n="adj"/></r></p></e>
+<e><p><l>visokokvalificiran<s n="adj"/></l><r>visokokvalifikovan<s n="adj"/></r></p></e>
+<e><p><l>nekvalificiran<s n="adj"/></l><r>nekvalifikovan<s n="adj"/></r></p></e>
+<e><p><l>okvalificiran<s n="adj"/></l><r>okvalifikovan<s n="adj"/></r></p></e>
+<e><p><l>niskokvalificiran<s n="adj"/></l><r>niskokvalifikovan<s n="adj"/></r></p></e>
 <e><p><l>paket<s n="n"/><s n="mi"/></l><r>paklica<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>nekontroliran<s n="adj"/></l><r>nekontrolisan<s n="adv"/></r></p></e>
 <e><p><l>neutralizirati<s n="vblex"/></l><r>neutralisati<s n="vblex"/></r></p></e>
@@ -2110,6 +2196,7 @@
 <e r="LR"><p><l>priopćenje<s n="n"/></l><r>saopštenje<s n="n"/></r></p></e>
 <e><p><l>sinkroniziran<s n="adj"/></l><r>sinhronizovan<s n="adj"/></r></p></e>
 <e><p><l>uhititi<s n="vblex"/></l><r>uhapsiti<s n="vblex"/></r></p></e>
+<e><p><l>pohapsiti<s n="vblex"/></l><r>poapsiti<s n="vblex"/></r></p></e>
 <e><p><l>vojska<s n="n"/></l><r>armija<s n="n"/></r></p></e>
 <e r="LR"><p><l>naredba<s n="n"/><s n="f"/></l><r>naređenje<s n="n"/><s n="nt"/></r></p></e>
 <e r="RL"><p><l>sastanak<s n="n"/><s n="f"/></l><r>samit<s n="n"/><s n="nt"/></r></p></e>
