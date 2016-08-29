@@ -2080,8 +2080,11 @@
 <e><p><l>opći<s n="adj"/></l><r>opšti<s n="adj"/></r></p></e>
 <e><p><l>spol<s n="n"/></l><r>pol<s n="n"/></r></p></e>
 <e><p><l>neovisan<s n="adj"/></l><r>nezavisan<s n="adj"/></r></p></e>
+<e><p><l>ovisan<s n="adj"/></l><r>zavisan<s n="adj"/></r></p></e>
+<e><p><l>ovisiti<s n="vblex"/></l><r>vblex<s n="adj"/></r></p></e>
 <e><p><l>oblik<s n="n"/><s n="mi"/></l><r>forma<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>svagdje<s n="adv"/></l><r>svuda<s n="adv"/></r></p></e>
+<e><p><l>okoliš<s n="n"/><s n="m"/></l><r>okolina<s n="n"/><s n="f"/></r></p></e>
 
 <!-- result of student coursework at unizg -->
 
@@ -2103,7 +2106,6 @@
 <e><p><l>kolegica<s n="n"/></l><r>koleginica<s n="n"/></r></p></e>
 <e><p><l>kombinirati<s n="vblex"/></l><r>kombinovati<s n="vblex"/></r></p></e>
 <e><p><l>rekombinirati<s n="vblex"/></l><r>rekombinovati<s n="vblex"/></r></p></e>
-<e><p><l>koncentrirati<s n="vblex"/></l><r>koncentrisati<s n="vblex"/></r></p></e>
 <e><p><l>kondenzirati<s n="vblex"/></l><r>kondenzovati<s n="vblex"/></r></p></e>
 <e><p><l>kršćanski<s n="adj"/></l><r>hrišćanski<s n="adj"/></r></p></e>
 <e><p><l>lokalizirati<s n="vblex"/></l><r>lokalizovati<s n="vblex"/></r></p></e>
