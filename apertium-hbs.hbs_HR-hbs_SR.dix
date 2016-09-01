@@ -774,12 +774,16 @@
 <e><p><l>krenuti<s n="vblex"/></l><r>kreniti<s n="vblex"/></r></p></e>
 <e><p><l>kristov<s n="adj"/></l><r>hristov<s n="adj"/></r></p></e>
 <e><p><l>kriterij<s n="n"/></l><r>kriterijum<s n="n"/></r></p></e>
+<e><p><l>prijevara<s n="n"/></l><r>prevara<s n="n"/></r></p></e>
 <e><p><l>krivotvorina<s n="n"/><s n="f"/></l><r>falsifikat<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>križarski<s n="adj"/></l><r>krstaški<s n="adj"/></r></p></e>
 <e><p><l>ledenjački<s n="adj"/></l><r>glacijalan<s n="adj"/></r></p></e>
+<e><p><l>ljetni<s n="adj"/></l><r>letnji<s n="adj"/></r></p></e>
 <e><p><l>leća<s n="n"/><s n="f"/></l><r>sočivo<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>rublje<s n="n"/><s n="n"/></l><r>veš<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>ljetnikovac<s n="n"/></l><r>letnikovac<s n="n"/></r></p></e>
 <e><p><l>cikla<s n="n"/></l><r>cvekla<s n="n"/></r></p></e>
+<e><p><l>kut<s n="n"/></l><r>ugao<s n="n"/></r></p></e>
 <e><p><l>ljeto<s n="n"/></l><r>leto<s n="n"/></r></p></e>
 <e><p><l>magnezij<s n="n"/></l><r>magnezijum<s n="n"/></r></p></e>
 <e><p><l>manifestirati<s n="vblex"/></l><r>manifestovati<s n="vblex"/></r></p></e>
@@ -2077,17 +2081,16 @@
 
 <!-- to be checked --> 
 
-<e><p><l>opći<s n="adj"/></l><r>opšti<s n="adj"/></r></p></e>
-<e><p><l>spol<s n="n"/></l><r>pol<s n="n"/></r></p></e>
-<e><p><l>neovisan<s n="adj"/></l><r>nezavisan<s n="adj"/></r></p></e>
-<e><p><l>ovisan<s n="adj"/></l><r>zavisan<s n="adj"/></r></p></e>
-<e><p><l>ovisiti<s n="vblex"/></l><r>vblex<s n="adj"/></r></p></e>
-<e><p><l>oblik<s n="n"/><s n="mi"/></l><r>forma<s n="n"/><s n="f"/></r></p></e>
-<e><p><l>svagdje<s n="adv"/></l><r>svuda<s n="adv"/></r></p></e>
-<e><p><l>okoliš<s n="n"/><s n="m"/></l><r>okolina<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>okoliš<s n="n"/><s n="mi"/></l><r>okolina<s n="n"/><s n="f"/></r></p></e>
 
 <!-- result of student coursework at unizg -->
 
+<e><p><l>svagdje<s n="adv"/></l><r>svuda<s n="adv"/></r></p></e>
+<e><p><l>oblik<s n="n"/><s n="mi"/></l><r>forma<s n="n"/><s n="f"/></r></p></e>
+<e><p><l>ovisiti<s n="vblex"/></l><r>zavisiti<s n="adj"/></r></p></e>
+<e><p><l>ovisan<s n="adj"/></l><r>zavisan<s n="adj"/></r></p></e>
+<e><p><l>neovisan<s n="adj"/></l><r>nezavisan<s n="adj"/></r></p></e>
+<e><p><l>neovisno<s n="adv"/></l><r>nezavisno<s n="adv"/></r></p></e>
 <e><p><l>ocean<s n="n"/></l><r>okean<s n="n"/></r></p></e>
 <e><p><l>afirmirati<s n="vblex"/></l><r>afirmisati<s n="vblex"/></r></p></e>
 <e><p><l>reafirmirati<s n="vblex"/></l><r>reafirmisati<s n="vblex"/></r></p></e>
@@ -2133,6 +2136,7 @@
 <e><p><l>spomenuti<s n="vblex"/></l><r>pomenuti<s n="vblex"/></r></p></e>
 <e><p><l>stjecanje<s n="n"/></l><r>sticanje<s n="n"/></r></p></e>
 <e><p><l>sugerirati<s n="vblex"/></l><r>sugerisati<s n="vblex"/></r></p></e>
+<e><p><l>odabirati<s n="vblex"/></l><r>odabirati<s n="vblex"/></r></p></e>
 <e><p><l>susjed<s n="n"/></l><r>komšija<s n="n"/></r></p></e>
 <e><p><l>susjedstvo<s n="n"/><s n="nt"/></l><r>komšiluk<s n="n"/><s n="mi"/></r></p></e>
 <e><p><l>šutnja<s n="n"/><s n="f"/></l><r>ćutanje<s n="n"/><s n="nt"/></r></p></e>
@@ -2151,6 +2155,7 @@
 <e><p><l>prešutjeti<s n="vblex"/></l><r>prećutati<s n="vblex"/></r></p></e>
 <e><p><l>saopćiti<s n="vblex"/></l><r>saopštiti<s n="vblex"/></r></p></e>
 <e><p><l>prometni<s n="adj"/></l><r>saobraćajni<s n="adj"/></r></p></e>
+<e><p><l>promjenjiv<s n="adj"/></l><r>promenljiv<s n="adj"/></r></p></e>
 
 <e><p><l>aktualan<s n="adj"/></l><r>aktuelan<s n="adj"/></r></p></e>
 <e><p><l>gluh<s n="adj"/></l><r>gluv<s n="adj"/></r></p></e>

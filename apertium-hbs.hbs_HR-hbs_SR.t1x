@@ -6218,110 +6218,9 @@ If no format information is present it is removed. -->
 
 
 
- <rule comment="RULE: trebati.pres/trebati.lp + vblex.inf = treba/trebalo + da + vb.infofromtrebati. Trebamo lupati -> Treba da lupamo; Trebale okončati -> trebalo da okončaju">
-  <pattern>
-    <pattern-item n="CAT__trebati_"/>
-    <pattern-item n="CAT__vbinf_"/>
-  </pattern>
-  <action>
-    <choose>
-      <when>
-        <test>
-          <equal>
-            <clip pos="1" side="sl" part="learned_verbtime"/>
-            <lit-tag v="lp"/>
-           </equal>
-        </test>
-       <out>
-          <lu>
-			<clip pos="1" side="tl" part="lemh"/>
-            <clip pos="1" side="sl" part="learned_verbcat"/>
-            <clip pos="1" side="sl" part="learned_isclt"/>
-            <clip pos="1" side="sl" part="learned_verbaspect"/>
-            <clip pos="1" side="sl" part="learned_verbtype"/>
-            <clip pos="1" side="sl" part="learned_isrefvb"/>
-            <lit-tag v="lp"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_issfx"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_definiteness"/>
-            <clip pos="1" side="tl" part="lemq"/>          
-          </lu>
-          <b pos="1"/>
-          <lu>
-          <lit v="da"/>
-          <lit-tag v="cnjsub"/>
-          </lu>
-          <b/>
-          <lu>
-            <clip pos="2" side="tl" part="lemh"/>
-            <clip pos="2" side="sl" part="learned_verbcat"/>
-            <clip pos="2" side="sl" part="learned_isclt"/>
-            <clip pos="2" side="sl" part="learned_verbaspect"/>
-            <clip pos="2" side="sl" part="learned_verbtype"/>
-            <clip pos="2" side="sl" part="learned_isrefvb"/>
-            <lit-tag v="pres"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_issfx"/>
-            <lit-tag v="p3"/>
-            <clip pos="1" side="sl" part="learned_number"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_definiteness"/>
-            <clip pos="2" side="tl" part="lemq"/>
-          </lu>
-      </out>
-      </when>
-      <otherwise>
-       <out>
-          <lu>
-			<clip pos="1" side="tl" part="lemh"/>
-            <clip pos="1" side="sl" part="learned_verbcat"/>
-            <clip pos="1" side="sl" part="learned_isclt"/>
-            <clip pos="1" side="sl" part="learned_verbaspect"/>
-            <clip pos="1" side="sl" part="learned_verbtype"/>
-            <clip pos="1" side="sl" part="learned_isrefvb"/>
-            <lit-tag v="pres"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_issfx"/>
-            <lit-tag v="p3"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_definiteness"/>
-            <clip pos="1" side="tl" part="lemq"/>               </lu>
-          <b pos="1"/>
-          <lu>
-          <lit v="da"/>
-          <lit-tag v="cnjsub"/>
-          </lu>
-          <b/>
-          <lu>
-            <clip pos="2" side="tl" part="lemh"/>
-            <clip pos="2" side="sl" part="learned_verbcat"/>
-            <clip pos="2" side="sl" part="learned_isclt"/>
-            <clip pos="2" side="sl" part="learned_verbaspect"/>
-            <clip pos="2" side="sl" part="learned_verbtype"/>
-            <clip pos="2" side="sl" part="learned_isrefvb"/>
-            <lit-tag v="pres"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_issfx"/>
-            <clip pos="1" side="sl" part="learned_person"/>
-            <clip pos="1" side="sl" part="learned_number"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_definiteness"/>
-            <clip pos="2" side="tl" part="lemq"/>
-          </lu>
-      </out>
-      </otherwise>
-     </choose>
-</action>
-</rule>
-
-<rule comment="RULE: trebati.lp + vbser + vblex.inf = trebalo + vbser + da + vblex.pres. Trebale smo spavati -> Trebalo je da spavamo">
+<rule comment="RULE: trebati.pres/trebati.lp + vblex.inf = treba/trebalo + da + vb.infofromtrebati. Trebale okončati -> trebalo da okončaju; Treba lupati -> Treba lupati; Trebamo lupati -> Treba da lupamo">
 	<pattern>
 		<pattern-item n="CAT__trebati_"/>
-		<pattern-item n="CAT__vbser_"/>
 		<pattern-item n="CAT__vbinf_"/>
 	</pattern>
 	<action>
@@ -6332,6 +6231,141 @@ If no format information is present it is removed. -->
 						<clip pos="1" side="sl" part="learned_verbtime"/>
 						<lit-tag v="lp"/>
 					</equal>
+				</test>
+				<out>
+					<lu>
+						<clip pos="1" side="tl" part="lemh"/>
+						<clip pos="1" side="sl" part="learned_verbcat"/>
+						<clip pos="1" side="sl" part="learned_isclt"/>
+						<clip pos="1" side="sl" part="learned_verbaspect"/>
+						<clip pos="1" side="sl" part="learned_verbtype"/>
+						<clip pos="1" side="sl" part="learned_isrefvb"/>
+						<lit-tag v="lp"/>
+						<clip pos="1" side="sl" part="learned_isadv"/>
+						<clip pos="1" side="sl" part="learned_issfx"/>
+						<lit-tag v="nt"/>
+						<lit-tag v="sg"/>
+						<clip pos="1" side="sl" part="learned_case"/>
+						<clip pos="1" side="sl" part="learned_definiteness"/>
+						<clip pos="1" side="tl" part="lemq"/>          
+					</lu>
+					<b pos="1"/>
+					<lu>
+						<lit v="da"/>
+						<lit-tag v="cnjsub"/>
+					</lu>
+					<b/>
+					<lu>
+						<clip pos="2" side="tl" part="lemh"/>
+						<clip pos="2" side="sl" part="learned_verbcat"/>
+						<clip pos="2" side="sl" part="learned_isclt"/>
+						<clip pos="2" side="sl" part="learned_verbaspect"/>
+						<clip pos="2" side="sl" part="learned_verbtype"/>
+						<clip pos="2" side="sl" part="learned_isrefvb"/>
+						<lit-tag v="pres"/>
+						<clip pos="1" side="sl" part="learned_isadv"/>
+						<clip pos="1" side="sl" part="learned_issfx"/>
+						<lit-tag v="p3"/>
+						<clip pos="1" side="sl" part="learned_number"/>
+						<clip pos="1" side="sl" part="learned_case"/>
+						<clip pos="1" side="sl" part="learned_definiteness"/>
+						<clip pos="2" side="tl" part="lemq"/>
+					</lu>
+				</out>
+			</when>		
+			<otherwise>
+				<choose>
+					<when>
+						<test>
+							<and>
+								<equal>
+									<clip pos="1" side="sl" part="learned_verbtime"/>
+									<lit-tag v="pres"/>
+								</equal>
+								<equal>
+									<clip pos="1" side="sl" part="learned_verbperson"/>
+									<lit-tag v="p3"/>	
+								</equal>
+							</and>
+						</test>
+						<out>
+							<lu>
+								<clip pos="1" side="tl" part="whole"/>            
+							</lu>
+							<b pos="1"/>
+							<lu>
+								<clip pos="2" side="tl" part="whole"/>            
+							</lu>
+						</out>			          
+					</when>
+					<otherwise>
+						<out>
+							<lu>
+								<clip pos="1" side="tl" part="lemh"/>
+								<clip pos="1" side="sl" part="learned_verbcat"/>
+								<clip pos="1" side="sl" part="learned_isclt"/>
+								<clip pos="1" side="sl" part="learned_verbaspect"/>
+								<clip pos="1" side="sl" part="learned_verbtype"/>
+								<clip pos="1" side="sl" part="learned_isrefvb"/>
+								<lit-tag v="pres"/>
+								<clip pos="1" side="sl" part="learned_isadv"/>
+								<clip pos="1" side="sl" part="learned_issfx"/>
+								<lit-tag v="p3"/>
+								<lit-tag v="sg"/>
+								<clip pos="1" side="sl" part="learned_case"/>
+								<clip pos="1" side="sl" part="learned_definiteness"/>
+								<clip pos="1" side="tl" part="lemq"/>               
+							</lu>
+							<b pos="1"/>
+							<lu>
+								<lit v="da"/>
+								<lit-tag v="cnjsub"/>
+							</lu>
+							<b/>
+							<lu>
+								<clip pos="2" side="tl" part="lemh"/>
+								<clip pos="2" side="sl" part="learned_verbcat"/>
+								<clip pos="2" side="sl" part="learned_isclt"/>
+								<clip pos="2" side="sl" part="learned_verbaspect"/>
+								<clip pos="2" side="sl" part="learned_verbtype"/>
+								<clip pos="2" side="sl" part="learned_isrefvb"/>
+								<lit-tag v="pres"/>
+								<clip pos="1" side="sl" part="learned_isadv"/>
+								<clip pos="1" side="sl" part="learned_issfx"/>
+								<clip pos="1" side="sl" part="learned_person"/>
+								<clip pos="1" side="sl" part="learned_number"/>
+								<clip pos="1" side="sl" part="learned_case"/>
+								<clip pos="1" side="sl" part="learned_definiteness"/>
+								<clip pos="2" side="tl" part="lemq"/>
+							</lu>
+						</out>
+					</otherwise>
+				</choose>
+			</otherwise>
+		</choose>
+	</action>
+</rule>
+
+<rule comment="RULE: trebati.lp + vbser + vblex.inf = trebalo + vbser lp + da + vblex.pres. Trebale smo spavati -> Trebalo je da spavamo">
+	<pattern>
+		<pattern-item n="CAT__trebati_"/>
+		<pattern-item n="CAT__vbser_"/>
+		<pattern-item n="CAT__vbinf_"/>
+	</pattern>
+	<action>
+		<choose>
+			<when>
+				<test>
+					<and>
+						<equal>
+							<clip pos="1" side="sl" part="learned_verbtime"/>
+							<lit-tag v="lp"/>
+						</equal>
+						<equal>
+							<clip pos="2" side="sl" part="learned_verbtime"/>
+							<lit-tag v="pres"/>
+						</equal>
+						</and>
 				</test>
 				<out>
 					<lu>
@@ -6377,6 +6411,21 @@ If no format information is present it is removed. -->
 					</lu>
 				</out>
 			</when>
+			<otherwise>
+		       <out>
+		          <lu>
+		            <clip pos="1" side="tl" part="whole"/>            
+		          </lu>
+		          <b pos="1"/>
+		          <lu>
+					<clip pos="2" side="tl" part="whole"/>            
+		          </lu>
+		          <b pos="2"/>
+		          <lu>
+					<clip pos="3" side="tl" part="whole"/>
+		          </lu>
+		      </out>
+			</otherwise>
 		</choose>
 	</action>
 </rule>
@@ -6626,6 +6675,91 @@ If no format information is present it is removed. -->
     </choose>
 </action>
 </rule>
+
+<!-- <rule comment="RULE: treba/trebalo + da + se + vb.pres = trebati.infofromvb + se + vblex.inf. se treba da -> treba da se">
+  <pattern>
+    <pattern-item n="CAT__trebati_"/>
+    <pattern-item n="CAT__da_"/>
+    <pattern-item n="CAT__se_"/>
+    <pattern-item n="CAT__vb_"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test>
+               <equal>
+                 <clip pos="1" side="tl" part="learned_verbtime"/>
+                 <lit-tag v="lp"/>
+               </equal>
+        </test>
+       <out>
+          <lu>
+           <get-case-from pos="1">
+            <clip pos="3" side="tl" part="lem"/>
+           </get-case-from>
+           <clip pos="3" side="tl" part="tags"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+           <get-case-from pos="3">
+            <lit v="trebati"/>
+           </get-case-from>
+            <lit-tag v="vbmod"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <lit-tag v="nt"/> 
+            <clip pos="4" side="sl" part="learned_number"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <clip pos="4" side="sl" part="learned_verbcat"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+            <clip pos="4" side="tl" part="lemq"/>
+          </lu>
+      </out>
+     </when>
+     <otherwise>
+       <out>
+          <lu>
+           <get-case-from pos="1">
+            <clip pos="3" side="tl" part="lem"/>
+           </get-case-from>
+           <clip pos="3" side="tl" part="tags"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <get-case-from pos="3">
+            <lit v="trebati"/>
+            </get-case-from>
+            <lit-tag v="vbmod"/>
+            <clip pos="1" side="sl" part="learned_verbtime"/>
+            <clip pos="4" side="sl" part="learned_person"/>
+            <clip pos="4" side="sl" part="learned_number"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="4" side="tl" part="lemh"/>
+            <lit-tag v="vblex"/>
+            <clip pos="4" side="sl" part="learned_verbaspect"/>
+            <clip pos="4" side="sl" part="learned_verbtype"/>
+            <clip pos="4" side="sl" part="learned_isrefvb"/>
+            <lit-tag v="inf"/>
+          </lu>
+        </out>
+     </otherwise>
+    </choose>
+    <call-macro n="f_bcond">
+       <with-param pos="2"/>
+       <with-param pos="3"/>
+    </call-macro>
+</action>
+</rule>
+-->
 
 <!-- end verb related phrases -->
 
