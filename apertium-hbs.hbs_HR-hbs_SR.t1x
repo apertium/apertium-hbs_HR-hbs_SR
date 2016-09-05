@@ -74,7 +74,8 @@
     <cat-item lemma="trebati" tags="vbmod.lp.*.*"/> <!-- gender agreement problematic -->
     <cat-item lemma="trebati" tags="vbmod.pres.*.*"/>
     <cat-item lemma="trebati" tags="vblex.*.lp.*.*"/> <!-- gender agreement problematic + tagger problem -->
-    <cat-item lemma="trebati" tags="vblex.*.pres.*.*"/> <!-- tagger problem -->
+	<cat-item lemma="trebati" tags="vblex.*.pres.*.*"/>
+<!--    <cat-item lemma="trebati" tags="vblex.*.pres.*.*"/> --> <!-- tagger problem -->
     <cat-item lemma="treba" tags="n.*"/> <!-- tagger mistake -->
   </def-cat>
 
@@ -6283,7 +6284,7 @@ If no format information is present it is removed. -->
 									<lit-tag v="pres"/>
 								</equal>
 								<equal>
-									<clip pos="1" side="sl" part="learned_verbperson"/>
+									<clip pos="1" side="sl" part="learned_person"/>
 									<lit-tag v="p3"/>	
 								</equal>
 							</and>
