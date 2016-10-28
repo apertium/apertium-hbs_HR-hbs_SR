@@ -187,6 +187,8 @@
 <e><p><l>spolni<s n="adj"/></l><r>polni<s n="adj"/></r></p></e>
 <e><p><l>izumiti<s n="vblex"/></l><r>iznaći<s n="vblex"/></r></p></e>
 <e><p><l>prodefilirati<s n="vblex"/></l><r>prodefilovati<s n="vblex"/></r></p></e>
+<e><p><l>konzultirati<s n="vblex"/></l><r>konzultovati<s n="vblex"/></r></p></e>
+<e><p><l>konsultirati<s n="vblex"/></l><r>konsultovati<s n="vblex"/></r></p></e>
 <e><p><l>postojati<s n="vblex"/></l><r>bitisati<s n="vblex"/></r></p></e>
 <e r="LR"><p><l>uspoređivati<s n="vblex"/></l><r>komparirati<s n="vblex"/></r></p></e>
 <e><p><l>usporediti<s n="vblex"/></l><r>porediti<s n="vblex"/></r></p></e>
@@ -241,6 +243,7 @@
 <e><p><l>specijalizirati<s n="vblex"/></l><r>specijalizovati<s n="vblex"/></r></p></e>
 <e><p><l>sat<s n="n"/></l><r>čas<s n="n"/></r></p></e>
 <e><p><l>eurozona<s n="n"/></l><r>evrozona<s n="n"/></r></p></e>
+<e><p><l>stolčić<s n="n"/></l><r>stočić<s n="n"/></r></p></e>
 <e><p><l>Europa<s n="np"/></l><r>Evropa<s n="np"/></r></p></e>
 <e><p><l>učiniti<s n="vblex"/></l><r>uraditi<s n="vblex"/></r></p></e>
 <e><p><l>profunkcionirati<s n="vblex"/></l><r>profunkcionisati<s n="vblex"/></r></p></e>
@@ -376,6 +379,7 @@
 <e><p><l>hlače<s n="n"/></l><r>pantalone<s n="n"/></r></p></e>
 <e><p><l>hranjiv<s n="adj"/></l><r>hranljiv<s n="adj"/></r></p></e>
 <e><p><l>ignorirati<s n="vblex"/></l><r>ignorisati<s n="vblex"/></r></p></e>
+<e><p><l>izignorirati<s n="vblex"/></l><r>izignorisati<s n="vblex"/></r></p></e>
 <e><p><l>imunološki<s n="adj"/></l><r>imunski<s n="adj"/></r></p></e>
 <e><p><l>indonezijski<s n="adj"/></l><r>indonežanski<s n="adj"/></r></p></e>
 <e><p><l>informiranje<s n="n"/></l><r>informisanje<s n="n"/></r></p></e>
@@ -957,6 +961,7 @@
 <e><p><l>startati<s n="vblex"/></l><r>startovati<s n="vblex"/></r></p></e>
 <e><p><l>klimatizirati<s n="vblex"/></l><r>klimatizovati<s n="vblex"/></r></p></e>
 <e><p><l>aklimatizirati<s n="vblex"/></l><r>aklimatizovati<s n="vblex"/></r></p></e>
+<e><p><l>karakterizirati<s n="vblex"/></l><r>karakterisati<s n="vblex"/></r></p></e>
 <e><p><l>stil<s n="n"/></l><r>manir<s n="n"/></r></p></e>
 <e r="LR"><p><l>stol<s n="n"/><s n="mi"/></l><r>trpeza<s n="n"/><s n="f"/></r></p></e>
 <e><p><l>stotinjak<s n="n"/><s n="f"/></l><r>stotinak<s n="n"/><s n="mi"/></r></p></e>
@@ -1462,6 +1467,7 @@
 <e><p><l>kalkulirati<s n="vblex"/></l><r>kalkulisati<s n="vblex"/></r></p></e>
 <e><p><l>kultivirati<s n="vblex"/></l><r>kultivisati<s n="vblex"/></r></p></e>
 <e><p><l>kriminalizirati<s n="vblex"/></l><r>kriminalizovati<s n="vblex"/></r></p></e>
+<e><p><l>subvencionirati<s n="vblex"/></l><r>subvencionisati<s n="vblex"/></r></p></e>
 <e><p><l>dekriminalizirati<s n="vblex"/></l><r>dekriminalizovati<s n="vblex"/></r></p></e>
 <e><p><l>pomicati<s n="vblex"/></l><r>pomerati<s n="vblex"/></r></p></e>
 <e><p><l>pomaknuti<s n="vblex"/></l><r>pomeriti<s n="vblex"/></r></p></e>
@@ -1706,7 +1712,7 @@
 <e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="imperf"/></l><r>kontrolisati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e r="LR"><p><l>kontrolirati<s n="vblex"/><s n="perf"/></l><r>kontrolisati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>koordinirati<s n="vblex"/></l><r>koordinisati<s n="vblex"/></r></p></e>
-<e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
+<e><p><l>iskoordinirati<s n="vblex"/></l><r>iskoordinisati<s n="vblex"/></r></p></e>
 <e><p><l>kruniti<s n="vblex"/></l><r>krunisati<s n="vblex"/></r></p></e>
 <e><p><l>kvalificirati<s n="vblex"/></l><r>kvalifikovati<s n="vblex"/></r></p></e>
 <e><p><l>letjeti<s n="vblex"/></l><r>leteti<s n="vblex"/></r></p></e>
@@ -1954,7 +1960,6 @@
 <e><p><l>sustav<s n="n"/></l><r>sistem<s n="n"/></r></p></e>
 <e><p><l>vodstvo<s n="n"/></l><r>vođstvo<s n="n"/></r></p></e>
 <e><p><l>tužiteljstvo<s n="n"/></l><r>tužilaštvo<s n="n"/></r></p></e>
-<e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
 <e><p><l>poduzeti<s n="vblex"/></l><r>preduzeti<s n="vblex"/></r></p></e>
 <e><p><l>tužitelj<s n="n"/></l><r>tužilac<s n="n"/></r></p></e>
 <e><p><l>tisuća<s n="n"/></l><r>hiljada<s n="n"/></r></p></e>
@@ -1993,9 +1998,15 @@
 <e r="LR"><p><l>diskutirati<s n="vblex"/><s n="imperf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e r="LR"><p><l>diskutirati<s n="vblex"/><s n="perf"/></l><r>diskutovati<s n="vblex"/><s n="imperf"/></r></p></e>
 <e><p><l>kritizirati<s n="vblex"/></l><r>kritikovati<s n="vblex"/></r></p></e>
+<e><p><l>iskritizirati<s n="vblex"/></l><r>iskritikovati<s n="vblex"/></r></p></e>
+<e><p><l>kristalizirati<s n="vblex"/></l><r>kristalisati<s n="vblex"/></r></p></e>
+<e><p><l>iskristalizirati<s n="vblex"/></l><r>kristalisati<s n="vblex"/></r></p></e>
 <e><p><l>iskomplicirati<s n="vblex"/></l><r>iskomplikovati<s n="vblex"/></r></p></e>
 <e><p><l>zakomplicirati<s n="vblex"/></l><r>zakomplikovati<s n="vblex"/></r></p></e>
 <e><p><l>zapakirati<s n="vblex"/></l><r>zapakovati<s n="vblex"/></r></p></e>
+<e><p><l>aktualizirati<s n="vblex"/></l><r>aktuelizovati<s n="vblex"/></r></p></e>
+<e><p><l>reaktualizirati<s n="vblex"/></l><r>reaktuelizovati<s n="vblex"/></r></p></e>
+<e><p><l>alkoholizirati<s n="vblex"/></l><r>alkoholisati<s n="vblex"/></r></p></e>
 <e><p><l>organizirati<s n="vblex"/></l><r>organizovati<s n="vblex"/></r></p></e>
 <e><p><l>banirati<s n="vblex"/></l><r>banovati<s n="vblex"/></r></p></e>
 <e><p><l>aplicirati<s n="vblex"/></l><r>aplikovati<s n="vblex"/></r></p></e>
